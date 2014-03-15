@@ -25,7 +25,7 @@ angular.module('app', ['ionic', 'app.services', 'app.controllers'])
     .state('slide', {
       url: "/slide",
       templateUrl: "templates/slide.html",
-      controller: "SlideController"
+      controller: "CardsCtrl"
     });
 
     // .state('side-bar.start', {
@@ -101,4 +101,17 @@ angular.module('app', ['ionic', 'app.services', 'app.controllers'])
   $urlRouterProvider.otherwise('/splash');
 
 });
+// .directive('noScroll', function($document) {
+
+//   return {
+//     restrict: 'A',
+//     link: function($scope, $element, $attr) {
+
+//       $document.on('touchmove', function(e) {
+//         e.preventDefault();
+//       });
+//     }
+//   }
+// })
+// ;
 
