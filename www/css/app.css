@@ -1,0 +1,27 @@
+/* Your app's CSS, go crazy, make it your own */
+
+.ionic-logo {
+  display: block;
+  margin: 15px auto;
+  width: 96px;
+  height: 96px;
+}
+
+#home {
+  min-height: 100%;
+  background-color: #CA4D60;
+}
+
+.splash {
+  padding-top: 40%;
+  padding-bottom: 4%;
+  text-align: center;
+  font-size: 100px;
+  font-family: 'Dancing Script', cursive;
+}
+
+#play {
+  border: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 150%;
+}
