@@ -11,41 +11,36 @@ angular.module('app', ['ionic', 'app.services', 'app.controllers'])
 .config(function($stateProvider, $urlRouterProvider) {
 
   $stateProvider
-    .state('side-bar', {
-      url: "/side",
-      abstract: true,
-      templateUrl: "templates/side-bar.html"
+    .state('splash', {
+      url: "/splash",
+      templateUrl: "templates/splash.html"
     })
 
-    .state('side-bar.home', {
+    .state('home', {
       url: "/home",
-      views: {
-        'home-view': {
-          templateUrl: "templates/home.html",
-          controller: "HomeController"  
-        }
-      }
-    })
-
-    .state('side-bar.start', {
-      url: "/start",
-      views: {
-        'home-view': {
-          templateUrl: "templates/start.html",
-          controller: "StartController"
-        }
-      }
-    })
-
-    .state('side-bar.slides', {
-      url: '/start/:slideId',
-      views: {
-        'slide-views': {
-          templateUrl: 'templates/slide.html',
-          controller: 'SlideController'
-        }
-      }
+      templateUrl: "templates/home.html",
+      controller: "HomeController"  
     });
+
+    // .state('side-bar.start', {
+    //   url: "/start",
+    //   views: {
+    //     'home-view': {
+    //       templateUrl: "templates/start.html",
+    //       controller: "StartController"
+    //     }
+    //   }
+    // })
+
+    // .state('side-bar.slides', {
+    //   url: '/start/:slideId',
+    //   views: {
+    //     'slide-views': {
+    //       templateUrl: 'templates/slide.html',
+    //       controller: 'SlideController'
+    //     }
+    //   }
+    // });
 
   // $stateProvider
 
@@ -97,7 +92,7 @@ angular.module('app', ['ionic', 'app.services', 'app.controllers'])
 
   // // if none of the above states are matched, use this as the fallback
   // $urlRouterProvider.otherwise('/tab/pets');
-  $urlRouterProvider.otherwise('/side/home');
+  $urlRouterProvider.otherwise('/splash');
 
 });
 

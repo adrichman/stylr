@@ -1,3 +1,5 @@
 *.keystore
 *.sw*
 platforms/^.*
+ref/*
+.DS_Store

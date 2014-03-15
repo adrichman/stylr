@@ -1,10 +1,23 @@
-<!-- <div class="row">
- <div class="col col-33 col-offset-33">
-  <h1 class="splash">Stylr</h1>
-</div> -->
+<ion-view title='Start'>
+  <ion-content>
+    <div class="list list-inset">
+      <label class="item item-input">
+        <span class="input-label">Your name</span>
+        <input type="text">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Your email</span>
+        <input type="email">
+      </label>
+      <ion-toggle>Subscribe To Newsletter</ion-toggle>
+      <button class="button button-positive button-block">Adopt</button>
+    </div>
+  </ion-content>
+</ion-view>
 
-<div id='home'>
-  <h1 class='splash'>Stylr</h1>
-  <a class="button button-block button-royal" id="play" href="#/side/start">What's Your Style?</a></p>
-  <!-- <ion-nav-view name="start-view"></ion-nav-view> -->
-</div>
+<ion-view id='home'>
+  <ion-content>
+    <h1 class='splash'>Stylr</h1>
+    <a class="button button-block button-royal" id="play" ui-sref="home">What's Your Style?</a></p>
+  </ion-content>
+</ion-view>
