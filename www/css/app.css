@@ -12,6 +12,11 @@
   background-color: #CA4D60;
 }
 
+#navi-header {
+  font-family: 'Dancing Script', cursive;
+  font-size: 190%;
+}
+
 .splash {
   padding-top: 40%;
   padding-bottom: 4%;
@@ -24,4 +29,14 @@
   border: none;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 150%;
+}
+
+.circular {
+  margin-top: 70%;
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  background: url(../img/karl.png) no-repeat;
 }

@@ -20,6 +20,12 @@ angular.module('app', ['ionic', 'app.services', 'app.controllers'])
       url: "/home",
       templateUrl: "templates/home.html",
       controller: "HomeController"  
+    })
+
+    .state('slide', {
+      url: "/slide",
+      templateUrl: "templates/slide.html",
+      controller: "SlideController"
     });
 
     // .state('side-bar.start', {

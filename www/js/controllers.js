@@ -1,11 +1,12 @@
 angular.module('app.controllers', [])
 
-.controller('HomeController', ['$scope', function($scope) {
-}])
+.controller('HomeController', function($scope, $state) {
 
-.controller('StartController', ['$scope', function($scope) {
-  
-}])
+  $scope.go = function() {
+    $state.go('slide');
+  };
+
+})
 
 .controller('SlideController', ['$scope', function($scope) {
 

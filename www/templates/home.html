@@ -1,23 +1,17 @@
-<ion-view title='Start'>
-  <ion-content>
-    <div class="list list-inset">
-      <label class="item item-input">
-        <span class="input-label">Your name</span>
-        <input type="text">
-      </label>
-      <label class="item item-input">
-        <span class="input-label">Your email</span>
-        <input type="email">
-      </label>
-      <ion-toggle>Subscribe To Newsletter</ion-toggle>
-      <button class="button button-positive button-block">Adopt</button>
+<ion-view id='home'>
+  <header class="bar bar-header bar-royal">
+   <h1 class="title" id="navi-header">Stylr</h1>
+  </header>
+  <ion-content has-header="true" ng-click="go()">
+    <div class="card">
+      <div class="item item-text-wrap">
+      <p>Get ready to throw down your style, grrl. <br>  
+      Just swipe to the <b>right</b> if you dig it,
+      swipe to the <b>left</b> if it's a hot mess. <br>
+      Tap Karl to Play</p>
+      </div>
     </div>
   </ion-content>
-</ion-view>
-
-<ion-view id='home'>
-  <ion-content>
-    <h1 class='splash'>Stylr</h1>
-    <a class="button button-block button-royal" id="play" ui-sref="home">What's Your Style?</a></p>
-  </ion-content>
+  <div class="circular">
+  </div>
 </ion-view>
