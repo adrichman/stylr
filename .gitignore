@@ -3,3 +3,4 @@
 platforms/^.*
 ref/*
 .DS_Store
+.sass-cache/*

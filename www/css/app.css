@@ -43,8 +43,7 @@
 
 
 .pane {
-  /*background-color: #333;*/
-  background-color: #CA4D60;
+  /*background-color: #CA4D60;*/
 }
 
 .bar.bar-transparent {
@@ -72,7 +71,6 @@
   margin-left: -150px;
   margin-top: -150px;
   box-sizing: border-box;
-  /*background-color: #CA4D60;*/
   background-color: rgb(255,255,255);
   border-radius: 4px;
   overflow: hidden;
