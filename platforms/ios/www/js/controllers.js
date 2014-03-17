@@ -14,7 +14,6 @@ angular.module('app.controllers', ['ionic.contrib.ui.cards'])
 }])
 
 .controller('SlideController', ['$scope', function($scope) {
-<<<<<<< HEAD
 
 }])
 .controller('CardsCtrl', function($scope, $ionicSwipeCardDelegate, $timeout) {
@@ -63,9 +62,4 @@ angular.module('app.controllers', ['ionic.contrib.ui.cards'])
     card.swipe();
   };
 });
-=======
-  $scope.$on('$viewContentLoaded', function() {
-    console.log("ssa");
-  });
-}]);
->>>>>>> Wrote on enter hooks
+

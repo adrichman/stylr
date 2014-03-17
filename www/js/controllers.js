@@ -1,7 +1,7 @@
-angular.module('app.controllers', ['ionic.contrib.ui.cards'])
+angular.module('app.controllers', ['ionic.contrib.ui.cards', 'app.services'])
 
 
-.controller('HomeController', ['$scope', '$ionicLoading', '$state', function($scope, $ionicLoading, $state)  {
+.controller('HomeController', ['$scope', '$state', function($scope, $state)  {
 
   $scope.$on('$viewContentLoading', function() {
     console.log("ssa");
@@ -59,9 +59,15 @@ angular.module('app.controllers', ['ionic.contrib.ui.cards'])
     $scope.cards.push(angular.extend({}, newCard));
   }
 })
+
 .controller('CardCtrl', function($scope, $ionicSwipeCardDelegate) {
   $scope.goAway = function() {
     var card = $ionicSwipeCardDelegate.getSwipebleCard($scope);
     card.swipe();
   };
+})
+
+.controller('UserController', function(dbService, Cordova) {
+  dbService.createDB().then(dbService.updateDB("someSHIT")); 
 });
+
