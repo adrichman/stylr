@@ -12,11 +12,17 @@ angular.module('app', ['ionic', 'app.services', 'app.controllers'])
 
   $stateProvider
     .state('splash', {
+      onEnter: function() {
+        console.log('hi');
+      },
       url: "/splash",
       templateUrl: "templates/splash.html"
     })
 
     .state('home', {
+      onEnter: function () {
+        console.log("hi");
+      },
       url: "/home",
       templateUrl: "templates/home.html",
       controller: "HomeController"  
