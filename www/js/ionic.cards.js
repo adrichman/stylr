@@ -59,7 +59,6 @@
 
       // Calculate the top left of a default card, as a translated pos
       var topLeft = window.innerHeight / 2 - this.maxHeight/2;
-      console.log(window.innerHeight, this.maxHeight);
 
       var cardOffset = Math.min(this.cards.length, 3) * 5;
 
@@ -233,11 +232,9 @@
       var height = this.el.offsetHeight;
       var point = window.innerHeight / 2 + this.rotationDirection * (height / 2)
       var distance = Math.abs(point - e.gesture.touches[0].pageY);// - window.innerWidth/2);
-      console.log(distance);
 
       this.touchDistance = distance * 8;
 
-      console.log('Touch distance', this.touchDistance);//this.touchDistance, width);
     },
 
     _doDrag: function(e) {
