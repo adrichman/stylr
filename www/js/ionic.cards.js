@@ -42,18 +42,19 @@
       var self = this;
 
       this.cards.push(card);
-      this.beforeCardShow(card);
+      this.beforeCardShow(card, function(nextCard){
+        setTimeout(function() {
+          // card.disableTransition(self.cardAnimation);
+          nextCard.transitionIn(self.cardAnimation);
+        }, this.cardPopInDuration + 100);
+      });
 
-      card.transitionIn(this.cardAnimation);
-      setTimeout(function() {
-        card.disableTransition(self.cardAnimation);
-      }, this.cardPopInDuration + 100);
     },
     /**
      * Set up a new card before it shows.
      */
-    beforeCardShow: function() {
-      var nextCard = this.cards[this.cards.length-1];
+    beforeCardShow: function(card, cb) {
+      var nextCard = card || this.cards[this.cards.length-1];
       if(!nextCard) return;
 
       // Calculate the top left of a default card, as a translated pos
@@ -65,6 +66,7 @@
       // Move each card 5 pixels down to give a nice stacking effect (max of 3 stacked)
       nextCard.setPopInDuration(this.cardPopInDuration);
       nextCard.setZIndex(this.cards.length);
+      cb(nextCard);
     },
     /**
      * Pop a card from the stack
