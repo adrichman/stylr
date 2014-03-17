@@ -1,0 +1,824 @@
+TStarterApp
+v6
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/Info.plist /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/StarterApp-Info.plist
+cPhaseScriptExecution Copy\ www\ directory /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Script-304B58A110DAC018002A0835.sh
+cCpResource StarterApp/config.xml build/emulator/StarterApp.app/config.xml
+cCpResource StarterApp/Resources/icons/icon-76.png build/emulator/StarterApp.app/icon-76.png
+cCpResource StarterApp/Resources/icons/icon-40@2x.png build/emulator/StarterApp.app/icon-40@2x.png
+cCpResource StarterApp/Resources/icons/icon-72.png build/emulator/StarterApp.app/icon-72.png
+cCpResource StarterApp/Resources/icons/icon.png build/emulator/StarterApp.app/icon.png
+cCopyStringsFile /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/en.lproj/Localizable.strings StarterApp/Resources/en.lproj/Localizable.strings
+cCpResource StarterApp/Resources/icons/icon@2x.png build/emulator/StarterApp.app/icon@2x.png
+cCompileXIB /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Classes/MainViewController.xib
+cCpResource StarterApp/Resources/icons/icon-50.png build/emulator/StarterApp.app/icon-50.png
+cCpResource StarterApp/Resources/icons/icon-60@2x.png build/emulator/StarterApp.app/icon-60@2x.png
+cCopyStringsFile /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/de.lproj/Localizable.strings StarterApp/Resources/de.lproj/Localizable.strings
+cCpResource StarterApp/Resources/icons/icon-small.png build/emulator/StarterApp.app/icon-small.png
+cCpResource StarterApp/Resources/splash/Default-Landscape@2x~ipad.png build/emulator/StarterApp.app/Default-Landscape@2x~ipad.png
+cCpResource StarterApp/Resources/splash/Default-Landscape~ipad.png build/emulator/StarterApp.app/Default-Landscape~ipad.png
+cCpResource StarterApp/Resources/splash/Default-Portrait@2x~ipad.png build/emulator/StarterApp.app/Default-Portrait@2x~ipad.png
+cCpResource StarterApp/Resources/icons/icon-small@2x.png build/emulator/StarterApp.app/icon-small@2x.png
+cCpResource StarterApp/Resources/splash/Default-Portrait~ipad.png build/emulator/StarterApp.app/Default-Portrait~ipad.png
+cCpResource StarterApp/Resources/splash/Default@2x~iphone.png build/emulator/StarterApp.app/Default@2x~iphone.png
+cCpResource StarterApp/Resources/icons/icon-40.png build/emulator/StarterApp.app/icon-40.png
+cCpResource StarterApp/Resources/icons/icon-60.png build/emulator/StarterApp.app/icon-60.png
+cCpResource StarterApp/Resources/splash/Default~iphone.png build/emulator/StarterApp.app/Default~iphone.png
+cCpResource StarterApp/Resources/splash/Default-568h@2x~iphone.png build/emulator/StarterApp.app/Default-568h@2x~iphone.png
+cCpResource StarterApp/Resources/icons/icon-50@2x.png build/emulator/StarterApp.app/icon-50@2x.png
+cCpResource StarterApp/Resources/icons/icon-76@2x.png build/emulator/StarterApp.app/icon-76@2x.png
+cCpResource StarterApp/Resources/icons/icon-72@2x.png build/emulator/StarterApp.app/icon-72@2x.png
+cProcessPCH /var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/StarterApp-Prefix-dplcywczbroduvejdijxykfxokvg/StarterApp-Prefix.pch.pch StarterApp/StarterApp-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects-normal/i386/main.o /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects-normal/i386/AppDelegate.o /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects-normal/i386/MainViewController.o /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/StarterApp normal i386
+cGenerateDSYMFile /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app.dSYM /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/StarterApp
+cTouch /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk
+c00000000525642F10000000000000176
+t1381384945
+s374
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/SDKSettings.plist
+c000000005287901D00000000000003B5
+t1384615965
+s949
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/CoreServices/SystemVersion.plist
+c000000005287902400000000000001A0
+t1384615972
+s416
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/AssetsLibrary.framework/AssetsLibrary
+c00000000528790240000000000059350
+t1384615972
+s365392
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c00000000528790250000000000445870
+t1384615973
+s4479088
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+c000000005287902500000000000EC820
+t1384615973
+s968736
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+c000000005287902700000000001BA530
+t1384615975
+s1811760
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Classes/AppDelegate.m
+c000000005324E23E00000000000013AB
+t1394926142
+s5035
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Classes/MainViewController.m
+c000000005324E23E000000000000126B
+t1394926142
+s4715
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Classes/MainViewController.xib
+c000000005324E23E0000000000001759
+t1394926142
+s5977
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/de.lproj/Localizable.strings
+c000000005324E23E00000000000004BF
+t1394926142
+s1215
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/en.lproj/Localizable.strings
+c000000005324E23E00000000000004AA
+t1394926142
+s1194
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/icons/icon-40.png
+c000000005324E23E0000000000000FF2
+t1394926142
+s4082
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/icons/icon-40@2x.png
+c000000005324E23E0000000000001CF3
+t1394926142
+s7411
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/icons/icon-50.png
+c000000005324E23E000000000000130A
+t1394926142
+s4874
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/icons/icon-50@2x.png
+c000000005324E23E000000000000258B
+t1394926142
+s9611
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/icons/icon-60.png
+c000000005324E23E00000000000016B3
+t1394926142
+s5811
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/icons/icon-60@2x.png
+c000000005324E23E0000000000002E94
+t1394926142
+s11924
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/icons/icon-72.png
+c000000005324E23E0000000000001350
+t1394926142
+s4944
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/icons/icon-72@2x.png
+c000000005324E23E0000000000002DBA
+t1394926142
+s11706
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/icons/icon-76.png
+c000000005324E23E0000000000001B71
+t1394926142
+s7025
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/icons/icon-76@2x.png
+c000000005324E23E0000000000003B9E
+t1394926142
+s15262
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/icons/icon-small.png
+c000000005324E23E0000000000000CDE
+t1394926142
+s3294
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/icons/icon-small@2x.png
+c000000005324E23E00000000000015E8
+t1394926142
+s5608
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/icons/icon.png
+c000000005324E23E0000000000000F3E
+t1394926142
+s3902
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/icons/icon@2x.png
+c000000005324E23E0000000000001EBD
+t1394926142
+s7869
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/splash/Default-568h@2x~iphone.png
+c000000005324E23E00000000000085B1
+t1394926142
+s34225
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/splash/Default-Landscape@2x~ipad.png
+c000000005324E23E0000000000012DF4
+t1394926142
+s77300
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/splash/Default-Landscape~ipad.png
+c000000005324E23E0000000000008877
+t1394926142
+s34935
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/splash/Default-Portrait@2x~ipad.png
+c000000005324E23E0000000000012B02
+t1394926142
+s76546
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/splash/Default-Portrait~ipad.png
+c000000005324E23E00000000000085E6
+t1394926142
+s34278
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/splash/Default@2x~iphone.png
+c000000005324E23E0000000000007323
+t1394926142
+s29475
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/splash/Default~iphone.png
+c000000005324E23E000000000000289A
+t1394926142
+s10394
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/StarterApp-Info.plist
+c000000005324E4440000000000000A16
+t1394926660
+s2582
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/StarterApp-Prefix.pch
+c000000005324E23E00000000000003C5
+t1394926142
+s965
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/config.xml
+c000000005324E44400000000000006B1
+t1394926660
+s1713
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/main.m
+c000000005324E23E000000000000045C
+t1394926142
+s1116
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects-normal/i386/AppDelegate.o
+t1394926667
+s77716
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects-normal/i386/MainViewController.o
+t1394926667
+s53676
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects-normal/i386/StarterApp.LinkFileList
+c000000005324E4480000000000000225
+t1394926664
+s549
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects-normal/i386/main.o
+t1394926666
+s3192
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Script-304B58A110DAC018002A0835.sh
+c000000005324E448000000000000002D
+t1394926664
+s45
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app
+t1394926667
+s1020
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app.dSYM
+t2
+s0
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/Default-568h@2x~iphone.png
+t1394926665
+s34225
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/Default-Landscape@2x~ipad.png
+t1394926665
+s77300
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/Default-Landscape~ipad.png
+t1394926665
+s34935
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/Default-Portrait@2x~ipad.png
+t1394926665
+s76546
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/Default-Portrait~ipad.png
+t1394926665
+s34278
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/Default@2x~iphone.png
+t1394926665
+s29475
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/Default~iphone.png
+t1394926665
+s10394
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/Info.plist
+t1394926664
+s1290
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/MainViewController.nib
+t1394926666
+s1332
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/PkgInfo
+t2
+s0
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/StarterApp
+t1394926667
+s280924
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/config.xml
+t1394926665
+s1713
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/de.lproj/Localizable.strings
+t1394926665
+s280
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/en.lproj/Localizable.strings
+t1394926665
+s166
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/icon-40.png
+t1394926665
+s4082
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/icon-40@2x.png
+t1394926665
+s7411
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/icon-50.png
+t1394926665
+s4874
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/icon-50@2x.png
+t1394926665
+s9611
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/icon-60.png
+t1394926665
+s5811
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/icon-60@2x.png
+t1394926665
+s11924
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/icon-72.png
+t1394926665
+s4944
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/icon-72@2x.png
+t1394926665
+s11706
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/icon-76.png
+t1394926665
+s7025
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/icon-76@2x.png
+t1394926665
+s15262
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/icon-small.png
+t1394926665
+s3294
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/icon-small@2x.png
+t1394926665
+s5608
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/icon.png
+t1394926665
+s3902
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/icon@2x.png
+t1394926665
+s7869
+
+N/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/libCordova.a
+c000000005324E44800000000000D7820
+t1394926664
+s882720
+
+N/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/StarterApp-Prefix-dplcywczbroduvejdijxykfxokvg/StarterApp-Prefix.pch.pch
+t1394926158
+s5343376
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesa016a7c81bd5b841^ee3da8c81bd5b841^---0#1#1#--18"Check dependencies36"DFCA441E-3A15-4062-9DE0-7DFF190F510C-
+
+CCompileC build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects-normal/i386/AppDelegate.o /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s416619466.865124
+e416619467.020562
+r1
+xCompileC
+xbuild/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects-normal/i386/AppDelegate.o
+x/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Classes/AppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Classes/AppDelegate.m
+d/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Classes/AppDelegate.h
+d/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
+d/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
+d/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
+d/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
+d/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
+d/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
+d/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
+d/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
+d/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
+d/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
+d/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Classes/MainViewController.h
+d/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection127"Compile /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Classes/AppDelegate.m205"CompileC build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects-normal/i386/AppDelegate.o StarterApp/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler47acddca1bd5b841^674405cb1bd5b841^---0#0#1#-19%DVTDocumentLocation2@126"file:///Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Classes/AppDelegate.m0000000000000000^5282"CompileC build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects-normal/i386/AppDelegate.o StarterApp/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/Port-O-Bucket/.rvm/rubies/ruby-2.0.0-p353/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/StarterApp-generated-files.hmap -I/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/StarterApp-own-target-headers.hmap -I/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/StarterApp-all-target-headers.hmap -iquote /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/StarterApp-project-headers.hmap -I/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/include -I/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/usr/local/lib/include -I/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/UninstalledProducts/include -I/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator -I/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/DerivedSources/i386 -I/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/DerivedSources -F/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator -include /var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/StarterApp-Prefix-dplcywczbroduvejdijxykfxokvg/StarterApp-Prefix.pch -MMD -MT dependencies -MF /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects-normal/i386/AppDelegate.d --serialize-diagnostics /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects-normal/i386/AppDelegate.dia -c /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Classes/AppDelegate.m -o /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects-normal/i386/AppDelegate.o36"ECBA6D59-A4D3-4176-9875-4CD29E19A592-
+b92714D49-708D-4955-99D6-7E8D03B37C87
+
+CCompileC build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects-normal/i386/MainViewController.o /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s416619466.865456
+e416619467.003389
+r1
+xCompileC
+xbuild/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects-normal/i386/MainViewController.o
+x/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Classes/MainViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Classes/MainViewController.m
+d/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Classes/MainViewController.h
+d/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
+d/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
+d/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
+d/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
+d/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
+d/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
+d/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
+d/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
+d/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
+d/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
+d/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection134"Compile /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Classes/MainViewController.m219"CompileC build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects-normal/i386/MainViewController.o StarterApp/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerbebfddca1bd5b841^a5dd00cb1bd5b841^---0#0#1#-19%DVTDocumentLocation2@133"file:///Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Classes/MainViewController.m0000000000000000^5324"CompileC build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects-normal/i386/MainViewController.o StarterApp/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/Port-O-Bucket/.rvm/rubies/ruby-2.0.0-p353/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/StarterApp-generated-files.hmap -I/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/StarterApp-own-target-headers.hmap -I/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/StarterApp-all-target-headers.hmap -iquote /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/StarterApp-project-headers.hmap -I/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/include -I/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/usr/local/lib/include -I/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/UninstalledProducts/include -I/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator -I/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/DerivedSources/i386 -I/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/DerivedSources -F/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator -include /var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/StarterApp-Prefix-dplcywczbroduvejdijxykfxokvg/StarterApp-Prefix.pch -MMD -MT dependencies -MF /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects-normal/i386/MainViewController.d --serialize-diagnostics /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects-normal/i386/MainViewController.dia -c /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Classes/MainViewController.m -o /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects-normal/i386/MainViewController.o36"B959CDE4-F54C-4FDD-BF6B-C872B944AB66-
+b92714D49-708D-4955-99D6-7E8D03B37C87
+
+CCompileC build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects-normal/i386/main.o /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s416619466.864850
+e416619466.945828
+r1
+xCompileC
+xbuild/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects-normal/i386/main.o
+x/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/main.m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Compile /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/main.m183"CompileC build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects-normal/i386/main.o StarterApp/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerb796ddca1bd5b841^ea21f2ca1bd5b841^---0#0#1#-19%DVTDocumentLocation2@111"file:///Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/main.m0000000000000000^5224"CompileC build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects-normal/i386/main.o StarterApp/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/Port-O-Bucket/.rvm/rubies/ruby-2.0.0-p353/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/StarterApp-generated-files.hmap -I/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/StarterApp-own-target-headers.hmap -I/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/StarterApp-all-target-headers.hmap -iquote /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/StarterApp-project-headers.hmap -I/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/include -I/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/usr/local/lib/include -I/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/UninstalledProducts/include -I/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator -I/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/DerivedSources/i386 -I/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/DerivedSources -F/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator -include /var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/StarterApp-Prefix-dplcywczbroduvejdijxykfxokvg/StarterApp-Prefix.pch -MMD -MT dependencies -MF /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects-normal/i386/main.dia -c /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/main.m -o /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects-normal/i386/main.o36"C1502401-D79D-4AEF-B873-0518456C5E3D-
+b92714D49-708D-4955-99D6-7E8D03B37C87
+
+CCompileXIB /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Classes/MainViewController.xib
+s416619465.006288
+e416619466.863870
+r1
+xCompileXIB
+x/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Classes/MainViewController.xib
+o2014-03-15 16:37:46.275 Interface Builder Cocoa Touch Tool[9705:303] CFPreferences: user home directory at file:///var/root/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection138"Compiling /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Classes/MainViewController.xib52"CompileXIB StarterApp/Classes/MainViewController.xibcfda01c91bd5b841^e926ddca1bd5b841^-226"2014-03-15 16:37:46.275 Interface Builder Cocoa Touch Tool[9705:303] CFPreferences: user home directory at file:///var/root/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.-0#0#1#-19%DVTDocumentLocation2@135"file:///Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Classes/MainViewController.xib0000000000000000^1878"CompileXIB StarterApp/Classes/MainViewController.xib    cd /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/Port-O-Bucket/.rvm/rubies/ruby-2.0.0-p353/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 5.0 --output-format human-readable-text --compile /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/MainViewController.nib /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Classes/MainViewController.xib36"61CBE129-5E0F-4AD1-9855-B58AFDFE2575-
+b92714D49-708D-4955-99D6-7E8D03B37C87
+
+CCopyStringsFile /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/de.lproj/Localizable.strings StarterApp/Resources/de.lproj/Localizable.strings
+s416619465.008711
+e416619465.010708
+r1
+xCopyStringsFile
+x/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/de.lproj/Localizable.strings
+xStarterApp/Resources/de.lproj/Localizable.strings
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection54"Copy StarterApp/Resources/de.lproj/Localizable.strings124"CopyStringsFile build/emulator/StarterApp.app/de.lproj/Localizable.strings StarterApp/Resources/de.lproj/Localizable.strings566602c91bd5b841^84bc02c91bd5b841^---0#0#1#-19%DVTDocumentLocation2@143"file:///Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/de.lproj/Localizable.strings0000000000000000^1645"CopyStringsFile build/emulator/StarterApp.app/de.lproj/Localizable.strings StarterApp/Resources/de.lproj/Localizable.strings    cd /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/Port-O-Bucket/.rvm/rubies/ruby-2.0.0-p353/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/de.lproj -- StarterApp/Resources/de.lproj/Localizable.strings36"4DEFE059-0F83-4172-BC88-DD0C8CE73D6C-
+b92714D49-708D-4955-99D6-7E8D03B37C87
+
+CCopyStringsFile /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/en.lproj/Localizable.strings StarterApp/Resources/en.lproj/Localizable.strings
+s416619465.006035
+e416619465.008200
+r1
+xCopyStringsFile
+x/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/en.lproj/Localizable.strings
+xStarterApp/Resources/en.lproj/Localizable.strings
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection54"Copy StarterApp/Resources/en.lproj/Localizable.strings124"CopyStringsFile build/emulator/StarterApp.app/en.lproj/Localizable.strings StarterApp/Resources/en.lproj/Localizable.strings44c001c91bd5b841^a14902c91bd5b841^---0#0#1#-19%DVTDocumentLocation2@143"file:///Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/en.lproj/Localizable.strings0000000000000000^1645"CopyStringsFile build/emulator/StarterApp.app/en.lproj/Localizable.strings StarterApp/Resources/en.lproj/Localizable.strings    cd /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/Port-O-Bucket/.rvm/rubies/ruby-2.0.0-p353/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/en.lproj -- StarterApp/Resources/en.lproj/Localizable.strings36"81711924-1A3A-439A-8614-52DEFC43CF56-
+b92714D49-708D-4955-99D6-7E8D03B37C87
+
+CCpResource StarterApp/Resources/icons/icon-40.png build/emulator/StarterApp.app/icon-40.png
+s416619465.015659
+e416619465.017673
+r1
+xCpResource
+xStarterApp/Resources/icons/icon-40.png
+xbuild/emulator/StarterApp.app/icon-40.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection46"Copy build/emulator/StarterApp.app/icon-40.png91"CpResource StarterApp/Resources/icons/icon-40.png build/emulator/StarterApp.app/icon-40.png513304c91bd5b841^2f8804c91bd5b841^---0#0#1#-19%DVTDocumentLocation2@135"file:///Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/icon-40.png00346cf8ddffdf42^1698"CpResource StarterApp/Resources/icons/icon-40.png build/emulator/StarterApp.app/icon-40.png    cd /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/Port-O-Bucket/.rvm/rubies/ruby-2.0.0-p353/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/icons/icon-40.png /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app36"99AE3346-BAEC-48FA-9493-593907139706-
+b92714D49-708D-4955-99D6-7E8D03B37C87
+
+CCpResource StarterApp/Resources/icons/icon-40@2x.png build/emulator/StarterApp.app/icon-40@2x.png
+s416619465.003799
+e416619465.005779
+r1
+xCpResource
+xStarterApp/Resources/icons/icon-40@2x.png
+xbuild/emulator/StarterApp.app/icon-40@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection49"Copy build/emulator/StarterApp.app/icon-40@2x.png97"CpResource StarterApp/Resources/icons/icon-40@2x.png build/emulator/StarterApp.app/icon-40@2x.png431e01c91bd5b841^508f01c91bd5b841^---0#0#1#-19%DVTDocumentLocation2@138"file:///Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/icon-40@2x.png00346cf8ddffdf42^1707"CpResource StarterApp/Resources/icons/icon-40@2x.png build/emulator/StarterApp.app/icon-40@2x.png    cd /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/Port-O-Bucket/.rvm/rubies/ruby-2.0.0-p353/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/icons/icon-40@2x.png /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app36"99D20F00-1CDF-41D1-914D-6A697996CB2A-
+b92714D49-708D-4955-99D6-7E8D03B37C87
+
+CCpResource StarterApp/Resources/icons/icon-50.png build/emulator/StarterApp.app/icon-50.png
+s416619465.008185
+e416619465.010523
+r1
+xCpResource
+xStarterApp/Resources/icons/icon-50.png
+xbuild/emulator/StarterApp.app/icon-50.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection46"Copy build/emulator/StarterApp.app/icon-50.png91"CpResource StarterApp/Resources/icons/icon-50.png build/emulator/StarterApp.app/icon-50.pnga14d02c91bd5b841^7db202c91bd5b841^---0#0#1#-19%DVTDocumentLocation2@135"file:///Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/icon-50.png00346cf8ddffdf42^1698"CpResource StarterApp/Resources/icons/icon-50.png build/emulator/StarterApp.app/icon-50.png    cd /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/Port-O-Bucket/.rvm/rubies/ruby-2.0.0-p353/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/icons/icon-50.png /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app36"2305B893-8267-489D-904B-85A58D70B450-
+b92714D49-708D-4955-99D6-7E8D03B37C87
+
+CCpResource StarterApp/Resources/icons/icon-50@2x.png build/emulator/StarterApp.app/icon-50@2x.png
+s416619465.018203
+e416619465.020526
+r1
+xCpResource
+xStarterApp/Resources/icons/icon-50@2x.png
+xbuild/emulator/StarterApp.app/icon-50@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection49"Copy build/emulator/StarterApp.app/icon-50@2x.png97"CpResource StarterApp/Resources/icons/icon-50@2x.png build/emulator/StarterApp.app/icon-50@2x.png36cc04c91bd5b841^7c4305c91bd5b841^---0#0#1#-19%DVTDocumentLocation2@138"file:///Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/icon-50@2x.png00346cf8ddffdf42^1707"CpResource StarterApp/Resources/icons/icon-50@2x.png build/emulator/StarterApp.app/icon-50@2x.png    cd /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/Port-O-Bucket/.rvm/rubies/ruby-2.0.0-p353/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/icons/icon-50@2x.png /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app36"42E130A5-153E-4219-827F-0AC722155677-
+b92714D49-708D-4955-99D6-7E8D03B37C87
+
+CCpResource StarterApp/Resources/icons/icon-60.png build/emulator/StarterApp.app/icon-60.png
+s416619465.015926
+e416619465.017774
+r1
+xCpResource
+xStarterApp/Resources/icons/icon-60.png
+xbuild/emulator/StarterApp.app/icon-60.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection46"Copy build/emulator/StarterApp.app/icon-60.png91"CpResource StarterApp/Resources/icons/icon-60.png build/emulator/StarterApp.app/icon-60.png134904c91bd5b841^098d04c91bd5b841^---0#0#1#-19%DVTDocumentLocation2@135"file:///Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/icon-60.png00346cf8ddffdf42^1698"CpResource StarterApp/Resources/icons/icon-60.png build/emulator/StarterApp.app/icon-60.png    cd /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/Port-O-Bucket/.rvm/rubies/ruby-2.0.0-p353/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/icons/icon-60.png /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app36"484DE6C4-9063-4878-BC90-B10BD71DBA30-
+b92714D49-708D-4955-99D6-7E8D03B37C87
+
+CCpResource StarterApp/Resources/icons/icon-60@2x.png build/emulator/StarterApp.app/icon-60@2x.png
+s416619465.008298
+e416619465.010289
+r1
+xCpResource
+xStarterApp/Resources/icons/icon-60@2x.png
+xbuild/emulator/StarterApp.app/icon-60@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection49"Copy build/emulator/StarterApp.app/icon-60@2x.png97"CpResource StarterApp/Resources/icons/icon-60@2x.png build/emulator/StarterApp.app/icon-60@2x.pngd34d02c91bd5b841^8ca302c91bd5b841^---0#0#1#-19%DVTDocumentLocation2@138"file:///Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/icon-60@2x.png00346cf8ddffdf42^1707"CpResource StarterApp/Resources/icons/icon-60@2x.png build/emulator/StarterApp.app/icon-60@2x.png    cd /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/Port-O-Bucket/.rvm/rubies/ruby-2.0.0-p353/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/icons/icon-60@2x.png /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app36"A2C22BCC-756F-4F13-8506-DAC5527E827F-
+b92714D49-708D-4955-99D6-7E8D03B37C87
+
+CCpResource StarterApp/Resources/icons/icon-72.png build/emulator/StarterApp.app/icon-72.png
+s416619465.003999
+e416619465.006129
+r1
+xCpResource
+xStarterApp/Resources/icons/icon-72.png
+xbuild/emulator/StarterApp.app/icon-72.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection46"Copy build/emulator/StarterApp.app/icon-72.png91"CpResource StarterApp/Resources/icons/icon-72.png build/emulator/StarterApp.app/icon-72.pngcd1d01c91bd5b841^29af01c91bd5b841^---0#0#1#-19%DVTDocumentLocation2@135"file:///Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/icon-72.png00346cf8ddffdf42^1698"CpResource StarterApp/Resources/icons/icon-72.png build/emulator/StarterApp.app/icon-72.png    cd /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/Port-O-Bucket/.rvm/rubies/ruby-2.0.0-p353/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/icons/icon-72.png /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app36"BB474525-F6F6-4D74-801B-FDDE573847DB-
+b92714D49-708D-4955-99D6-7E8D03B37C87
+
+CCpResource StarterApp/Resources/icons/icon-72@2x.png build/emulator/StarterApp.app/icon-72@2x.png
+s416619465.020753
+e416619465.022346
+r1
+xCpResource
+xStarterApp/Resources/icons/icon-72@2x.png
+xbuild/emulator/StarterApp.app/icon-72@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection49"Copy build/emulator/StarterApp.app/icon-72@2x.png97"CpResource StarterApp/Resources/icons/icon-72@2x.png build/emulator/StarterApp.app/icon-72@2x.png596e05c91bd5b841^fab905c91bd5b841^---0#0#1#-19%DVTDocumentLocation2@138"file:///Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/icon-72@2x.png00346cf8ddffdf42^1707"CpResource StarterApp/Resources/icons/icon-72@2x.png build/emulator/StarterApp.app/icon-72@2x.png    cd /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/Port-O-Bucket/.rvm/rubies/ruby-2.0.0-p353/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/icons/icon-72@2x.png /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app36"DD5F12AD-B57F-49A4-8541-E64A5C8B9B39-
+b92714D49-708D-4955-99D6-7E8D03B37C87
+
+CCpResource StarterApp/Resources/icons/icon-76.png build/emulator/StarterApp.app/icon-76.png
+s416619465.003656
+e416619465.005810
+r1
+xCpResource
+xStarterApp/Resources/icons/icon-76.png
+xbuild/emulator/StarterApp.app/icon-76.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection46"Copy build/emulator/StarterApp.app/icon-76.png91"CpResource StarterApp/Resources/icons/icon-76.png build/emulator/StarterApp.app/icon-76.pngd71301c91bd5b841^6f9f01c91bd5b841^---0#0#1#-19%DVTDocumentLocation2@135"file:///Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/icon-76.png00346cf8ddffdf42^1698"CpResource StarterApp/Resources/icons/icon-76.png build/emulator/StarterApp.app/icon-76.png    cd /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/Port-O-Bucket/.rvm/rubies/ruby-2.0.0-p353/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/icons/icon-76.png /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app36"E11DC197-037C-41A3-8A10-32B7BBFF7CBC-
+b92714D49-708D-4955-99D6-7E8D03B37C87
+
+CCpResource StarterApp/Resources/icons/icon-76@2x.png build/emulator/StarterApp.app/icon-76@2x.png
+s416619465.020625
+e416619465.022475
+r1
+xCpResource
+xStarterApp/Resources/icons/icon-76@2x.png
+xbuild/emulator/StarterApp.app/icon-76@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection49"Copy build/emulator/StarterApp.app/icon-76@2x.png97"CpResource StarterApp/Resources/icons/icon-76@2x.png build/emulator/StarterApp.app/icon-76@2x.png726c05c91bd5b841^66c005c91bd5b841^---0#0#1#-19%DVTDocumentLocation2@138"file:///Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/icon-76@2x.png00346cf8ddffdf42^1707"CpResource StarterApp/Resources/icons/icon-76@2x.png build/emulator/StarterApp.app/icon-76@2x.png    cd /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/Port-O-Bucket/.rvm/rubies/ruby-2.0.0-p353/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/icons/icon-76@2x.png /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app36"72AB119C-F69A-4758-B179-7BBA243E56E2-
+b92714D49-708D-4955-99D6-7E8D03B37C87
+
+CCpResource StarterApp/Resources/icons/icon-small.png build/emulator/StarterApp.app/icon-small.png
+s416619465.010459
+e416619465.012279
+r1
+xCpResource
+xStarterApp/Resources/icons/icon-small.png
+xbuild/emulator/StarterApp.app/icon-small.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection49"Copy build/emulator/StarterApp.app/icon-small.png97"CpResource StarterApp/Resources/icons/icon-small.png build/emulator/StarterApp.app/icon-small.pngebe602c91bd5b841^d52503c91bd5b841^---0#0#1#-19%DVTDocumentLocation2@138"file:///Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/icon-small.png00346cf8ddffdf42^1707"CpResource StarterApp/Resources/icons/icon-small.png build/emulator/StarterApp.app/icon-small.png    cd /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/Port-O-Bucket/.rvm/rubies/ruby-2.0.0-p353/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/icons/icon-small.png /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app36"3CB543DF-0187-4851-B322-7484CE378EA0-
+b92714D49-708D-4955-99D6-7E8D03B37C87
+
+CCpResource StarterApp/Resources/icons/icon-small@2x.png build/emulator/StarterApp.app/icon-small@2x.png
+s416619465.013478
+e416619465.015406
+r1
+xCpResource
+xStarterApp/Resources/icons/icon-small@2x.png
+xbuild/emulator/StarterApp.app/icon-small@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection52"Copy build/emulator/StarterApp.app/icon-small@2x.png103"CpResource StarterApp/Resources/icons/icon-small@2x.png build/emulator/StarterApp.app/icon-small@2x.png77a303c91bd5b841^e0f703c91bd5b841^---0#0#1#-19%DVTDocumentLocation2@141"file:///Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/icon-small@2x.png00346cf8ddffdf42^1716"CpResource StarterApp/Resources/icons/icon-small@2x.png build/emulator/StarterApp.app/icon-small@2x.png    cd /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/Port-O-Bucket/.rvm/rubies/ruby-2.0.0-p353/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/icons/icon-small@2x.png /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app36"CDA0E90F-3CA2-4E2C-BC0D-3D3DA50B731B-
+b92714D49-708D-4955-99D6-7E8D03B37C87
+
+CCpResource StarterApp/Resources/icons/icon.png build/emulator/StarterApp.app/icon.png
+s416619465.005937
+e416619465.007995
+r1
+xCpResource
+xStarterApp/Resources/icons/icon.png
+xbuild/emulator/StarterApp.app/icon.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection43"Copy build/emulator/StarterApp.app/icon.png85"CpResource StarterApp/Resources/icons/icon.png build/emulator/StarterApp.app/icon.pngfdc001c91bd5b841^ed0d02c91bd5b841^---0#0#1#-19%DVTDocumentLocation2@132"file:///Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/icon.png00346cf8ddffdf42^1689"CpResource StarterApp/Resources/icons/icon.png build/emulator/StarterApp.app/icon.png    cd /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/Port-O-Bucket/.rvm/rubies/ruby-2.0.0-p353/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/icons/icon.png /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app36"51157DD4-031B-4388-8BFA-EAEA9C6FA3BF-
+b92714D49-708D-4955-99D6-7E8D03B37C87
+
+CCpResource StarterApp/Resources/icons/icon@2x.png build/emulator/StarterApp.app/icon@2x.png
+s416619465.006072
+e416619465.008053
+r1
+xCpResource
+xStarterApp/Resources/icons/icon@2x.png
+xbuild/emulator/StarterApp.app/icon@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection46"Copy build/emulator/StarterApp.app/icon@2x.png91"CpResource StarterApp/Resources/icons/icon@2x.png build/emulator/StarterApp.app/icon@2x.pngbac001c91bd5b841^b01b02c91bd5b841^---0#0#1#-19%DVTDocumentLocation2@135"file:///Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/icon@2x.png00346cf8ddffdf42^1698"CpResource StarterApp/Resources/icons/icon@2x.png build/emulator/StarterApp.app/icon@2x.png    cd /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/Port-O-Bucket/.rvm/rubies/ruby-2.0.0-p353/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/icons/icon@2x.png /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app36"A0D18362-DA66-44C1-8FBC-2034FDB6B00E-
+b92714D49-708D-4955-99D6-7E8D03B37C87
+
+CCpResource StarterApp/Resources/splash/Default-568h@2x~iphone.png build/emulator/StarterApp.app/Default-568h@2x~iphone.png
+s416619465.017917
+e416619465.020389
+r1
+xCpResource
+xStarterApp/Resources/splash/Default-568h@2x~iphone.png
+xbuild/emulator/StarterApp.app/Default-568h@2x~iphone.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Copy build/emulator/StarterApp.app/Default-568h@2x~iphone.png122"CpResource StarterApp/Resources/splash/Default-568h@2x~iphone.png build/emulator/StarterApp.app/Default-568h@2x~iphone.pngd2c704c91bd5b841^ef3805c91bd5b841^---0#0#1#-19%DVTDocumentLocation2@150"file:///Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/Default-568h@2x~iphone.png00346cf8ddffdf42^1745"CpResource StarterApp/Resources/splash/Default-568h@2x~iphone.png build/emulator/StarterApp.app/Default-568h@2x~iphone.png    cd /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/Port-O-Bucket/.rvm/rubies/ruby-2.0.0-p353/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/splash/Default-568h@2x~iphone.png /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app36"E5527D54-6C5D-4268-B932-E7F910F6C1C7-
+b92714D49-708D-4955-99D6-7E8D03B37C87
+
+CCpResource StarterApp/Resources/splash/Default-Landscape@2x~ipad.png build/emulator/StarterApp.app/Default-Landscape@2x~ipad.png
+s416619465.010661
+e416619465.013186
+r1
+xCpResource
+xStarterApp/Resources/splash/Default-Landscape@2x~ipad.png
+xbuild/emulator/StarterApp.app/Default-Landscape@2x~ipad.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Copy build/emulator/StarterApp.app/Default-Landscape@2x~ipad.png128"CpResource StarterApp/Resources/splash/Default-Landscape@2x~ipad.png build/emulator/StarterApp.app/Default-Landscape@2x~ipad.pngcced02c91bd5b841^2d5f03c91bd5b841^---0#0#1#-19%DVTDocumentLocation2@153"file:///Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/Default-Landscape@2x~ipad.png00346cf8ddffdf42^1754"CpResource StarterApp/Resources/splash/Default-Landscape@2x~ipad.png build/emulator/StarterApp.app/Default-Landscape@2x~ipad.png    cd /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/Port-O-Bucket/.rvm/rubies/ruby-2.0.0-p353/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/splash/Default-Landscape@2x~ipad.png /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app36"CD8F82BC-30E7-4A25-BD6B-1B62CF3CFE3A-
+b92714D49-708D-4955-99D6-7E8D03B37C87
+
+CCpResource StarterApp/Resources/splash/Default-Landscape~ipad.png build/emulator/StarterApp.app/Default-Landscape~ipad.png
+s416619465.010965
+e416619465.013216
+r1
+xCpResource
+xStarterApp/Resources/splash/Default-Landscape~ipad.png
+xbuild/emulator/StarterApp.app/Default-Landscape~ipad.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Copy build/emulator/StarterApp.app/Default-Landscape~ipad.png122"CpResource StarterApp/Resources/splash/Default-Landscape~ipad.png build/emulator/StarterApp.app/Default-Landscape~ipad.pngedf502c91bd5b841^516603c91bd5b841^---0#0#1#-19%DVTDocumentLocation2@150"file:///Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/Default-Landscape~ipad.png00346cf8ddffdf42^1745"CpResource StarterApp/Resources/splash/Default-Landscape~ipad.png build/emulator/StarterApp.app/Default-Landscape~ipad.png    cd /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/Port-O-Bucket/.rvm/rubies/ruby-2.0.0-p353/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/splash/Default-Landscape~ipad.png /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app36"EE46FCCF-113E-40CF-B238-DCDB50CD3A74-
+b92714D49-708D-4955-99D6-7E8D03B37C87
+
+CCpResource StarterApp/Resources/splash/Default-Portrait@2x~ipad.png build/emulator/StarterApp.app/Default-Portrait@2x~ipad.png
+s416619465.012426
+e416619465.015389
+r1
+xCpResource
+xStarterApp/Resources/splash/Default-Portrait@2x~ipad.png
+xbuild/emulator/StarterApp.app/Default-Portrait@2x~ipad.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Copy build/emulator/StarterApp.app/Default-Portrait@2x~ipad.png126"CpResource StarterApp/Resources/splash/Default-Portrait@2x~ipad.png build/emulator/StarterApp.app/Default-Portrait@2x~ipad.pnga94e03c91bd5b841^bff303c91bd5b841^---0#0#1#-19%DVTDocumentLocation2@152"file:///Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/Default-Portrait@2x~ipad.png00346cf8ddffdf42^1751"CpResource StarterApp/Resources/splash/Default-Portrait@2x~ipad.png build/emulator/StarterApp.app/Default-Portrait@2x~ipad.png    cd /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/Port-O-Bucket/.rvm/rubies/ruby-2.0.0-p353/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/splash/Default-Portrait@2x~ipad.png /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app36"4FB5EDD3-8976-41B5-9705-A02A70DAF3DA-
+b92714D49-708D-4955-99D6-7E8D03B37C87
+
+CCpResource StarterApp/Resources/splash/Default-Portrait~ipad.png build/emulator/StarterApp.app/Default-Portrait~ipad.png
+s416619465.013546
+e416619465.015667
+r1
+xCpResource
+xStarterApp/Resources/splash/Default-Portrait~ipad.png
+xbuild/emulator/StarterApp.app/Default-Portrait~ipad.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Copy build/emulator/StarterApp.app/Default-Portrait~ipad.png120"CpResource StarterApp/Resources/splash/Default-Portrait~ipad.png build/emulator/StarterApp.app/Default-Portrait~ipad.png66a303c91bd5b841^b00204c91bd5b841^---0#0#1#-19%DVTDocumentLocation2@149"file:///Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/Default-Portrait~ipad.png00346cf8ddffdf42^1742"CpResource StarterApp/Resources/splash/Default-Portrait~ipad.png build/emulator/StarterApp.app/Default-Portrait~ipad.png    cd /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/Port-O-Bucket/.rvm/rubies/ruby-2.0.0-p353/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/splash/Default-Portrait~ipad.png /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app36"51A8F9B8-12C3-452A-A976-5303E830AD6B-
+b92714D49-708D-4955-99D6-7E8D03B37C87
+
+CCpResource StarterApp/Resources/splash/Default@2x~iphone.png build/emulator/StarterApp.app/Default@2x~iphone.png
+s416619465.015673
+e416619465.018008
+r1
+xCpResource
+xStarterApp/Resources/splash/Default@2x~iphone.png
+xbuild/emulator/StarterApp.app/Default@2x~iphone.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection56"Copy build/emulator/StarterApp.app/Default@2x~iphone.png112"CpResource StarterApp/Resources/splash/Default@2x~iphone.png build/emulator/StarterApp.app/Default@2x~iphone.png833304c91bd5b841^179d04c91bd5b841^---0#0#1#-19%DVTDocumentLocation2@145"file:///Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/Default@2x~iphone.png00346cf8ddffdf42^1730"CpResource StarterApp/Resources/splash/Default@2x~iphone.png build/emulator/StarterApp.app/Default@2x~iphone.png    cd /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/Port-O-Bucket/.rvm/rubies/ruby-2.0.0-p353/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/splash/Default@2x~iphone.png /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app36"E7C0A98D-E955-4278-805E-6383CA4FD808-
+b92714D49-708D-4955-99D6-7E8D03B37C87
+
+CCpResource StarterApp/Resources/splash/Default~iphone.png build/emulator/StarterApp.app/Default~iphone.png
+s416619465.017889
+e416619465.020803
+r1
+xCpResource
+xStarterApp/Resources/splash/Default~iphone.png
+xbuild/emulator/StarterApp.app/Default~iphone.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Copy build/emulator/StarterApp.app/Default~iphone.png106"CpResource StarterApp/Resources/splash/Default~iphone.png build/emulator/StarterApp.app/Default~iphone.png54c504c91bd5b841^115405c91bd5b841^---0#0#1#-19%DVTDocumentLocation2@142"file:///Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/Default~iphone.png00346cf8ddffdf42^1721"CpResource StarterApp/Resources/splash/Default~iphone.png build/emulator/StarterApp.app/Default~iphone.png    cd /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/Port-O-Bucket/.rvm/rubies/ruby-2.0.0-p353/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/Resources/splash/Default~iphone.png /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app36"E7045174-7437-49A6-B25F-E12440C42E4C-
+b92714D49-708D-4955-99D6-7E8D03B37C87
+
+CCpResource StarterApp/config.xml build/emulator/StarterApp.app/config.xml
+s416619465.003535
+e416619465.005757
+r1
+xCpResource
+xStarterApp/config.xml
+xbuild/emulator/StarterApp.app/config.xml
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection45"Copy build/emulator/StarterApp.app/config.xml73"CpResource StarterApp/config.xml build/emulator/StarterApp.app/config.xmlfe0e01c91bd5b841^ee7a01c91bd5b841^---0#0#1#-19%DVTDocumentLocation2@134"file:///Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/config.xml00346cf8ddffdf42^1663"CpResource StarterApp/config.xml build/emulator/StarterApp.app/config.xml    cd /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/Port-O-Bucket/.rvm/rubies/ruby-2.0.0-p353/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/config.xml /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app36"E3203668-8C6A-47AD-8FE9-CA0B933C2792-
+b92714D49-708D-4955-99D6-7E8D03B37C87
+
+CGenerateDSYMFile /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app.dSYM /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/StarterApp
+s416619467.141703
+e416619467.191156
+r1
+xGenerateDSYMFile
+x/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app.dSYM
+x/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/StarterApp
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection130"Generate /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app.dSYM92"GenerateDSYMFile build/emulator/StarterApp.app.dSYM build/emulator/StarterApp.app/StarterApp156f24cb1bd5b841^52f030cb1bd5b841^---0#0#1#-19%DVTDocumentLocation2@128"file:///Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app.dSYM00346cf8ddffdf42^1697"GenerateDSYMFile build/emulator/StarterApp.app.dSYM build/emulator/StarterApp.app/StarterApp    cd /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/Port-O-Bucket/.rvm/rubies/ruby-2.0.0-p353/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/StarterApp -o /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app.dSYM36"79356640-6175-4607-B090-1B641D207F6D-
+b92714D49-708D-4955-99D6-7E8D03B37C87
+
+CLd /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/StarterApp normal i386
+s416619467.021704
+e416619467.140880
+r1
+xLd
+x/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/StarterApp
+xnormal
+xi386
+d/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects-normal/i386/StarterApp.LinkFileList
+d/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/libCordova.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/crt1.o
+d/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects-normal/i386/main.o
+d/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects-normal/i386/AppDelegate.o
+d/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects-normal/i386/MainViewController.o
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/AssetsLibrary.framework/AssetsLibrary
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/arc/libarclite_iphonesimulator.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/libobjc.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/lib/darwin/libclang_rt.ios.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/AVFoundation.framework/libAVFAudio.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_override.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcache_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcommonCrypto_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcompiler_rt_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcopyfile_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libdyld_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libmacho_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libnotify_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libremovefile_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libunwind_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libxpc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_asl.dylib
+d/usr/lib/libSystem.B.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/host/libdyld.dylib
+d/usr/lib/system/libcache.dylib
+d/usr/lib/system/libcommonCrypto.dylib
+d/usr/lib/system/libcompiler_rt.dylib
+d/usr/lib/system/libcopyfile.dylib
+d/usr/lib/system/libcorecrypto.dylib
+d/usr/lib/system/libkeymgr.dylib
+d/usr/lib/system/liblaunch.dylib
+d/usr/lib/system/libmacho.dylib
+d/usr/lib/system/libquarantine.dylib
+d/usr/lib/system/libremovefile.dylib
+d/usr/lib/system/libsystem_asl.dylib
+d/usr/lib/system/libsystem_blocks.dylib
+d/usr/lib/system/libsystem_c.dylib
+d/usr/lib/system/libsystem_configuration.dylib
+d/usr/lib/system/libsystem_dnssd.dylib
+d/usr/lib/system/libsystem_info.dylib
+d/usr/lib/system/libsystem_kernel.dylib
+d/usr/lib/system/libsystem_m.dylib
+d/usr/lib/system/libsystem_malloc.dylib
+d/usr/lib/system/libsystem_notify.dylib
+d/usr/lib/system/libsystem_platform.dylib
+d/usr/lib/system/libsystem_pthread.dylib
+d/usr/lib/system/libsystem_sandbox.dylib
+d/usr/lib/system/libunc.dylib
+d/usr/lib/system/libunwind.dylib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection132"Link /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/StarterApp55"Ld build/emulator/StarterApp.app/StarterApp normal i386cea805cb1bd5b841^5e1124cb1bd5b841^---0#0#1#--2963"Ld build/emulator/StarterApp.app/StarterApp normal i386    cd /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios    setenv IPHONEOS_DEPLOYMENT_TARGET 5.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/Port-O-Bucket/.rvm/rubies/ruby-2.0.0-p353/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -L/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator -F/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator -filelist /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects-normal/i386/StarterApp.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -weak_framework CoreFoundation -weak_framework UIKit -weak_framework AVFoundation -weak_framework CoreMedia -weak-lSystem -force_load /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/libCordova.a -ObjC -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=5.0 -framework AssetsLibrary /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/libCordova.a -framework CoreGraphics -framework MobileCoreServices -framework CoreLocation -Xlinker -dependency_info -Xlinker /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects-normal/i386/StarterApp_dependency_info.dat -o /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/StarterApp36"063D4A04-5308-4368-B4C0-B7B688FCC143-
+b92714D49-708D-4955-99D6-7E8D03B37C87
+
+CPhaseScriptExecution Copy\ www\ directory /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Script-304B58A110DAC018002A0835.sh
+s416619464.662082
+e416619465.003080
+r1
+xPhaseScriptExecution
+xCopy www directory
+x/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Script-304B58A110DAC018002A0835.sh
+o
+oreal	0m0.315s
+ouser	0m0.119s
+osys	0m0.194s
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Run custom shell script 'Copy www directory'138"PhaseScriptExecution Copy\ www\ directory build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Script-304B58A110DAC018002A0835.sh5caaaac81bd5b841^f3cb00c91bd5b841^-42"real	0m0.315suser	0m0.119ssys	0m0.194s3(21%IDEActivityLogMessage2@14"real	0m0.315s-416619465#1#14#-0#-----2@14"user	0m0.119s-416619465#15#14#-0#-----2@13"sys	0m0.194s-416619465#29#13#-0#-----0#0#1#--24493"PhaseScriptExecution Copy\ www\ directory build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Script-304B58A110DAC018002A0835.sh    cd /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios    setenv ACTION build    setenv AD_HOC_CODE_SIGNING_ALLOWED NO    setenv ALTERNATE_GROUP wheel    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER root    setenv ALWAYS_SEARCH_USER_PATHS NO    setenv ALWAYS_USE_SEPARATE_HEADERMAPS YES    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD i386    setenv ARCHS_STANDARD_32_64_BIT i386    setenv ARCHS_STANDARD_32_BIT i386    setenv ARCHS_STANDARD_64_BIT x86_64    setenv ARCHS_STANDARD_INCLUDING_64_BIT "i386 x86_64"    setenv AVAILABLE_PLATFORMS "iphonesimulator macosx iphoneos"    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build    setenv BUILD_ROOT /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build    setenv BUILD_STYLE     setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator    setenv CACHE_ROOT /var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode    setenv CCHROOT /var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLANG_ENABLE_OBJC_ARC YES    setenv CLANG_WARN_BOOL_CONVERSION YES    setenv CLANG_WARN_CONSTANT_CONVERSION YES    setenv CLANG_WARN_EMPTY_BODY YES    setenv CLANG_WARN_ENUM_CONVERSION YES    setenv CLANG_WARN_INT_CONVERSION YES    setenv CLANG_WARN__DUPLICATE_METHOD_MATCH YES    setenv CLASS_FILE_DIR /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app    setenv CODE_SIGNING_ALLOWED NO    setenv CODE_SIGN_CONTEXT_CLASS XCiPhoneSimulatorCodeSignContext    setenv COLOR_DIAGNOSTICS NO    setenv COMBINE_HIDPI_IMAGES NO    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/CompositeSDKs    setenv COMPRESS_PNG_FILES YES    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator    setenv CONFIGURATION_TEMP_DIR /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator    setenv CONTENTS_FOLDER_PATH StarterApp.app    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CREATE_INFOPLIST_SECTION_IN_BINARY NO    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf-with-dsym    setenv DEFAULT_COMPILER com.apple.compilers.llvm.clang.1_0    setenv DEFAULT_KEXT_INSTALL_PATH /System/Library/Extensions    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/DerivedSources    setenv DERIVED_FILE_DIR /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Applications/Xcode.app/Contents/Developer/Applications    setenv DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin    setenv DEVELOPER_DIR /Applications/Xcode.app/Contents/Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Applications/Xcode.app/Contents/Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED /Applications/Xcode.app/Contents/Developer/Library/Frameworks    setenv DEVELOPER_LIBRARY_DIR /Applications/Xcode.app/Contents/Developer/Library    setenv DEVELOPER_SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Applications/Xcode.app/Contents/Developer/Tools    setenv DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH StarterApp.app/English.lproj/Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/StarterApp.dst    setenv DT_TOOLCHAIN_DIR /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain    setenv DWARF_DSYM_FILE_NAME StarterApp.app.dSYM    setenv DWARF_DSYM_FILE_SHOULD_ACCOMPANY_PRODUCT NO    setenv DWARF_DSYM_FOLDER_PATH /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator    setenv EFFECTIVE_PLATFORM_NAME -iphonesimulator    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".DS_Store .svn .git .hg CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH StarterApp.app/Executables    setenv EXECUTABLE_FOLDER_PATH StarterApp.app    setenv EXECUTABLE_NAME StarterApp    setenv EXECUTABLE_PATH StarterApp.app/StarterApp    setenv FILE_LIST /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH StarterApp.app/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME StarterApp.app    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD c99    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OBJC_LEGACY_DISPATCH YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER StarterApp/StarterApp-Prefix.pch    setenv GCC_SYMBOLS_PRIVATE_EXTERN YES    setenv GCC_THUMB_SUPPORT NO    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION com.apple.compilers.llvm.clang.1_0    setenv GCC_VERSION_IDENTIFIER com_apple_compilers_llvm_clang_1_0    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_UNDECLARED_SELECTOR YES    setenv GCC_WARN_UNINITIALIZED_AUTOS YES    setenv GCC_WARN_UNUSED_FUNCTION YES    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 0    setenv GROUP wheel    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/include \"/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/usr/local/lib/include\" \"/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/UninstalledProducts/include\" \"/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator\""    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE StarterApp/StarterApp-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT binary    setenv INFOPLIST_PATH StarterApp.app/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH StarterApp.app/English.lproj/InfoPlist.strings    setenv INSTALL_DIR /tmp/StarterApp.dst/Applications    setenv INSTALL_GROUP wheel    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER root    setenv INSTALL_PATH /Applications    setenv INSTALL_ROOT /tmp/StarterApp.dst    setenv IPHONEOS_DEPLOYMENT_TARGET 5.0    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH StarterApp.app/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_DEPENDENCY_INFO_FILE /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects-normal/i386/StarterApp_dependency_info.dat    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/StarterApp-LinkMap-normal-i386.txt    setenv LD_NO_PIE NO    setenv LD_QUOTE_LINKER_ARGUMENTS_FOR_COMPILER_DRIVER YES    setenv LEGACY_DEVELOPER_DIR /Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer    setenv LEX lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_KEXT_INSTALL_PATH /Library/Extensions    setenv LIBRARY_SEARCH_PATHS "/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator "    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects-normal/i386/StarterApp.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH StarterApp.app/English.lproj    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv MAC_OS_X_PRODUCT_BUILD_VERSION 13B42    setenv MAC_OS_X_VERSION_ACTUAL 1091    setenv MAC_OS_X_VERSION_MAJOR 1090    setenv MAC_OS_X_VERSION_MINOR 0901    setenv MODULE_CACHE_DIR /var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/ModuleCache    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJC_ABI_VERSION 2    setenv OBJECT_FILE_DIR /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects    setenv OBJECT_FILE_DIR_normal /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Objects-normal    setenv OBJROOT /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build    setenv ONLY_ACTIVE_ARCH YES    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_LDFLAGS "-weak_framework CoreFoundation -weak_framework UIKit -weak_framework AVFoundation -weak_framework CoreMedia -weak-lSystem -force_load \"/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/libCordova.a\" -ObjC"    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/:/var/pgsql_socket:/usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/Port-O-Bucket/.rvm/rubies/ruby-2.0.0-p353/bin:/Users/Port-O-Bucket/.rvm/bin"    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Applications/Xcode.app/Contents/Developer/Headers /Applications/Xcode.app/Contents/Developer/SDKs /Applications/Xcode.app/Contents/Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH StarterApp.app/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS objective-c    setenv PKGINFO_FILE_PATH /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/PkgInfo    setenv PKGINFO_PATH StarterApp.app/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr    setenv PLATFORM_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform    setenv PLATFORM_NAME iphonesimulator    setenv PLATFORM_PREFERRED_ARCH i386    setenv PLATFORM_PRODUCT_BUILD_VERSION 11B508    setenv PLATFORM_VERSION_AVAILABILITY_H_FORMAT 70000    setenv PLIST_FILE_OUTPUT_FORMAT binary    setenv PLUGINS_FOLDER_PATH StarterApp.app/PlugIns    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH StarterApp.app/PrivateHeaders    setenv PRODUCT_NAME StarterApp    setenv PRODUCT_SETTINGS_PATH /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/StarterApp-Info.plist    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT StarterApp    setenv PROJECT_DERIVED_FILE_DIR /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/DerivedSources    setenv PROJECT_DIR /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios    setenv PROJECT_FILE_PATH /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp.xcodeproj    setenv PROJECT_NAME StarterApp    setenv PROJECT_TEMP_DIR /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build    setenv PROJECT_TEMP_ROOT /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build    setenv PUBLIC_HEADERS_FOLDER_PATH StarterApp.app/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_HG_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator "    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH StarterApp.app/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk    setenv SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk    setenv SDK_NAME iphonesimulator7.0    setenv SDK_PRODUCT_BUILD_VERSION 11B508    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHALLOW_BUNDLE YES    setenv SHARED_DERIVED_FILE_DIR /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH StarterApp.app/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH StarterApp.app/SharedSupport    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios    setenv SRCROOT /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios    setenv STRINGS_FILE_OUTPUT_ENCODING binary    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SUPPORTED_DEVICE_FAMILIES "1 2"    setenv SUPPORTED_PLATFORMS "iphonesimulator iphoneos"    setenv SYMROOT /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Applications/Xcode.app/Contents/Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Applications/Xcode.app/Contents/Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Applications/Xcode.app/Contents/Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Applications/Xcode.app/Contents/Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_KEXT_INSTALL_PATH /System/Library/Extensions    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETED_DEVICE_FAMILY 1,2    setenv TARGETNAME StarterApp    setenv TARGET_BUILD_DIR /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator    setenv TARGET_NAME StarterApp    setenv TARGET_TEMP_DIR /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build    setenv TEMP_DIR /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build    setenv TEMP_FILES_DIR /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build    setenv TEMP_FILE_DIR /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build    setenv TEMP_ROOT /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build    setenv TOOLCHAINS com.apple.dt.toolchain.XcodeDefault    setenv UID 0    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH StarterApp.app    setenv UNSTRIPPED_PRODUCT NO    setenv USER root    setenv USER_APPS_DIR /Users/Port-O-Bucket/Applications    setenv USER_LIBRARY_DIR /Users/Port-O-Bucket/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS i386    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH StarterApp.app/version.plist    setenv VERSION_INFO_BUILDER root    setenv VERSION_INFO_FILE StarterApp_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:StarterApp  PROJECT:StarterApp-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME StarterApp.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Applications/Xcode.app/Contents/Developer/Library/Xcode    setenv XCODE_PRODUCT_BUILD_VERSION 5A3005    setenv XCODE_VERSION_ACTUAL 0502    setenv XCODE_VERSION_MAJOR 0500    setenv XCODE_VERSION_MINOR 0500    setenv XPCSERVICES_FOLDER_PATH StarterApp.app/XPCServices    setenv YACC yacc    setenv arch i386    setenv variant normal    /bin/sh -c /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/StarterApp.build/Debug-iphonesimulator/StarterApp.build/Script-304B58A110DAC018002A0835.sh36"73D7D4A3-8508-4704-9604-B487D44E72F5-
+b92714D49-708D-4955-99D6-7E8D03B37C87
+
+CProcessInfoPlistFile /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/Info.plist /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/StarterApp-Info.plist
+s416619464.657986
+e416619464.660308
+r1
+xProcessInfoPlistFile
+x/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/Info.plist
+x/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/StarterApp-Info.plist
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection127"Process /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/StarterApp-Info.plist94"ProcessInfoPlistFile build/emulator/StarterApp.app/Info.plist StarterApp/StarterApp-Info.plistb88fa8c81bd5b841^670aa9c81bd5b841^---0#0#1#-19%DVTDocumentLocation2@126"file:///Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/StarterApp-Info.plist0000000000000000^1825"ProcessInfoPlistFile build/emulator/StarterApp.app/Info.plist StarterApp/StarterApp-Info.plist    cd /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/Port-O-Bucket/.rvm/rubies/ruby-2.0.0-p353/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin"    builtin-infoPlistUtility /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/StarterApp/StarterApp-Info.plist -genpkginfo /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app/Info.plist36"E843DE6B-9E69-4A0E-B537-FC67F540834E-
+b92714D49-708D-4955-99D6-7E8D03B37C87
+
+CProcessPCH /var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/StarterApp-Prefix-dplcywczbroduvejdijxykfxokvg/StarterApp-Prefix.pch.pch StarterApp/StarterApp-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CTouch /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app
+s416619467.192624
+e416619467.198076
+r1
+xTouch
+x/Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection122"Touch /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app35"Touch build/emulator/StarterApp.app276631cb1bd5b841^07b632cb1bd5b841^---0#0#1#--1426"Touch build/emulator/StarterApp.app    cd /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353/bin:/Users/Port-O-Bucket/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/Port-O-Bucket/.rvm/rubies/ruby-2.0.0-p353/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/node:/.npm:/./v0.10.21/bin/npm:/.nvm/v0.10.21/bin:/Users/adamdrichman:/Users/adamdrichman/../..:/Users/adamdrichman/../../var/pgsql_socket:/Users/adamdrichman/../../usr/local/bin/postgres:/Users/adamdrichman/bin:/usr/lib/pgsql/bin:/.npm/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin:/Users/Port-O-Bucket/.rvm/bin"    /usr/bin/touch -c /Users/Port-O-Bucket/Desktop/Development/hackreactor/stitch-mobile/stylr/platforms/ios/build/emulator/StarterApp.app36"598524B7-3181-40E7-B183-03051DDBAC55-
+b92714D49-708D-4955-99D6-7E8D03B37C87
+
