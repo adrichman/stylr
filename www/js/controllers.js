@@ -33,6 +33,15 @@ angular.module('app.controllers', ['ionic.contrib.ui.cards'])
   $scope.cardSwiped = function(index) {
     index = index || 0;
     $scope.addCard(index);
+    if (this.swipeCard){
+      $scope.registerPreference(this.swipeCard);
+    }
+  };
+
+  $scope.registerPreference = function(card){
+    var preference = card.x >= 0 ? 1 : 0;
+    console.log("x", card.x, preference);
+    // $databaseService.register()
   };
 
   var last = 0;
@@ -54,6 +63,7 @@ angular.module('app.controllers', ['ionic.contrib.ui.cards'])
     index = index || 0;
     var newCard = cardTypes[index];
     $scope.cards.push(angular.extend({}, newCard));
+    return newCard;
   }
 })
 .controller('CardCtrl', function($scope, $ionicSwipeCardDelegate) {
