@@ -11,15 +11,12 @@ angular.module('app.controllers', ['ionic.contrib.ui.cards'])
     $state.go('slide');
   };
 
-  $scope.$on('$viewContentLoaded', function() {
-    console.log("ssa");
-  });
 }])
 
 .controller('SlideController', ['$scope', function($scope) {
+<<<<<<< HEAD
 
 }])
-
 .controller('CardsCtrl', function($scope, $ionicSwipeCardDelegate, $timeout) {
   var cardTypes = [
     // { title: 'Swipe down to clear the card', image: 'img/pic.png' },
@@ -34,7 +31,6 @@ angular.module('app.controllers', ['ionic.contrib.ui.cards'])
   $scope.cards = Array.prototype.slice.call(cardTypes, 0, 0);
 
   $scope.cardSwiped = function(index) {
-    index = index || 0;
     $scope.addCard(index);
   };
 
@@ -43,7 +39,7 @@ angular.module('app.controllers', ['ionic.contrib.ui.cards'])
   $scope.cardDestroyed = function(index) {
     $scope.cards.splice(index, 1);
     cardTypes.shift();
-    if (cardTypes.length < 2) {
+    if (cardTypes.length < 1) {
       if (last === 1){
         $timeout(function(){
           alert('YOU\'RE BOHEMIAN-CHIC!');
@@ -53,9 +49,11 @@ angular.module('app.controllers', ['ionic.contrib.ui.cards'])
     }
   };
 
+  // var count = 1;
+
   $scope.addCard = function(index) {
-    index = index || 0;
     var newCard = cardTypes[index];
+    // count++;
     $scope.cards.push(angular.extend({}, newCard));
   }
 })
@@ -65,3 +63,9 @@ angular.module('app.controllers', ['ionic.contrib.ui.cards'])
     card.swipe();
   };
 });
+=======
+  $scope.$on('$viewContentLoaded', function() {
+    console.log("ssa");
+  });
+}]);
+>>>>>>> Wrote on enter hooks
