@@ -33,6 +33,12 @@ angular.module('app', ['ionic', 'app.services', 'app.controllers'])
       url: "/slide",
       templateUrl: "templates/slide.html",
       controller: "CardsCtrl"
+    })
+
+    .state('results', {
+      url: "/results",
+      templateUrl: "templates/results.html",
+      controller: "ResultsController"
     });
 
   $urlRouterProvider.otherwise('/splash');

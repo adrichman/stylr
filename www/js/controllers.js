@@ -76,5 +76,9 @@ angular.module('app.controllers', ['ionic.contrib.ui.cards', 'app.services'])
 
 .controller('UserController', function(dbService, Cordova) {
   dbService.createDB().then(dbService.updateDB("someSHIT")); 
+})
+
+.controller('ResultsController', function() {
+
 });
 
