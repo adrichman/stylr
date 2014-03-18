@@ -16,9 +16,6 @@ angular.module('app.controllers', ['ionic.contrib.ui.cards', 'app.services'])
   });
 }])
 
-.controller('SlideController', ['$scope', function($scope) {
-
-}])
 
 .controller('CardsCtrl', function($scope, $ionicSwipeCardDelegate, $timeout) {
   var cardTypes = [
