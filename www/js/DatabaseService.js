@@ -21,11 +21,13 @@ angular.module('app.services')
   };
 
   this.updateDB = function(table, columns, values) {
-    var last_played = new Date();
+    console.log(table, columns, values);
     var db = window.openDatabase("test", "1.0", "Test_DB", 10000);
     db.transaction(function(tx) {
-      tx.executeSql('INSERT INTO' + table + '(' + columns + ') VALUES (' + values + ')',
-
+      // tx.executeSql('INSERT INTO' + table + '(' + columns + ') VALUES (?)',
+      //   [""+values],
+      tx.executeSql('INSERT INTO ' + table + ' (' + columns + ') VALUES (?)',
+        [values],
       function(tx, result) {
         console.log("update success!", result);
       },

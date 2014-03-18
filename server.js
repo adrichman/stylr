@@ -1,10 +1,12 @@
 'use strict';
 
-var express = require("express");
-var fs = require("fs");
-var port = 3000;
+var express  = require("express"),
+    mongoose = require("mongoose"),
+    fs       = require("fs"),
+    port     = 3000;
 
 var app = express();
+var db = mongoose.connect('mongodb://localhost/stylr');
 
 app.use(express.json());
 app.use(express.urlencoded());
@@ -12,7 +14,6 @@ app.use(express.static(__dirname + '/www/'));
 
 app.get('/images', function(request, response) {
   fs.readFile(__dirname + '/app/data/data_img_small.txt', 'utf-8', function(err, data) {
-    console.log(err, data);
     if( err ) {
       response.send(500, "ERROR", err);
     } else {

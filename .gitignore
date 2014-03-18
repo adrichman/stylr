@@ -6,3 +6,5 @@ ref/*
 .sass-cache/*
 node_modules/*
 ignore_assets/
+*.bowerrc
+bower.json
