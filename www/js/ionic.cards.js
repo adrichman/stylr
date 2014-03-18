@@ -40,12 +40,13 @@
      */
     pushCard: function(card) {
       var self = this;
-
       this.cards.push(card);
       this.beforeCardShow(card, function(nextCard){
         setTimeout(function() {
           // card.disableTransition(self.cardAnimation);
-          nextCard.transitionIn(self.cardAnimation);
+          if (nextCard){
+            nextCard.transitionIn(self.cardAnimation);
+          }
         }, this.cardPopInDuration + 100);
       });
 
@@ -54,18 +55,20 @@
      * Set up a new card before it shows.
      */
     beforeCardShow: function(card, cb) {
-      var nextCard = card || this.cards[this.cards.length-1];
-      if(!nextCard) return;
-
-      // Calculate the top left of a default card, as a translated pos
-      var topLeft = window.innerHeight / 2 - this.maxHeight/2;
-
-      var cardOffset = Math.min(this.cards.length, 3) * 5;
-
-      // Move each card 5 pixels down to give a nice stacking effect (max of 3 stacked)
-      nextCard.setPopInDuration(this.cardPopInDuration);
-      nextCard.setZIndex(this.cards.length);
-      cb(nextCard);
+      if(card){
+        var nextCard = card || this.cards[this.cards.length-1];
+        if(!nextCard) return;
+  
+        // Calculate the top left of a default card, as a translated pos
+        var topLeft = window.innerHeight / 2 - this.maxHeight/2;
+  
+        var cardOffset = Math.min(this.cards.length, 3) * 5;
+  
+        // Move each card 5 pixels down to give a nice stacking effect (max of 3 stacked)
+        nextCard.setPopInDuration(this.cardPopInDuration);
+        nextCard.setZIndex(this.cards.length);
+        cb(nextCard);
+      }
     },
     /**
      * Pop a card from the stack
@@ -284,9 +287,9 @@
             },
           });
           $scope.$parent.swipeCard = swipeableCard;
-
-          swipeCards.pushCard(swipeableCard);
-
+          if ($scope.$parent.card.id){
+            swipeCards.pushCard(swipeableCard);
+          }
         }
       }
     }
