@@ -1,6 +1,6 @@
 angular.module('app.controllers')
 
-.controller('CardsCtrl', function($scope, $ionicSwipeCardDelegate, $timeout) {
+.controller('CardsCtrl', function($scope, $ionicSwipeCardDelegate, $timeout, $state) {
   var cardTypes = [
     // { title: 'Swipe down to clear the card', image: 'img/pic.png' },
     { title: 'blouse', image: 'img/blouse.png' },
@@ -34,6 +34,7 @@ angular.module('app.controllers')
     cardTypes.shift();
     if (cardTypes.length < 2) {
       if (last === 1){
+        $state.go('results');
         $timeout(function(){
           alert('YOU\'RE BOHEMIAN-CHIC!');
         });
