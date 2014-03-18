@@ -1,6 +1,6 @@
 *.keystore
 *.sw*
-platforms/^.*
+platforms/*
 ref/*
 .DS_Store
 .sass-cache/*
