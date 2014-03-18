@@ -34,7 +34,10 @@ angular.module('app', ['ionic', 'app.services', 'app.controllers'])
     })
 
     .state('results', {
-      url: "/results",
+      onEnter: function($stateParams){
+        console.log($stateParams);
+      },
+      url: "/results?preference",
       templateUrl: "templates/results.html",
       controller: "ResultsController"
     });
