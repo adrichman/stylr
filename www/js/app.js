@@ -27,10 +27,25 @@ angular.module('app', ['ionic', 'app.services', 'app.controllers'])
       controller: "HomeController"  
     })
 
-    .state('slide', {
+    .state('home.slide', {
+      parent: "home",
       url: "/slide",
       templateUrl: "templates/slide.html",
-      controller: "CardsCtrl"
+    })
+
+    .state('home.slide.cards', {
+      parent: "home.slide",
+      url:"/cards",
+      controller: "CardsController",
+      templateUrl: "templates/slide.cards.html",
+      resolve: {
+        cardTypes: function(PhotoService){
+                    return PhotoService().then(function(photos){
+                      var photos = JSON.parse(photos)
+                      return photos;
+                    });   
+                  }       
+      }
     })
 
     .state('results', {
