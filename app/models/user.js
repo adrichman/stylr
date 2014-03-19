@@ -12,14 +12,16 @@ var UserSchema = new Schema({
   stitchfix: {
     account: String
   },
-  match_deadline: String, //last day for loan to be matched
-  payback_days: Number, //# of days to payback loan after it's accepted
-  category: String,
-  purpose: String,
-  status: { type: String,
-            default: "pending" },
-  borrower_id: {type: Schema.Types.ObjectId, ref: 'User'},
-  lender_id: {type: Schema.Types.ObjectId, ref: 'User'}
+  style_preferences: {
+    classic_score: Number,
+    romantic_score: Number,
+    edgy_score: Number,
+    boho_score: Number,
+    glam_score: Number,
+    casual_score: Number,
+    cute_top_score: Number,
+    preppy_score: Number
+  }
 });
 
 

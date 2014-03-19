@@ -14,14 +14,15 @@ angular.module('app.services')
   // }
 
   this.getPhotos = function() {
-    var photos;
-    $http.get('/images')
+    var result;
+    result = $http.get('/images')
       .success(function(data, status, headers, config) {
-        photos =  data;
+        return data;
       }).error(function(data, status, headers, config) {
         return data;
       });
-      return photos;
+    
+    return result;
   }
 
   this.setPhotos = function() {
