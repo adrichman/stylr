@@ -1,6 +1,6 @@
 angular.module('app.controllers')
 
-.controller('CardsController', ['$scope','cardTypes', 'PhotoService', 'EndOfGameService', '$ionicSwipeCardDelegate', '$timeout', '$state', function($scope, cardTypes, PhotoService, EndOfGameService, $ionicSwipeCardDelegate, $timeout, $state) {
+.controller('CardsController', ['$scope','cardTypes', 'PhotoService', 'GameService', '$ionicSwipeCardDelegate', '$timeout', '$state', function($scope, cardTypes, PhotoService, GameService, $ionicSwipeCardDelegate, $timeout, $state) {
   // console.log("cardTypes", cardTypes);
   $scope.cards = [];
   
@@ -22,9 +22,9 @@ angular.module('app.controllers')
     console.log($scope.preference);
     // $databaseService.register()
     if (cardTypes.length < 2) {
-      console.log(EndOfGameService);
+      console.log(GameService.end);
       $timeout(function(){
-        EndOfGameService($scope.preference.category);
+        GameService.end($scope.preference.category);
       },200);
     }
   };
