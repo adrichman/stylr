@@ -4,7 +4,7 @@
   </header>
   <div class="circular">
     <ion-content class="" ng-init="show = true" has-header="true" scroll="false">
-      <div ng-if="show" class="item item-text-wrap"><p>your style is:</p><h1>{{ args.preference | uppercase }}</h1>
+      <div ng-if="show" ng-click="showAlert()" class="item item-text-wrap"><p>your style is:</p><h1>{{ args.preference | uppercase }}</h1>
       </div>
     </ion-content>
   </div>
