@@ -14,17 +14,10 @@ angular.module('app.controllers')
   };
 
   $scope.registerPreference = function(index, swipedCard){
-    $scope.preference = {
-      id  :     swipedCard.card._id, 
-      like:     swipedCard.swipeCard.x >= 0 ? 1 : 0,
-      category: swipedCard.card.category
-    }
-    console.log($scope.preference);
-    // $databaseService.register()
+    $scope.preference = GameService.calculateScore(swipedCard, $scope.preference) || {};
     if (cardTypes.length < 2) {
-      console.log(GameService.end);
       $timeout(function(){
-        GameService.end($scope.preference.category);
+        GameService.end($scope.preference);
       },200);
     }
   };
