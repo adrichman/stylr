@@ -1,6 +1,6 @@
 angular.module('app.controllers')
 
-.controller('CardsController', ['$scope','cardTypes', 'PhotoService', function($scope, cardTypes, PhotoService, $ionicSwipeCardDelegate, $timeout, $state, EndOfGameService) {
+.controller('CardsController', ['$scope','cardTypes', 'PhotoService', 'EndOfGameService', '$ionicSwipeCardDelegate', '$timeout', '$state', function($scope, cardTypes, PhotoService, EndOfGameService, $ionicSwipeCardDelegate, $timeout, $state) {
   // console.log("cardTypes", cardTypes);
   $scope.cards = [];
   
@@ -8,19 +8,21 @@ angular.module('app.controllers')
   $scope.cardSwiped = function(index) {
     index = index || 0;
     $scope.addCard(index);
-    // if (this.swipeCard){
-      $scope.registerPreference(this);
-    // }
+    if (this.swipeCard){
+      $scope.registerPreference(index, this);
+    }
   };
 
-  $scope.registerPreference = function(card){
+  $scope.registerPreference = function(index, swipedCard){
     $scope.preference = {
-      // id  :     card.card.id, 
-      // like:     card.swipeCard.x >= 0 ? 1 : 0,
-      // category: card.card.category
+      id  :     swipedCard.card._id, 
+      like:     swipedCard.swipeCard.x >= 0 ? 1 : 0,
+      category: swipedCard.card.category
     }
+    console.log($scope.preference);
     // $databaseService.register()
     if (cardTypes.length < 2) {
+      console.log(EndOfGameService);
       $timeout(function(){
         EndOfGameService($scope.preference.category);
       },200);

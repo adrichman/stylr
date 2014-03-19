@@ -17,7 +17,7 @@ exports.create = function(request, response) {
 };
 
 exports.getAll = function(request, response) {
-  Photo.find({}, function(err, photos) {
+  Photo.find({}).limit(5).exec(function(err, photos) {
     if( err ) {
       response.send(500, "ERROR");
     } else {
