@@ -16,3 +16,13 @@ exports.create = function(request, response) {
     }
   });
 };
+
+exports.getAll = function(request, response) {
+  Photo.find({}, function(err, photos) {
+    if( err ) {
+      response.send(500, "ERROR");
+    } else {
+      response.send(photos);
+    }
+  });
+};
