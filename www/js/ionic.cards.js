@@ -287,7 +287,7 @@
             },
           });
           $scope.$parent.swipeCard = swipeableCard;
-          if ($scope.$parent.card.id){
+          if ($scope.$parent.card['Image_URL']){
             swipeCards.pushCard(swipeableCard);
           }
         }

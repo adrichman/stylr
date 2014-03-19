@@ -6,8 +6,8 @@ angular.module('app.controllers', ['ionic.contrib.ui.cards', 'app.services'])
   $scope.$on('$viewContentLoading', function() {
   });
 
-  $scope.go = function() {
-    $state.go('slide');
+  $scope.go = function(state) {
+    $state.go(state);
   };
 
   $scope.$on('$viewContentLoaded', function() {

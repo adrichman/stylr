@@ -1,14 +1,6 @@
 <ion-view id='slide'>
   <header class="bar bar-header bar-stable">
-   <h1 class="title" id="navi-header">Stylr</h1>
+   <h1 class="title" id="navi-header" ng-init="go('home.slide.cards')">Stylr</h1>
   </header>
-  <pane has-header ng-controller="CardsCtrl">
-    <swipe-cards ng-init="cardSwiped()">
-      <swipe-card ng-repeat="card in cards" on-destroy="cardDestroyed($index)" on-swipe="cardSwiped($index+1)">
-        <div ng-controller="CardCtrl">
-            <img ng-src="{{card.image}}">
-        </div>
-      </swipe-card>
-    </swipe-cards>
-  </pane>
+  <div ui-view></div>
 </ion-view>
