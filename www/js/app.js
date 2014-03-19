@@ -41,7 +41,6 @@ angular.module('app', ['ionic', 'app.services', 'app.controllers'])
       resolve: {
         cardTypes: function(PhotoService){
                     return PhotoService().then(function(photos){
-                      var photos = JSON.parse(photos)
                       return photos;
                     });   
                   }       

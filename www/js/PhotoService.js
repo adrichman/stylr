@@ -6,7 +6,7 @@ angular.module('app.services')
     var d = $q.defer();
     $http.get('http://127.0.0.1:3000/images')
       .success(function(data, status, headers, config) {
-        d.resolve(JSON.parse(data));
+        d.resolve(data);
       }).error(function(data, status, headers, config) {
         d.reject(data);
       });
