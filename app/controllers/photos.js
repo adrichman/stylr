@@ -6,7 +6,6 @@ var mongoose = require('mongoose'),
 
 
 exports.create = function(request, response) {
-  console.log(request);
   var photo = new Photo(request.body);
   photo.save(function(err) {
     if( err ) {
@@ -22,7 +21,6 @@ exports.getAll = function(request, response) {
     if( err ) {
       response.send(500, "ERROR");
     } else {
-      console.log(photos);
       response.send(photos);
     }
   });
