@@ -22,6 +22,7 @@ exports.getAll = function(request, response) {
     if( err ) {
       response.send(500, "ERROR");
     } else {
+      console.log(photos);
       response.send(photos);
     }
   });

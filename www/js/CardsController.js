@@ -2,7 +2,7 @@ angular.module('app.controllers')
 
 .controller('CardsController', ['$scope','cardTypes', 'PhotoService', function($scope, cardTypes, PhotoService, $ionicSwipeCardDelegate, $timeout, $state, EndOfGameService) {
   // console.log("cardTypes", cardTypes);
-  $scope.cards = Array.prototype.slice.call(cardTypes, 0, 0);
+  $scope.cards = [];
   
 
   $scope.cardSwiped = function(index) {
