@@ -1,6 +1,6 @@
 <ion-view id='cards'>
 <pane has-header>
-  <swipe-cards ng-init="cardSwiped()">
+  <swipe-cards ng-init="addCard()">
     <div ng-controller="CardCtrl">
       <swipe-card ng-repeat="card in cards" on-destroy="cardDestroyed($index)" on-swipe="cardSwiped($index+1)">
         <img ng-src="{{ card['Image_URL'] }}">
