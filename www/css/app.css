@@ -228,6 +228,18 @@
   -webkit-animation-timing-function: linear;
   -webkit-animation-duration: 0.1s;
 }
+.stylr-fade3 {
+
+  -moz-animation-name: fadeIn;
+  -moz-animation-iteration-count: once;
+  -moz-animation-timing-function: linear;
+  -moz-animation-duration: 0.3s;
+
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-iteration-count: once;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-duration: 0.3s;
+}
 
   @-webkit-keyframes dropDown {
     0% {
