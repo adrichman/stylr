@@ -1,21 +1,16 @@
 angular.module('app.controllers')
 
-.controller('CardsController', ['$scope','cardTypes', 'PhotoService', 'GameService', '$ionicSwipeCardDelegate', '$timeout', '$state', '$ionicPopup', function($scope, cardTypes, PhotoService, GameService, $ionicSwipeCardDelegate, $timeout, $state, $ionicPopup) {
+.controller('CardsController', ['$scope','cardTypes', 'PhotoService', 'GameService', '$ionicSwipeCardDelegate', '$timeout', '$state', '$ionicPopup', '$rootScope', function($scope, cardTypes, PhotoService, GameService, $ionicSwipeCardDelegate, $timeout, $state, $ionicPopup, $rootScope) {
   // console.log("cardTypes", cardTypes);
   $scope.cards = [];
 
   $scope.showAlert = function() {
-    return $ionicPopup.show({
+    return $ionicPopup.alert({
       templateUrl: 'templates/popup.html',
       title: 'We\'ve got your style!',
       scope: $scope,
-      buttons: [{
-        text: 'Ok',
-        type: 'button-stable',
-        onTap: function() {
-          return true;
-        }
-      }]
+      okText: 'Ok',
+      okType: 'button-stable'
     });
   };
   $scope.cardSwiped = function(index) {
@@ -29,10 +24,10 @@ angular.module('app.controllers')
   $scope.registerPreference = function(index, swipedCard){
     $scope.preference = GameService.calculateScore(swipedCard, $scope.preference) || {};
     if (cardTypes.length < 2) {
-      $scope.showAlert().then(function(){      
+      $scope.showAlert().then(function(){
         $timeout(function(){
           GameService.end($scope.preference);
-        },400);
+        },400); 
       });
     }
   };

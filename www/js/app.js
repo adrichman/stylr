@@ -12,18 +12,21 @@ angular.module('app', ['ionic', 'app.services', 'app.controllers'])
 
   $stateProvider
     .state('splash', {
-      onEnter: function() {
-      },
       url: "/splash",
       templateUrl: "templates/splash.html",
       controller: 'UserController'
     })
 
     .state('home', {
-      onEnter: function () {
-      },
       url: "/home",
       templateUrl: "templates/home.html",
+      controller: "HomeController"  
+    })
+
+    .state('home.start', {
+      parent: "home",
+      url: "/start",
+      templateUrl: "templates/start.html",
       controller: "HomeController"  
     })
 
@@ -47,10 +50,11 @@ angular.module('app', ['ionic', 'app.services', 'app.controllers'])
       }
     })
 
-    .state('results', {
+    .state('home.results', {
       onEnter: function($stateParams){
         console.log($stateParams);
       },
+      parent: "home",
       url: "/results?preference",
       templateUrl: "templates/results.html",
       controller: "ResultsController"
