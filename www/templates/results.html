@@ -1,11 +1,4 @@
-<ion-view id='results'>
-  <header class="bar bar-header bar-stable">
-   <h1 class="title" id="navi-header">Stylr</h1>
-  </header>
-  <div class="circular">
-    <ion-content class="" ng-init="show = true" has-header="true" scroll="false">
-      <div ng-if="show" class="item item-text-wrap"><p>your style is:</p><h1>{{ args.preference | uppercase }}</h1>
-      </div>
-    </ion-content>
+<ion-content class="has-header" scroll="false">
+  <div class="item item-text-wrap stylr-fade"><p>your style is:</p><h1>{{ args.preference | uppercase }}</h1>
   </div>
-</ion-view>
+</ion-content>

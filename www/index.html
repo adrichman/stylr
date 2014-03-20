@@ -9,7 +9,7 @@
     <title>Ionic Seed App</title>
 
     <!-- ionic css -->
-    <link href="lib/css/ionic.css" rel="stylesheet">
+    <link href="lib/css/ionic.3.19.14.css" rel="stylesheet">
 
     <!-- your app's css -->
     <link href="css/app.css" rel="stylesheet">
@@ -19,7 +19,7 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
 
     <!-- ionic/angularjs scripts -->
-    <script src="lib/js/ionic.bundle.js"></script>
+    <script src="lib/js/ionic.bundle.3.19.14.js"></script>
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
@@ -39,6 +39,18 @@
     <script src="js/CardsController.js"></script>
     <script src="js/ResultsController.js"></script>
     <script src="js/UserController.js"></script>
+    <script >
+        document.addEventListener("deviceready", onDeviceReady, false);
+
+        // Cordova is ready
+        //
+        function onDeviceReady() {
+            navigator.splashscreen.show();
+            setTimeout(function(){
+                navigator.splashscreen.hide();
+            }, 5000);
+        }
+    </script>
 
   </head>
 
