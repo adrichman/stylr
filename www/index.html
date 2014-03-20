@@ -39,29 +39,10 @@
     <script src="js/CardsController.js"></script>
     <script src="js/ResultsController.js"></script>
     <script src="js/UserController.js"></script>
-    <script >
-        document.addEventListener("deviceready", onDeviceReady, false);
-
-        // Cordova is ready
-        //
-        function onDeviceReady() {
-            navigator.splashscreen.show();
-            setTimeout(function(){
-                navigator.splashscreen.hide();
-            }, 5000);
-        }
-    </script>
-
-   
-    <script type="text/javascript" src="cdv-plugin-fb-connect.js"></script>
-    <!-- facebook js sdk -->
-    <script type="text/javascript" src="facebook-js-sdk.js"></script>
 
   </head>
 
   <body ng-app="app">
-
-    <div id="fb-root"></div>
 
     <ion-nav-view></ion-nav-view>
     
