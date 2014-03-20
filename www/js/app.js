@@ -42,8 +42,8 @@ angular.module('app', ['ionic', 'app.services', 'app.controllers'])
       controller: "CardsController",
       templateUrl: "templates/slide.cards.html",
       resolve: {
-        cardTypes: function(PhotoService){
-                    return PhotoService().then(function(photos){
+        cardTypes: function(PhotoService, $stateParams){
+                    return PhotoService($stateParams.level).then(function(photos){
                       return photos;
                     });   
                   }       
