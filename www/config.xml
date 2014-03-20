@@ -13,4 +13,8 @@
     <preference name="webviewbounce" value="false" />
     <preference name="UIWebViewBounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
+    <feature name="org.apache.cordova.facebook.Connect">
+        <param name="ios-package" value="FacebookConnectPlugin" />
+    </feature>
+    <plugin name="org.apache.cordova.facebook.Connect" value="FacebookConnectPlugin" />
 </widget>

@@ -62,5 +62,11 @@ angular.module('app', ['ionic', 'app.services', 'app.controllers'])
 
   $urlRouterProvider.otherwise('/splash');
 
+})
+
+.run(function($http) {
+  // $http.defaults.useXDomain = true;
+  delete $http.defaults.headers.common['X-Requested-With'];
+  console.log($http.defaults);
 });
 
