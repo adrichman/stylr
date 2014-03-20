@@ -50,11 +50,11 @@ angular.module('app', ['ionic', 'app.services', 'app.controllers'])
       }
     })
 
-    .state('home.slide.results', {
+    .state('home.results', {
       onEnter: function($stateParams){
         console.log($stateParams);
       },
-      parent: "home.slide",
+      parent: "home",
       url: "/results?preference",
       templateUrl: "templates/results.html",
       controller: "ResultsController"

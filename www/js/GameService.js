@@ -41,7 +41,7 @@ angular.module('app.services')
     });
 
     favorite = results[0][0].replace("_score","");
-    $state.go('home.slide.results', { preference: favorite });
+    $state.go('home.results', { preference: favorite });
   };
 
   return  {
