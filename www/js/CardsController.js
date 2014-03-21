@@ -15,9 +15,7 @@ angular.module('app.controllers')
   $scope.cardSwiped = function(index) {
     index = index || 0;
     $scope.addCard(index);
-    if (this.swipeCard){
-      $scope.registerPreference(index, this);
-    }
+    $scope.registerPreference(index, this);
   };
 
   $scope.registerPreference = function(index, swipedCard){
