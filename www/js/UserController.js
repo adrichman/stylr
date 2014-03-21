@@ -16,7 +16,7 @@ angular.module('app.controllers')
   
   $scope.start = function(){
     var preloaded = $window.document.getElementsByClassName('preload');
-    if (startCount > 5 || ($scope.cacheCount > 1 && preloaded.length === $scope.cacheCount)){
+    if (startCount > 2 || ($scope.cacheCount > 1 && preloaded.length === $scope.cacheCount)){
       $timeout(function(){
         $state.go('home.start');
       });

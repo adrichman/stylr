@@ -1,7 +1,7 @@
 angular.module('app.controllers', ['ionic.contrib.ui.cards', 'app.services'])
 
 
-.controller('HomeController', ['$rootScope','$scope', '$state', '$timeout', 'Cordova', function($rootScope, $scope, $state, $timeout, Cordova)  {
+.controller('HomeController', ['$rootScope','$scope', '$state', '$timeout', 'Cordova', '$ionicLoading', function($rootScope, $scope, $state, $timeout, Cordova, $ionicLoading)  {
   $scope.showSpinner = false;
   $rootScope.level = $rootScope.level || 1;
 
@@ -48,4 +48,31 @@ angular.module('app.controllers', ['ionic.contrib.ui.cards', 'app.services'])
     $state.go(state, { level : $rootScope.level });
   };
 
+  $scope.loadingShow = function() {
+
+    // Show the loading overlay and text
+    $scope.loading = $ionicLoading.show({
+
+      // The text to display in the loading indicator
+      content: 'Loading',
+
+      // The animation to use
+      animation: 'fade-in',
+
+      // Will a dark overlay or backdrop cover the entire view
+      showBackdrop: true,
+
+      // The maximum width of the loading indicator
+      // Text will be wrapped if longer than maxWidth
+      maxWidth: 200,
+
+      // The delay in showing the indicator
+      showDelay: 500
+    });
+  };
+
+  // Hide the loading indicator
+  $scope.loadingHide = function(){
+    $scope.loading.hide();
+  };
 }]);
