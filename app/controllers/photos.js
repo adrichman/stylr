@@ -17,9 +17,12 @@ exports.create = function(request, response) {
 };
 
 exports.getAll = function(request, response) {
-  Photo.find({}).limit(5).exec(function(err, photos) {
+  var params = {}; 
+  params.category = request.params[0];
+  console.log(params);
+  Photo.find(params).limit(15).exec(function(err, photos) {
     if( err ) {
-      response.send(500, "ERROR");
+      response.send(500, "ERROR", err);
     } else {
       response.send(photos);
     }

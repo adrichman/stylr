@@ -20,40 +20,38 @@ angular.module('app', ['ionic', 'app.services', 'app.controllers'])
     .state('home', {
       url: "/home",
       templateUrl: "templates/home.html",
-      controller: "HomeController"  
+      controller: "HomeController"
     })
 
     .state('home.start', {
       parent: "home",
       url: "/start",
       templateUrl: "templates/start.html",
-      controller: "HomeController"  
+      controller: "HomeController"
     })
 
     .state('home.slide', {
       parent: "home",
       url: "/slide",
-      templateUrl: "templates/slide.html",
+      templateUrl: "templates/slide.html"
     })
 
     .state('home.slide.cards', {
       parent: "home.slide",
-      url:"/cards",
+      url:"/cards?level",
       controller: "CardsController",
       templateUrl: "templates/slide.cards.html",
       resolve: {
-        cardTypes: function(PhotoService){
-                    return PhotoService().then(function(photos){
-                      return photos;
-                    });   
-                  }       
+        cardTypes:      function(PhotoService, $stateParams){
+                          return PhotoService($stateParams.level).then(function(photos){
+                            console.log(photos);
+                            return photos;
+                          });   
+                        }
       }
     })
 
     .state('home.results', {
-      onEnter: function($stateParams){
-        console.log($stateParams);
-      },
       parent: "home",
       url: "/results?preference",
       templateUrl: "templates/results.html",

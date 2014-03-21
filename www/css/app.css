@@ -16,6 +16,14 @@
   font-family: 'Dancing Script', cursive;
   font-size: 190%;
 }
+.preload_images {
+  display: none;  
+}
+.splash_img {
+  height: 100%;
+  background: url('../img/stylr-iphone5s.png') no-repeat;
+  background-size: 100% auto;
+}
 
 .splash {
   padding-top: 40%;
@@ -24,6 +32,7 @@
   font-size: 100px;
   font-family: 'Dancing Script', cursive;
 }
+
 
 #play {
   border: none;

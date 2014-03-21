@@ -1,6 +1,5 @@
-<ion-view id='splash'>
-  <div ng-init="timeout()">
-    <h1 class='splash'>Stylr</h1>
-    <div class="button button-block button-stable" id="play">What's Your Style?</div>
-  </div>
-</ion-view>
+<div class="splash_img">
+</div>
+<img ng-repeat="image in preloadCache track by $index" src="{{ image }}" class="preload"/>
+<div ng-init="start()">
+</div>

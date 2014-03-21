@@ -1,7 +1,6 @@
 angular.module('app.controllers')
 
-.controller('CardsController', ['$scope','cardTypes', 'PhotoService', 'GameService', '$ionicSwipeCardDelegate', '$timeout', '$state', '$ionicPopup', '$rootScope', function($scope, cardTypes, PhotoService, GameService, $ionicSwipeCardDelegate, $timeout, $state, $ionicPopup, $rootScope) {
-  // console.log("cardTypes", cardTypes);
+.controller('CardsController', ['$scope','cardTypes','GameService', '$ionicSwipeCardDelegate', '$timeout', '$state', '$ionicPopup', '$rootScope', function($scope, cardTypes, GameService, $ionicSwipeCardDelegate, $timeout, $state, $ionicPopup, $rootScope) {
   $scope.cards = [];
 
   $scope.showAlert = function() {
@@ -16,9 +15,7 @@ angular.module('app.controllers')
   $scope.cardSwiped = function(index) {
     index = index || 0;
     $scope.addCard(index);
-    if (this.swipeCard){
-      $scope.registerPreference(index, this);
-    }
+    $scope.registerPreference(index, this);
   };
 
   $scope.registerPreference = function(index, swipedCard){
