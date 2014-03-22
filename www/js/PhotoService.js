@@ -8,7 +8,7 @@ angular.module('app.services')
                     "3":  { "db": "Dress"       , "friendly" : "Dresses"       },
                     "4":  { "db": "Accessory"   , "friendly" : "Accessories"   },
                     "5":  { "db": "Bracelet"    , "friendly" : "Bracelets"     },
-                    "6":  { "db": "Necklace"    , "friendly" : "Necklaces"     },
+                    "6":  { "db": "Necklace"    , "friendly" : "Necklaces"     }
                   };
 
   var requestPhotos = function(params) {
