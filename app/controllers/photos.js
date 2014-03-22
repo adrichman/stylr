@@ -20,10 +20,15 @@ exports.getAll = function(request, response) {
   var params = {}; 
   params.category = request.params[0];
   console.log(params);
-  Photo.find(params).limit(15).exec(function(err, photos) {
+  Photo.find(params).limit(10).exec(function(err, photos) {
     if( err ) {
       response.send(500, "ERROR", err);
     } else {
+      response.set({       
+                      'Cache-Control'   :'public', 
+                      'max-age'         : 5184000,
+                      'Content-Type'    :'image/jpg'
+                  })
       response.send(photos);
     }
   });
