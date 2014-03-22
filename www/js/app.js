@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'app.services' is found in services.js
 // 'app.controllers' is found in controllers.js
-angular.module('app', ['ionic', 'app.services', 'app.controllers'])
+angular.module('app', ['ionic', 'firebase', 'app.services', 'app.controllers'])
 
 .config(function($stateProvider, $urlRouterProvider) {
 
@@ -14,6 +14,12 @@ angular.module('app', ['ionic', 'app.services', 'app.controllers'])
       url: "/splash",
       templateUrl: "templates/splash.html",
       controller: 'UserController'
+    })
+
+    .state('login', {
+      url: "/login",
+      templateUrl: "templates/login.html",
+      controller: "LoginController"
     })
 
     .state('home', {
@@ -60,3 +66,30 @@ angular.module('app', ['ionic', 'app.services', 'app.controllers'])
   $urlRouterProvider.otherwise('/splash');
 
 });
+
+// .run(function($rootScope, $firebaseSimpleLogin, $state, $window) {
+
+//   var firebaseRef = new Firebase("https://sweltering-fire-2238.firebaseio.com/");
+//   var loginObj = $firebaseSimpleLogin(firebaseRef);
+
+//   console.log(loginObj);
+
+//   loginObj.$getCurrentUser().then(function(user) {
+//     if(!user){ 
+//       // Might already be handled by logout event below
+//       //$state.go('home');
+//     }
+//   }, function(err) {
+//     console.log("err", err);
+//   });
+
+//   $rootScope.$on('$firebaseSimpleLogin:login', function(e, user) {
+//     $state.go('home');
+//   });
+
+//   $rootScope.$on('$firebaseSimpleLogin:logout', function(e, user) {
+//     console.log($state);
+//     //$state.go('splash'); "GO SOMEWHERE ON LOGOUT"
+//   });
+
+// });
