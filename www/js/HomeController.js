@@ -3,7 +3,6 @@ angular.module('app.controllers', ['ionic.contrib.ui.cards', 'app.services'])
 
 .controller('HomeController', ['$rootScope','$scope', '$state', '$timeout', '$ionicLoading', function($rootScope, $scope, $state, $timeout, $ionicLoading)  {
   $scope.showSpinner = false;
-  $rootScope.level = $rootScope.level || 1;
 
   $scope.$on('$viewContentLoading', function() {
     console.log('loading');
@@ -22,6 +21,7 @@ angular.module('app.controllers', ['ionic.contrib.ui.cards', 'app.services'])
   });
   $rootScope.$on('$stateChangeSuccess', function() {
     console.log('state change success');
+    $rootScope.level = $state.params.level ? $state.params.level : 1;
   });
 
   $scope.go = function(state) {
