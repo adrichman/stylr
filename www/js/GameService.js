@@ -1,6 +1,6 @@
 angular.module('app.services')
 
-.service('GameService', ['$state', function($state){
+.service('GameService', ['$state','$rootScope', function($state, $rootScope){
   var fields = [
                 "classic_score",
                 "romantic_score",
@@ -30,6 +30,16 @@ angular.module('app.services')
     return userPreferences;
   };
 
+  var nextLevel = function(prefs){
+    if ($rootScope.level < 5){
+      $rootScope.level++;
+      console.log('in next level');
+      $state.go('home.slide.cards', { level : $rootScope.level });
+    } else {
+      end(prefs);
+    }
+  }
+
   var end = function(prefs){
     var favorite;
     var results = [];
@@ -46,6 +56,7 @@ angular.module('app.services')
 
   return  {
             calculateScore: calculateScore,
+            nextLevel: nextLevel,
             end: end
           }
 }]);

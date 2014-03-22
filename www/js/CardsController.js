@@ -1,16 +1,29 @@
 angular.module('app.controllers')
 
-.controller('CardsController', ['$scope','cardTypes','GameService', '$ionicSwipeCardDelegate', '$timeout', '$state', '$ionicPopup', '$rootScope', function($scope, cardTypes, GameService, $ionicSwipeCardDelegate, $timeout, $state, $ionicPopup, $rootScope) {
+.controller('CardsController', ['$rootScope','$scope','cardTypes','GameService', '$ionicSwipeCardDelegate', '$timeout', '$state', '$ionicPopup', '$rootScope', function($rootScope, $scope, cardTypes, GameService, $ionicSwipeCardDelegate, $timeout, $state, $ionicPopup, $rootScope) {
   $scope.cards = [];
 
   $scope.showAlert = function() {
-    return $ionicPopup.alert({
-      templateUrl: 'templates/popup.html',
-      title: 'We\'ve got your style!',
-      scope: $scope,
-      okText: 'Ok',
-      okType: 'button-stable'
-    });
+    if ($rootScope.level < 5){
+      return $ionicPopup.alert({
+        templateUrl: 'templates/popup.html',
+        title: 'Level' + $rootScope.level + ' Complete!',
+        scope: $scope,
+        okText: 'Next',
+        okType: 'button-stable'
+      });
+    } else {
+      return $ionicPopup.alert({
+        templateUrl: 'templates/popup.html',
+        title: 'We\'ve got your style!',
+        scope: $scope,
+        okText: 'Ok',
+        okType: 'button-stable'
+      });
+      
+    }
+
+
   };
   $scope.cardSwiped = function(index) {
     index = index || 0;
@@ -23,12 +36,11 @@ angular.module('app.controllers')
     if (cardTypes.length < 2) {
       $scope.showAlert().then(function(){
         $timeout(function(){
-          GameService.end($scope.preference);
+          GameService.nextLevel($scope.preference);
         },400); 
       });
     }
   };
-
 
   $scope.cardDestroyed = function(index) {
     $scope.cards.splice(index, 1);
