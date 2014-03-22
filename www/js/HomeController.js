@@ -1,7 +1,7 @@
 angular.module('app.controllers', ['ionic.contrib.ui.cards', 'app.services'])
 
 
-.controller('HomeController', ['$rootScope','$scope', '$state', '$timeout', '$ionicLoading', function($rootScope, $scope, $state, $timeout, $ionicLoading)  {
+.controller('HomeController', ['$rootScope','$scope', '$state', '$timeout', '$ionicLoading','ENV', function($rootScope, $scope, $state, $timeout, $ionicLoading, ENV)  {
   $scope.showSpinner = false;
 
   $scope.$on('$viewContentLoading', function() {

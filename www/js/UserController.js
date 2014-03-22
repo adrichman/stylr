@@ -4,7 +4,7 @@ angular.module('app.controllers')
   console.log("USER controller");
   $scope.preloadCache;
   var startCount = 0;
-  var verifyCacheAndProceed = function(nTotal){
+  var verifyCacheAndProceed = function(){
     var nTotal = $scope.preloadCache.length
     var nCached = $window.document.getElementsByClassName('preload').length
     PhotoService.verifyCache(nTotal, nCached)
