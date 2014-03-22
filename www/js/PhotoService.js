@@ -1,8 +1,8 @@
 angular.module('app.services')
 
-.factory('PhotoService', ['$q','$http','$rootScope', '$cacheFactory', function($q, $http, $rootScope, $cacheFactory, $timeout) {
-
-  var categories = {
+.factory('PhotoService', ['$q','$http','$rootScope', '$cacheFactory', function($q, $http, $rootScope, $cacheFactory, $timeout, categories) {
+  $rootScope.categories =  
+                  { 
                     "1":  { "db": "Top"         , "friendly" : "Tops"          },
                     "2":  { "db": "Bottom"      , "friendly" : "Bottoms"       },
                     "3":  { "db": "Dress"       , "friendly" : "Dresses"       },
@@ -10,16 +10,19 @@ angular.module('app.services')
                     "5":  { "db": "Bracelet"    , "friendly" : "Bracelets"     },
                     "6":  { "db": "Necklace"    , "friendly" : "Necklaces"     }
                   };
-
   var requestPhotos = function(params) {
     params = params || 1;
     var d = $q.defer();
-      $http.get('http://127.0.0.1:3000/images/' + categories[params].db)
+    if (params <= 6){
+      $http.get('http://127.0.0.1:3000/images/' + $rootScope.categories[params].db)
         .success(function(data, status, headers, config) {
           d.resolve(data);
         }).error(function(data, status, headers, config) {
           d.reject(data);
         });
+    } else {
+      d.resolve([]);
+    }
     return d.promise;
   };
 
@@ -44,11 +47,12 @@ angular.module('app.services')
     return d.promise;
   };
 
-  return { 
-          requestPhotos         : requestPhotos,
-          getPhotos             : getPhotos,
-          verifyCache           : verifyCache
-        };
+  return  { 
+              requestPhotos : requestPhotos,
+              getPhotos     : getPhotos,
+              verifyCache   : verifyCache,
+              categories    : categories
+          };
 
 }]);
 

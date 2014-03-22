@@ -7,7 +7,6 @@
 // 'app.controllers' is found in controllers.js
 angular.module('app', ['ionic', 'app.services', 'app.controllers'])
 
-
 .config(function($stateProvider, $urlRouterProvider) {
 
   $stateProvider

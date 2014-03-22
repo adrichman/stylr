@@ -1,10 +1,22 @@
 angular.module('app.controllers')
 
-.controller('CardsController', ['$rootScope','$scope','cardTypes','GameService', '$ionicSwipeCardDelegate', '$timeout', '$state', '$ionicPopup', '$rootScope', function($rootScope, $scope, cardTypes, GameService, $ionicSwipeCardDelegate, $timeout, $state, $ionicPopup, $rootScope) {
+.controller('CardsController', ['$rootScope','$scope','cardTypes','GameService', '$ionicSwipeCardDelegate', '$timeout', '$state', '$ionicPopup', '$rootScope','PhotoService', function($rootScope, $scope, cardTypes, GameService, $ionicSwipeCardDelegate, $timeout, $state, $ionicPopup, $rootScope, PhotoService) {
   $scope.cards = [];
+  $scope.preloadCache;
+
+  PhotoService.requestPhotos(+($state.params.level) + 1)
+  .then(function(res){
+    console.log('requested photos', res);
+    
+    PhotoService.getPhotos(res)
+    .then(function(urls){
+      console.log('got urls', urls);
+      $scope.preloadCache = urls;
+    })
+  });
 
   $scope.showAlert = function() {
-    if ($rootScope.level < 5){
+    if ($rootScope.level < Object.keys($rootScope.categories).length){
       return $ionicPopup.alert({
         templateUrl: 'templates/popup.html',
         title: 'Level' + $rootScope.level + ' Complete!',
