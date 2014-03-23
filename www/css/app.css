@@ -19,6 +19,21 @@
 .preload {
   display: none;  
 }
+.loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  text-align: center;
+  text-overflow: ellipsis;
+  font-size: 15px; }
+  .loading h1, .loading h2, .loading h3, .loading h4, .loading h5, .loading h6 {
+    color: #fff; 
+  }
+
 .splash_img {
   height: 100%;
   background: url('../img/stylr-iphone5s.png') no-repeat;
@@ -47,7 +62,7 @@
   border-radius: 150px;
   -webkit-border-radius: 150px;
   -moz-border-radius: 150px;
-  background: url(../img/karl.png) no-repeat;
+  background: url(../img/karl_fade.png) no-repeat;
 }
 
 .pane {

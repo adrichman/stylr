@@ -185,8 +185,8 @@
         } else {
           rotateTo = (this.rotationAngle - (this.rotationDirection * 0.6) );
         };
-        var duration = this.rotationAngle ? 0.2 : 0.2;
-        this.el.style[TRANSITION] = '-webkit-transform ' + duration + 's ease-in-out';
+        var duration = this.rotationAngle ? 0.6 : 0.6;
+        this.el.style[TRANSITION] = '-webkit-transform ' + duration + 's linear';
         this.el.style[ionic.CSS.TRANSFORM] = 'translate3d(' + (this.x * 100) + 'px,'+ 0 +'px,0) rotate(' + rotateTo + 'rad)';
         this.onSwipe && this.onSwipe();
 
@@ -246,8 +246,9 @@
       this.rotationAngle = Math.atan(o/this.touchDistance) * this.rotationDirection;
 
       this.x = this.startX + (e.gesture.deltaX * 0.4);
+      this.y = this.startY + (e.gesture.deltaY * 0.6);
 
-      this.el.style[ionic.CSS.TRANSFORM] = 'translate3d(' + this.x + 'px, ' + this.y  + 'px, 0) rotate(' + (this.rotationAngle) + 'rad)';
+      this.el.style[ionic.CSS.TRANSFORM] = 'translate3d(' + this.x + 'px, ' + this.y + 'px, 0) rotate(' + (this.rotationAngle) + 'rad)';
     },
     _doDragEnd: function(e) {
       this.transitionOut(e);
