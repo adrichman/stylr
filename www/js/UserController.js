@@ -1,6 +1,7 @@
 angular.module('app.controllers')
 
 .controller('UserController', function($window, $rootScope, $scope, Cordova, PhotoService, $timeout, $state) {
+  console.log("USER controller");
   $scope.preloadCache;
   var startCount = 0;
   var verifyCacheAndProceed = function(nTotal){
@@ -10,7 +11,7 @@ angular.module('app.controllers')
     .then(function(n){
       console.log(n)
       $timeout(function(){
-        $state.go('home.start');
+        $state.go('login');
       }, 2000);
     })
     .catch(function(){
@@ -19,7 +20,7 @@ angular.module('app.controllers')
       if(startCount < 3){
         verifyCacheAndProceed();
       } else {
-        $state.go('home.start');
+        $state.go('login');
       }
     });
   };

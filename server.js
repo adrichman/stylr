@@ -5,7 +5,8 @@ var express  = require("express"),
     users    = require("./app/models/user"),
     photos   = require("./app/models/photo"),
     port     = 3000,
-    db       = mongoose.connect('mongodb://localhost/stylr');
+    // db       = mongoose.connect('mongodb://localhost/stylr');
+    db       = mongoose.connect('mongodb://admin:stylr@ds029187.mongolab.com:29187/stylr');
 
 // instantiate expressjs app
 var app = express();
