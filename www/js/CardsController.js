@@ -19,9 +19,9 @@ angular.module('app.controllers')
     if ($rootScope.level < Object.keys(ENV.categories).length){
       return $ionicPopup.alert({
         templateUrl: 'templates/popup.html',
-        title: 'Level' + $rootScope.level + ' Complete!',
+        title: 'Level ' + $rootScope.level + ' Complete!',
         scope: $scope,
-        okText: 'Next',
+        okText: ENV.categories[+($rootScope.level) + 1].friendly,
         okType: 'button-stable'
       });
     } else {

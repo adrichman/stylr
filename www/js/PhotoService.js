@@ -6,7 +6,7 @@ angular.module('app.services')
     params = params || 1;
     var d = $q.defer();
     if (params <= 6){
-      $http.get('http://107.170.219.118/images/' + $rootScope.categories[params].db)
+      $http.get('http://107.170.219.118/images/' + ENV['categories'][params].db)
         .success(function(data, status, headers, config) {
           d.resolve(data);
         }).error(function(data, status, headers, config) {
