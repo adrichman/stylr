@@ -1,20 +1,12 @@
 angular.module('app.services')
 
-.factory('PhotoService', ['$q','$http','$rootScope', '$cacheFactory', function($q, $http, $rootScope, $cacheFactory, $timeout, categories) {
-  $rootScope.categories =  
-                  { 
-                    "1":  { "db": "Top"         , "friendly" : "Tops"          },
-                    "2":  { "db": "Bottom"      , "friendly" : "Bottoms"       },
-                    "3":  { "db": "Dress"       , "friendly" : "Dresses"       },
-                    "4":  { "db": "Accessory"   , "friendly" : "Accessories"   },
-                    "5":  { "db": "Bracelet"    , "friendly" : "Bracelets"     },
-                    "6":  { "db": "Necklace"    , "friendly" : "Necklaces"     }
-                  };
+.factory('PhotoService', ['ENV','$q','$http','$rootScope', '$cacheFactory', function(ENV, $q, $http, $rootScope, $cacheFactory, $timeout) {
+
   var requestPhotos = function(params) {
     params = params || 1;
     var d = $q.defer();
     if (params <= 6){
-      $http.get('http://107.170.219.118/images/' + $rootScope.categories[params].db)
+      $http.get('http://107.170.219.118/images/' + ENV['categories'][params].db)
         .success(function(data, status, headers, config) {
           d.resolve(data);
         }).error(function(data, status, headers, config) {
@@ -50,8 +42,7 @@ angular.module('app.services')
   return  { 
               requestPhotos : requestPhotos,
               getPhotos     : getPhotos,
-              verifyCache   : verifyCache,
-              categories    : categories
+              verifyCache   : verifyCache
           };
 
 }]);

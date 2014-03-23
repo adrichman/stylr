@@ -24,7 +24,6 @@
     <preference name="fullscreen" value="true" />
     <preference name="webviewbounce" value="false" />
     <preference name="UIWebViewBounce" value="false" />
-    <preference name="AutoHideSplashScreen" value="false" />
     <preference name="DisallowOverscroll" value="true" />
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />

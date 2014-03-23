@@ -1,6 +1,6 @@
 angular.module('app.services')
 
-.service('GameService', ['$state','$rootScope', function($state, $rootScope){
+.service('GameService', ['ENV','$state','$rootScope', function(ENV, $state, $rootScope){
   var fields = [
                 "classic_score",
                 "romantic_score",
@@ -31,7 +31,7 @@ angular.module('app.services')
   };
 
   var nextLevel = function(prefs){
-    if ($rootScope.level < Object.keys($rootScope.categories).length){
+    if ($rootScope.level < Object.keys(ENV.categories).length){
       $rootScope.level++;
       console.log('in next level');
       $state.go('home.slide.cards', { level : $rootScope.level });

@@ -1,18 +1,19 @@
 angular.module('app.controllers')
 
-.controller('UserController', function($window, $rootScope, $scope, Cordova, PhotoService, $timeout, $state) {
+.controller('UserController', function($window, $rootScope, $scope, Cordova, PhotoService, $timeout, $state, $ionicLoading) {
   console.log("USER controller");
   $scope.preloadCache;
   var startCount = 0;
-  var verifyCacheAndProceed = function(nTotal){
+  var verifyCacheAndProceed = function(){
     var nTotal = $scope.preloadCache.length
     var nCached = $window.document.getElementsByClassName('preload').length
     PhotoService.verifyCache(nTotal, nCached)
     .then(function(n){
       console.log(n)
       $timeout(function(){
+        $scope.loading.hide();
         $state.go('login');
-      }, 2000);
+      }, 3000);
     })
     .catch(function(){
       console.log('cache incomplete!');
@@ -24,6 +25,16 @@ angular.module('app.controllers')
       }
     });
   };
+
+  $scope.loading = $ionicLoading.show(
+    {
+      content: '<h1><i class=\"icon ion-looping\"></i></h1>',
+      animation: 'fade-in',
+      showBackdrop: true,
+      maxWidth: 200,
+      showDelay: 200
+    }
+  );
 
   PhotoService.requestPhotos()
   .then(function(res){
