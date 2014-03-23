@@ -55,7 +55,7 @@
   font-size: 150%;
 }
 
-.circular {
+/*.circular {
   margin-top: 70%;
   width: 300px;
   height: 300px;
@@ -63,6 +63,30 @@
   -webkit-border-radius: 150px;
   -moz-border-radius: 150px;
   background: url(../img/karl_fade.png) no-repeat;
+}*/
+
+.circular {
+  width: 100%;
+  height: 100%;
+  margin-top: 260px;
+  background: url(../img/karl_fade.png) no-repeat;
+}
+.vert-top-third {
+  margin-top: 70px;
+}
+.button-fb {
+  background-color: #3B5998;
+  border: 1px solid #25375D;
+}
+.button-fb:active {
+  background-color: #25375D;
+  border: 1px solid #3B5998;
+}
+
+.fb {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
 }
 
 .pane {
