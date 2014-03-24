@@ -59,4 +59,3 @@ angular.module('app', ['ionic', 'app.services', 'app.controllers'])
   $urlRouterProvider.otherwise('/splash');
 
 });
-

@@ -12,4 +12,22 @@ angular.module('app.controllers', ['ionic.contrib.ui.cards', 'app.services'])
 
   $scope.$on('$viewContentLoaded', function() {
   });
+}])
+.directive('gotTapped', ['$ionicGesture', function($ionicGesture, $timeout) {
+
+    return {
+        restrict: 'A',
+        link: function($scope, $element, $attr) {
+            $ionicGesture.on('mousedown', function(e) {
+                console.log('I got Tapped!')
+                console.log($element);
+                $element.addClass('circular-tap');
+            }, $element);
+            $ionicGesture.on('$destroy mouseup', function(e) {
+                console.log('I got unTapped!')
+                console.log($element);
+                $element.removeClass('circular-tap');
+            }, $element);
+        }
+    };
 }]);
