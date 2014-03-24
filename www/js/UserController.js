@@ -1,6 +1,6 @@
 angular.module('app.controllers')
 
-.controller('UserController', function($window, $rootScope, $scope, Cordova, PhotoService, $timeout, $state, $ionicLoading) {
+.controller('UserController', function($window, $rootScope, $scope, Cordova, PhotoService, $timeout, $state, $ionicLoading, ENV) {
   console.log("USER controller");
   $scope.preloadCache;
   var startCount = 0;
@@ -26,15 +26,7 @@ angular.module('app.controllers')
     });
   };
 
-  $scope.loading = $ionicLoading.show(
-    {
-      content: '<h1><i class=\"icon ion-looping\"></i></h1>',
-      animation: 'fade-in',
-      showBackdrop: true,
-      maxWidth: 200,
-      showDelay: 200
-    }
-  );
+  $scope.loading = $ionicLoading.show(ENV.loadingOptions);
 
   PhotoService.requestPhotos()
   .then(function(res){

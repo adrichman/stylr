@@ -6,11 +6,9 @@ angular.module('app.controllers')
 
   PhotoService.requestPhotos(+($state.params.level) + 1)
   .then(function(res){
-    console.log('requested photos', res);
     
     PhotoService.getPhotos(res)
     .then(function(urls){
-      console.log('got urls', urls);
       $scope.preloadCache = urls;
     })
   });
@@ -38,6 +36,7 @@ angular.module('app.controllers')
 
   };
   $scope.cardSwiped = function(index) {
+    console.log(this);
     index = index || 0;
     $scope.addCard(index);
     $scope.registerPreference(index, this);
@@ -45,6 +44,9 @@ angular.module('app.controllers')
 
   $scope.registerPreference = function(index, swipedCard){
     $scope.preference = GameService.calculateScore(swipedCard, $scope.preference) || {};
+    console.log("cardTypes.length", cardTypes.length);
+    console.log("index", index);
+    console.log("swipedCard", swipedCard);
     if (cardTypes.length < 2) {
       $scope.showAlert().then(function(){
         $timeout(function(){

@@ -1,9 +1,8 @@
 <ion-view id='home'>
-  <div class="circular">
-  <header class="bar bar-header bar-stable">
-   <h1 class="title" id="navi-header">Stylr</h1>
-  </header>
-  <div ng-show="hide" ui-view></div>
-  </div>
-  <div ng-show="showSpinner">SHOW SPINNER</div>
+    <header class="bar bar-header bar-stable">
+      <h1 class="title" id="navi-header">Stylr</h1>
+    </header>
+    <div class="circular" scroll="false">
+      <div ng-hide="showLoading" ui-view></div>
+    </div>
 </ion-view>
