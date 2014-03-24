@@ -18,12 +18,12 @@ angular.module('app.controllers', ['ionic.contrib.ui.cards', 'app.services'])
     return {
         restrict: 'A',
         link: function($scope, $element, $attr) {
-            $ionicGesture.on('mousedown', function(e) {
+            $ionicGesture.on('touch', function(e) {
                 console.log('I got Tapped!')
                 console.log($element);
                 $element.addClass('circular-tap');
             }, $element);
-            $ionicGesture.on('$destroy mouseup', function(e) {
+            $ionicGesture.on('$destroy', function(e) {
                 console.log('I got unTapped!')
                 console.log($element);
                 $element.removeClass('circular-tap');
