@@ -6,7 +6,7 @@ angular.module('app.controllers')
 
   $scope.post = function() {
     UserService.currentUser().then(function(user) {
-      
+      console.log(window);
     });
   };
 }]);
