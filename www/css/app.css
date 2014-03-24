@@ -1,5 +1,36 @@
 /* Your app's CSS, go crazy, make it your own */
 
+@font-face {
+  font-family: 'bebas_neueregular';
+  src: url('../lib/fonts/BebasNeue-webfont.eot');
+  src: url('../lib/fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../lib/fonts/BebasNeue-webfont.woff') format('woff'),
+       url('../lib/fonts/BebasNeue-webfont.ttf') format('truetype'),
+       url('../lib/fonts/BebasNeue-webfont.svg#bebas_neueregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.result {
+  width: 90%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'bebas_neueregular';
+}
+.result p {
+  width: 90%;
+  font-size: 20px;
+  font-family: 'bebas_neueregular';
+}
+.result h1 {
+  width: 90%;
+  line-height: 75px;
+  font-size: 100px;
+  font-family: 'bebas_neueregular';
+}
+
+
 .ionic-logo {
   display: block;
   margin: 15px auto;
@@ -195,12 +226,12 @@
   -moz-animation-name: dropDown;
   -moz-animation-iteration-count: once;
   -moz-animation-timing-function: ease-in-out;
-  -moz-animation-duration: 0.1s;
+  -moz-animation-duration: 0.3s;
 
   -webkit-animation-name: dropDown;
   -webkit-animation-iteration-count: once;
   -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-duration: 0.1s;
+  -webkit-animation-duration: 0.3s;
 }
 .popup-hidden {
   top: 0%;
@@ -215,12 +246,12 @@
   -moz-animation-name: raiseUp;
   -moz-animation-iteration-count: once;
   -moz-animation-timing-function: ease-in-out;
-  -moz-animation-duration: 0.1s;
+  -moz-animation-duration: 0.3s;
 
   -webkit-animation-name: raiseUp;
   -webkit-animation-iteration-count: once;
   -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-duration: 0.1s;
+  -webkit-animation-duration: 0.3s;
 }
 
 .popup-backdrop {
