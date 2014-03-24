@@ -67,30 +67,3 @@ angular.module('app', ['ionic', 'firebase', 'ngCookies', 'app.services', 'app.co
   $urlRouterProvider.otherwise('/splash');
 
 });
-
-// .run(function($rootScope, $firebaseSimpleLogin, $state, $window) {
-
-//   var firebaseRef = new Firebase("https://sweltering-fire-2238.firebaseio.com/");
-//   var loginObj = $firebaseSimpleLogin(firebaseRef);
-
-//   console.log(loginObj);
-
-//   loginObj.$getCurrentUser().then(function(user) {
-//     if(!user){ 
-//       // Might already be handled by logout event below
-//       //$state.go('home');
-//     }
-//   }, function(err) {
-//     console.log("err", err);
-//   });
-
-//   $rootScope.$on('$firebaseSimpleLogin:login', function(e, user) {
-//     $state.go('home');
-//   });
-
-//   $rootScope.$on('$firebaseSimpleLogin:logout', function(e, user) {
-//     console.log($state);
-//     //$state.go('splash'); "GO SOMEWHERE ON LOGOUT"
-//   });
-
-// });

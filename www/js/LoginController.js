@@ -24,14 +24,12 @@ angular.module('app.controllers')
 
     Cordova.navigator().then(function() {
       UserService.currentUser().then(function(user) {
-        console.log(user);
         if( !user ) {
           auth.login('facebook', {
             rememberMe: true,
-            scope: 'basic_info,email,user_likes'
+            scope: 'basic_info,email,user_likes,publish_actions'
           });
         } else {
-          alert('Hello', user);
           $state.go('home.start');
         }
       });

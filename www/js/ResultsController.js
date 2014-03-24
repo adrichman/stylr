@@ -1,12 +1,26 @@
 angular.module('app.controllers')
 
-.controller('ResultsController', ['$scope', '$stateParams', 'UserService', function($scope, $stateParams, UserService) {
+.controller('ResultsController', ['$scope', '$stateParams', '$http', 'UserService', function($scope, $stateParams, $http, UserService) {
   $scope.args = $stateParams;
   // $scope.list = [{'id':1,'title':'hey'},{'id':2,'title':'sup'},{'id':3,'title':'nothin'}];
 
   $scope.post = function() {
     UserService.currentUser().then(function(user) {
-      console.log(window);
+        console.log(user);
+        $http.post('https://graph.facebook.com/' + user.id + '/feed', { params: {access_token: user.accessToken, app_id:"740962102604033"} } ) //{app_id:"740962102604033", message:"SOMETHING AWESOME", access_token: user.accessToken} )
+        .success(function(data, status, headers, config) {
+          console.log(arguments);
+        })
+        .error(function(data, status, headers, config) {
+          console.log(arguments);
+        });
+        $http.get('https://graph.facebook.com/' + user.id + '/permissions', { params: {access_token: user.accessToken} } )
+        .success(function(data, status, headers, config) {
+          console.log(arguments);
+        })
+        .error(function(data, status, headers, config) {
+          console.log(arguments);
+        });
     });
   };
 }]);

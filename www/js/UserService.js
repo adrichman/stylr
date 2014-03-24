@@ -9,7 +9,7 @@ angular.module('app.services')
   this.setCurrentUser = function(user) {
     var d = $q.defer();
     console.log("\n\n Set USER: ", user, "\n\n");
-    $cookieStore.put('user', JSON.stringify(user));
+    $cookieStore.put('user', user);
     self._currentUser = user;
     d.resolve(user);
     return d.promise;
@@ -27,5 +27,10 @@ angular.module('app.services')
     }
     return d.promise;
   };
+
+  this.user = function() {
+
+  }
+
 
 });
