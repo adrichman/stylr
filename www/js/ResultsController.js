@@ -7,20 +7,14 @@ angular.module('app.controllers')
   $scope.post = function() {
     UserService.currentUser().then(function(user) {
         console.log(user);
-        $http.post('https://graph.facebook.com/' + user.id + '/feed', { params: {access_token: user.accessToken, app_id:"740962102604033"} } ) //{app_id:"740962102604033", message:"SOMETHING AWESOME", access_token: user.accessToken} )
+        $http.post('https://graph.facebook.com/' + user.id + '/feed?message=SUP&access_token=' + user.accessToken )
         .success(function(data, status, headers, config) {
           console.log(arguments);
         })
         .error(function(data, status, headers, config) {
           console.log(arguments);
         });
-        $http.get('https://graph.facebook.com/' + user.id + '/permissions', { params: {access_token: user.accessToken} } )
-        .success(function(data, status, headers, config) {
-          console.log(arguments);
-        })
-        .error(function(data, status, headers, config) {
-          console.log(arguments);
-        });
+        
     });
   };
 }]);
