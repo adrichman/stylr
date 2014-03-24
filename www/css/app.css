@@ -100,8 +100,13 @@
   width: 100%;
   height: 100%;
   margin-top: 260px;
-  background: url(../img/karl_fade.png) no-repeat;
+  background: url(../img/sprite-karl.png) no-repeat;
+  background-position: 0 -358px;
 }
+.circular-tap {
+  background-position: 0 0;
+}
+
 .vert-top-third {
   margin-top: 70px;
 }
