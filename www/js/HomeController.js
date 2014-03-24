@@ -23,7 +23,7 @@ angular.module('app.controllers', ['ionic.contrib.ui.cards', 'app.services'])
                 console.log($element);
                 $element.addClass('circular-tap');
             }, $element);
-            $ionicGesture.on('$destroy', function(e) {
+            $ionicGesture.on('release', function(e) {
                 console.log('I got unTapped!')
                 console.log($element);
                 $element.removeClass('circular-tap');
