@@ -58,6 +58,13 @@
 .vert-top-third {
   margin-top: 70px;
 }
+
+.sf-icon {
+  display: inline-block;
+  background-size: contain;
+  background-image: url(../img/stitch-fix-icon.png);
+}
+
 .button-fb {
   background-color: #3B5998;
   border: 1px solid #25375D;
@@ -66,12 +73,22 @@
   background-color: #25375D;
   border: 1px solid #3B5998;
 }
-
-.fb {
-  margin-left: auto;
-  margin-right: auto;
+.button-get-your-fix {
+  padding-top: 3px;
+}
+.button-results {
+  width: 220px;
+  height: 60px;
+  margin: 16px auto;
   border-radius: 4px;
 >>>>>>> karl lights up
+}
+.button-play-again {
+  background-color: rgb(240, 159, 65);
+  border: 0px solid black;
+}
+.result-buttons {
+  margin-top: 40px;
 }
 
 .pane {
