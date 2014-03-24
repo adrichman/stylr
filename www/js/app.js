@@ -64,6 +64,7 @@ angular.module('app', ['ionic', 'firebase', 'ngCookies', 'app.services', 'app.co
       controller: "ResultsController"
     });
 
+
   $urlRouterProvider.otherwise('/splash');
 
 });
