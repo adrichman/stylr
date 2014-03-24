@@ -1,6 +1,6 @@
 angular.module('app.controllers')
 
-.controller('ResultsController', ['$scope', '$state', '$stateParams', '$http', '$location', 'UserService', function($scope, $state, $stateParams, $http, $location, UserService) {
+.controller('ResultsController', ['$scope', '$state', '$stateParams', '$http', '$location', 'UserService','$ionicLoading', 'ENV', function($scope, $state, $stateParams, $http, $location, UserService, $ionicLoading, ENV) {
   $scope.args = $stateParams;
   // $scope.list = [{'id':1,'title':'hey'},{'id':2,'title':'sup'},{'id':3,'title':'nothin'}];
 
@@ -21,7 +21,10 @@ angular.module('app.controllers')
   };
 
   $scope.stitchFix = function() {
-    $scope.$apply(function() { $location.path("http://www.stitchfix.com"); });
+    // $scope.loading = $ionicLoading.show(ENV.loadingOptions);
+    $scope.$apply(function() { 
+      $location.path("http://www.stitchfix.com"); 
+    });
   };
 
   $scope.playAgain = function() {
