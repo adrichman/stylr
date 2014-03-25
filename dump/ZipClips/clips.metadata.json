@@ -1,0 +1,1 @@
+{ "options" : { "create" : "clips" }, "indexes" : [ { "v" : 1, "key" : { "_id" : 1 }, "ns" : "ZipClips.clips", "name" : "_id_" } ] }

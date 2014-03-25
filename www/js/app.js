@@ -5,22 +5,28 @@
 // the 2nd parameter is an array of 'requires'
 // 'app.services' is found in services.js
 // 'app.controllers' is found in controllers.js
-angular.module('app', ['ionic', 'app.services', 'app.controllers'])
-
+angular.module('app', ['ionic', 'firebase', 'ngCookies', 'app.services', 'app.controllers'])
 
 .config(function($stateProvider, $urlRouterProvider) {
 
   $stateProvider
+
     .state('splash', {
       url: "/splash",
       templateUrl: "templates/splash.html",
       controller: 'UserController'
     })
 
+    .state('login', {
+      url: "/login",
+      templateUrl: "templates/login.html",
+      controller: "LoginController"
+    })
+
     .state('home', {
       url: "/home",
       templateUrl: "templates/home.html",
-      controller: "HomeController"  
+      controller: "HomeController"
     })
 
     .state('home.start', {
@@ -33,34 +39,31 @@ angular.module('app', ['ionic', 'app.services', 'app.controllers'])
     .state('home.slide', {
       parent: "home",
       url: "/slide",
-      templateUrl: "templates/slide.html",
+      templateUrl: "templates/slide.html"
     })
 
     .state('home.slide.cards', {
       parent: "home.slide",
-      url:"/cards",
+      url:"/cards?level",
       controller: "CardsController",
       templateUrl: "templates/slide.cards.html",
       resolve: {
-        cardTypes: function(PhotoService){
-                    return PhotoService().then(function(photos){
-                      return photos;
-                    });   
-                  }       
+        cardTypes:      function(PhotoService, $stateParams){
+                          return PhotoService.requestPhotos($stateParams.level).then(function(photos){
+                            return photos;
+                          });   
+                        }
       }
     })
 
     .state('home.results', {
-      onEnter: function($stateParams){
-        console.log($stateParams);
-      },
       parent: "home",
       url: "/results?preference",
       templateUrl: "templates/results.html",
       controller: "ResultsController"
     });
 
+
   $urlRouterProvider.otherwise('/splash');
 
 });
-
