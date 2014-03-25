@@ -64,6 +64,9 @@
   .loading h1, .loading h2, .loading h3, .loading h4, .loading h5, .loading h6 {
     color: #fff; 
   }
+.loading-backdrop.active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
 
 .splash_img {
   height: 100%;

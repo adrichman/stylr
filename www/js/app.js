@@ -33,7 +33,7 @@ angular.module('app', ['ionic', 'firebase', 'ngCookies', 'app.services', 'app.co
       parent: "home",
       url: "/start",
       templateUrl: "templates/start.html",
-      controller: "HomeController"
+      controller: "HomeController"  
     })
 
     .state('home.slide', {

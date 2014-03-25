@@ -43,8 +43,6 @@ angular.module('app.controllers')
       });
       
     }
-
-
   };
   $scope.cardSwiped = function(index) {
     index = index || 0;

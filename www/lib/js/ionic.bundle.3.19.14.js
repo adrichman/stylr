@@ -1795,7 +1795,6 @@ window.ionic = {
           }
           
           this.triggered = false;
-
           break;
       }
     }
