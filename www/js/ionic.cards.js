@@ -178,6 +178,7 @@
      * Fly the card out or animate back into resting position.
      */
     transitionOut: function() {
+      window.direction = 0;
       var self = this;
 
         // Fly out
