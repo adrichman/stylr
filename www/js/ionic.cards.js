@@ -185,15 +185,24 @@
         } else {
           rotateTo = (this.rotationAngle - (this.rotationDirection * 0.6) );
         };
-        var duration = this.rotationAngle ? 0.2 : 0.2;
+        var duration = 0.6;
         this.el.style[TRANSITION] = '-webkit-transform ' + duration + 's ease-in-out';
-        this.el.style[ionic.CSS.TRANSFORM] = 'translate3d(' + (this.x * 100) + 'px,'+ 0 +'px,0) rotate(' + rotateTo + 'rad)';
+        this.el.style[ionic.CSS.TRANSFORM] = 'translate3d(' + (this.x * 50) + 'px,'+ 0 +'px,0) rotate(' + rotateTo + 'rad)';
         this.onSwipe && this.onSwipe();
 
         // Trigger destroy after card has swiped out
         setTimeout(function() {
           self.onDestroy && self.onDestroy();
-        }, duration * 1000);
+        }, duration * 2);
+    },
+
+    /**
+     * Snap the card back to the center if drag is aborted
+     */
+    transitionBack: function(e) {
+      var self = this;
+      self.el.style[TRANSITION] = '-webkit-transform 0.1s linear';
+      self.el.style[ionic.CSS.TRANSFORM] = 'translate3d(0px,0px,0) rotate(0rad)';
     },
 
     /**
@@ -218,6 +227,10 @@
       ionic.onGesture('dragend', function(e) {
         window._rAF(function() { self._doDragEnd(e) });
       }, this.el);
+
+      ionic.onGesture('dragabort', function(e) {
+        window._rAF(function() { self._doDragAbort(e) });
+      }, this.el);
     },
 
     // Rotate anchored to the left of the screen
@@ -233,24 +246,32 @@
 
     _doDragStart: function(e) {
       var height = this.el.offsetHeight;
-      var point = window.innerHeight / 2 + this.rotationDirection * (height / 2)
+      var point = window.innerHeight / 2 + (this.rotationDirection * (height / 2))
       var distance = Math.abs(point - e.gesture.touches[0].pageY);// - window.innerWidth/2);
-
       this.touchDistance = distance * 8;
 
     },
 
     _doDrag: function(e) {
+
       var o = e.gesture.deltaX / 5;
 
       this.rotationAngle = Math.atan(o/this.touchDistance) * this.rotationDirection;
 
-      this.x = this.startX + (e.gesture.deltaX * 0.4);
+      this.x = this.startX + (e.gesture.deltaX);
+      this.y = this.startY + (e.gesture.deltaY);
 
-      this.el.style[ionic.CSS.TRANSFORM] = 'translate3d(' + this.x + 'px, ' + this.y  + 'px, 0) rotate(' + (this.rotationAngle) + 'rad)';
+      this.el.style[ionic.CSS.TRANSFORM] = 'translate3d(' + this.x * .8 + 'px, ' + this.y + 'px, 0) rotate(' + (this.rotationAngle) + 'rad)';
     },
     _doDragEnd: function(e) {
       this.transitionOut(e);
+    },
+
+    _doDragAbort: function(e) {
+      this.startX = this.startY = this.x = this.y = 0;
+      this.transitionBack(e);
+
+
     }
   });
 

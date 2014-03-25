@@ -1,5 +1,36 @@
 /* Your app's CSS, go crazy, make it your own */
 
+@font-face {
+  font-family: 'bebas_neueregular';
+  src: url('../lib/fonts/BebasNeue-webfont.eot');
+  src: url('../lib/fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../lib/fonts/BebasNeue-webfont.woff') format('woff'),
+       url('../lib/fonts/BebasNeue-webfont.ttf') format('truetype'),
+       url('../lib/fonts/BebasNeue-webfont.svg#bebas_neueregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.result {
+  width: 90%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'bebas_neueregular';
+}
+.result p {
+  width: 90%;
+  font-size: 20px;
+  font-family: 'bebas_neueregular';
+}
+.result h1 {
+  width: 90%;
+  line-height: 75px;
+  font-size: 100px;
+  font-family: 'bebas_neueregular';
+}
+
+
 .ionic-logo {
   display: block;
   margin: 15px auto;
@@ -16,8 +47,6 @@
   font-family: 'Dancing Script', cursive;
   font-size: 190%;
 }
-<<<<<<< HEAD
-=======
 .preload {
   display: none;  
 }
@@ -44,7 +73,6 @@
   background: url('../img/stylr-iphone5s.png') no-repeat;
   background-size: 100% auto;
 }
->>>>>>> lighten loading backdrop
 
 .splash {
   padding-top: 40%;
@@ -54,22 +82,20 @@
   font-family: 'Dancing Script', cursive;
 }
 
+
 #play {
   border: none;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 150%;
 }
 
-.circular {
+/*.circular {
   margin-top: 70%;
   width: 300px;
   height: 300px;
   border-radius: 150px;
   -webkit-border-radius: 150px;
   -moz-border-radius: 150px;
-<<<<<<< HEAD
-  background: url(../img/karl.png) no-repeat;
-=======
   background: url(../img/karl_fade.png) no-repeat;
 }*/
 
@@ -110,7 +136,6 @@
   height: 60px;
   margin: 16px auto;
   border-radius: 4px;
->>>>>>> karl lights up
 }
 .button-play-again {
   background-color: rgb(240, 159, 65);
@@ -212,3 +237,182 @@
 .swipe-card.pop-in {
   -webkit-animation: bounceIn 0.4s ease-out;
 }
+
+.popup {
+  top: 30%;
+  left: 50%;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 1);
+  text-align: center;
+  padding: 10px;
+  border-radius: 4px;
+  z-index: 9999;
+
+  -moz-animation-name: dropDown;
+  -moz-animation-iteration-count: once;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-duration: 0.3s;
+
+  -webkit-animation-name: dropDown;
+  -webkit-animation-iteration-count: once;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 0.3s;
+}
+.popup-hidden {
+  top: 0%;
+  left: 50%;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 1);
+  text-align: center;
+  padding: 10px;
+  border-radius: 4px;
+  z-index: 9999;
+
+  -moz-animation-name: raiseUp;
+  -moz-animation-iteration-count: once;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-duration: 0.3s;
+
+  -webkit-animation-name: raiseUp;
+  -webkit-animation-iteration-count: once;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 0.3s;
+}
+
+.popup-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+
+  -moz-animation-name: backDropIn;
+  -moz-animation-iteration-count: once;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-duration: 0.2s;
+
+  -webkit-animation-name: backDropIn;
+  -webkit-animation-iteration-count: once;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 0.2s;
+
+}
+
+.popup-backdrop-hidden {
+  background-color: rgba(0, 0, 0, 0.0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+
+  -moz-animation-name: backDropOut;
+  -moz-animation-iteration-count: once;
+  -moz-animation-timing-function: ease-out;
+  -moz-animation-duration: 0.5s;
+
+  -webkit-animation-name: backDropOut;
+  -webkit-animation-iteration-count: once;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-duration: 0.5s;
+}
+
+.stylr-fade {
+
+  -moz-animation-name: fadeIn;
+  -moz-animation-iteration-count: once;
+  -moz-animation-timing-function: linear;
+  -moz-animation-duration: 0.1s;
+
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-iteration-count: once;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-duration: 0.1s;
+}
+.stylr-fade3 {
+
+  -moz-animation-name: fadeIn;
+  -moz-animation-iteration-count: once;
+  -moz-animation-timing-function: linear;
+  -moz-animation-duration: 0.3s;
+
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-iteration-count: once;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-duration: 0.3s;
+}
+
+  @-webkit-keyframes dropDown {
+    0% {
+      top: 0;
+    }
+
+    100% {
+      top: 30%;
+    }
+  }
+
+  @-webkit-keyframes raiseUp {
+
+    0% {
+      top: 30%;
+    }
+
+    100% {
+      top: 0;
+    }
+  }
+
+  @-moz-keyframes backDropIn {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 0.7;
+      }
+  }
+  @-webkit-keyframes backDropIn {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 0.7;
+      }
+  }
+  @-moz-keyframes backDropOut {
+      0% {
+          opacity: 0.7;
+      }
+      100% {
+          opacity: 0;
+      }
+  }
+  @-webkit-keyframes backDropOut {
+      0% {
+          opacity: 0.7;
+      }
+      100% {
+          opacity: 0;
+      }
+  }
+
+  @-moz-keyframes fadeIn {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1.0;
+      }
+  }
+  @-webkit-keyframes fadeIn {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1.0;
+      }
+  }
+  

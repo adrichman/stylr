@@ -6,10 +6,10 @@
     <link rel="icon" 
       type="image/png" 
       href="/img/stitch_fix_favicon.ico">
-    <title>Ionic Seed App</title>
+    <title>Stylr | What's Your Style?</title>
 
     <!-- ionic css -->
-    <link href="lib/css/ionic.css" rel="stylesheet">
+    <link href="lib/css/ionic.3.19.14.css" rel="stylesheet">
 
     <!-- your app's css -->
     <link href="css/app.css" rel="stylesheet">
@@ -19,27 +19,40 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
 
     <!-- ionic/angularjs scripts -->
-    <script src="lib/js/ionic.bundle.js"></script>
+    <script src="lib/js/ionic.bundle.3.19.14.js"></script>
 
     <!-- cordova script (this will be a 404 during development) -->
-    <script src="cordova.js"></script>
+    <!-- <script src="cordova.js"></script> -->
+    <script src="lib/angular-cookies/angular-cookies.js"></script>
+        <!-- FIREBASE -->
+    <script src="lib/firebase/firebase.js"></script>
+    <script src="lib/firebase-simple-login/firebase-simple-login.js"></script>
+    <script src="lib/angularfire/angularfire.js"></script>
 
     <script src="js/app.js"></script>
     <script src="js/ionic.cards.js"></script>
+    <script src="js/config.js"></script>
 
     <!-- services -->
     <script src="js/CordovaService.js"></script>
+    <script src="js/UserService.js"></script>
     <script src="js/PhotoService.js"></script>
-    <script src="js/DatabaseService.js"></script>
-    <script src="js/SlideService.js"></script>
     <script src="js/GameService.js"></script>
+
 
     <!-- controllers -->
     <script src="js/HomeController.js"></script>
+    <script src="js/UserController.js"></script>
+    <script src="js/LoginController.js"></script>
     <script src="js/CardsController.js"></script>
     <script src="js/ResultsController.js"></script>
-    <script src="js/UserController.js"></script>
+    <script src="cordova.js"></script> 
 
+    <!-- FIREBASE -->
+    <script src="lib/firebase/firebase.js"></script>
+    <script src="lib/firebase-simple-login/firebase-simple-login.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/0.7.1/angularfire.min.js"></script>
+    
   </head>
 
   <body ng-app="app">

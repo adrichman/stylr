@@ -1,0 +1,31 @@
+{
+    "version": "0.3.3",
+    "name": "org.apache.cordova.inappbrowser",
+    "cordova_name": "InAppBrowser",
+    "description": "Cordova InAppBrowser Plugin",
+    "license": "Apache 2.0",
+    "repo": "https://git-wip-us.apache.org/repos/asf/cordova-plugin-inappbrowser.git",
+    "issue": "https://issues.apache.org/jira/browse/CB/component/12320641",
+    "keywords": [
+        "cordova",
+        "in",
+        "app",
+        "browser",
+        "inappbrowser"
+    ],
+    "platforms": [
+        "android",
+        "amazon-fireos",
+        "ubuntu",
+        "ios",
+        "wp7",
+        "wp8",
+        "windows8"
+    ],
+    "engines": [
+        {
+            "name": "cordova",
+            "version": ">=3.1.0"
+        }
+    ]
+}
