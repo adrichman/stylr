@@ -149,6 +149,7 @@
      * Transition in the card with the given animation class
      */
     transitionIn: function(animationClass) {
+      window.direction = 0;
       var self = this;
 
       this.el.classList.add(animationClass + '-start');
@@ -203,6 +204,7 @@
       var self = this;
       self.el.style[TRANSITION] = '-webkit-transform 0.1s linear';
       self.el.style[ionic.CSS.TRANSFORM] = 'translate3d(0px,0px,0) rotate(0rad)';
+      window.direction = 0;
     },
 
     /**
@@ -258,7 +260,8 @@
 
       this.rotationAngle = Math.atan(o/this.touchDistance) * this.rotationDirection;
       window.direction = this.rotationAngle;
-      console.log(this.rotationAngle);      this.x = this.startX + (e.gesture.deltaX);
+
+      this.x = this.startX + (e.gesture.deltaX);
       this.y = this.startY + (e.gesture.deltaY);
 
       this.el.style[ionic.CSS.TRANSFORM] = 'translate3d(' + this.x * .8 + 'px, ' + this.y + 'px, 0) rotate(' + (this.rotationAngle) + 'rad)';
@@ -270,8 +273,7 @@
     _doDragAbort: function(e) {
       this.startX = this.startY = this.x = this.y = 0;
       this.transitionBack(e);
-
-
+      window.direction = 0;
     }
   });
 

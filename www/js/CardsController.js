@@ -4,7 +4,7 @@ angular.module('app.controllers')
   $scope.cards = [];
   $scope.preloadCache;
   $scope.hot;
-  $scope.not = false;
+  $scope.center = true;
 
   PhotoService.requestPhotos(+($state.params.level) + 1)
   .then(function(res){
@@ -16,13 +16,18 @@ angular.module('app.controllers')
   });
 
   setInterval(function() {
-    console.log(window.direction);
-    if(window.direction < 0) {
-      $scope.hot = false;
-    } else {
-      $scope.hot = true;
-    }
-  }, 10);
+    $scope.$apply(function() {
+      if(window.direction < 0) {
+        $scope.hot = false;
+        $scope.center = false;
+      } else if (window.direction > 0 ) {
+        $scope.hot = true;
+        $scope.center = false;
+      } else {
+        $scope.center = true;
+      }
+    });
+  }, 100);
   
   $scope.showAlert = function() {
     if ($rootScope.level < Object.keys(ENV.categories).length){
@@ -80,4 +85,4 @@ angular.module('app.controllers')
     var card = $ionicSwipeCardDelegate.getSwipebleCard($scope);
     card.swipe();
   };
-});
+}); 
