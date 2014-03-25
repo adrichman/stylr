@@ -50,7 +50,6 @@ angular.module('app', ['ionic', 'firebase', 'ngCookies', 'app.services', 'app.co
       resolve: {
         cardTypes:      function(PhotoService, $stateParams){
                           return PhotoService.requestPhotos($stateParams.level).then(function(photos){
-                            console.log(photos);
                             return photos;
                           });   
                         }

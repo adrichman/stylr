@@ -21,10 +21,13 @@ angular.module('app.controllers')
   };
 
   $scope.stitchFix = function() {
+<<<<<<< HEAD
     // $scope.loading = $ionicLoading.show(ENV.loadingOptions);
     $scope.$apply(function() { 
       $location.path("http://www.stitchfix.com"); 
     });
+=======
+>>>>>>> Working on swipe indication
   };
 
   $scope.playAgain = function() {

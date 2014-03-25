@@ -6,5 +6,11 @@
       </swipe-card>
     </div>
   </swipe-cards>
+  <div class="bar bar-footer bar-balanced" ng-if="hot">
+    <div class="title">{{ hot }}</div>
+  </div>
+  <div class="bar bar-footer bar-assertive" ng-if="hot">
+    <div class="title">Gross!</div>
+  </div>
 </pane>
 <img ng-repeat="image in preloadCache track by $index" src="{{ image }}" class="preload"/>

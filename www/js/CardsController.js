@@ -3,6 +3,8 @@ angular.module('app.controllers')
 .controller('CardsController', ['ENV', '$rootScope','$scope','cardTypes','GameService', '$ionicSwipeCardDelegate', '$timeout', '$state', '$ionicPopup', '$rootScope','PhotoService', function(ENV, $rootScope, $scope, cardTypes, GameService, $ionicSwipeCardDelegate, $timeout, $state, $ionicPopup, $rootScope, PhotoService) {
   $scope.cards = [];
   $scope.preloadCache;
+  $scope.hot;
+  $scope.not = false;
 
   PhotoService.requestPhotos(+($state.params.level) + 1)
   .then(function(res){
@@ -13,6 +15,15 @@ angular.module('app.controllers')
     })
   });
 
+  setInterval(function() {
+    console.log(window.direction);
+    if(window.direction < 0) {
+      $scope.hot = false;
+    } else {
+      $scope.hot = true;
+    }
+  }, 10);
+  
   $scope.showAlert = function() {
     if ($rootScope.level < Object.keys(ENV.categories).length){
       return $ionicPopup.alert({
@@ -36,7 +47,6 @@ angular.module('app.controllers')
 
   };
   $scope.cardSwiped = function(index) {
-    console.log(this);
     index = index || 0;
     $scope.addCard(index);
     $scope.registerPreference(index, this);
@@ -44,9 +54,6 @@ angular.module('app.controllers')
 
   $scope.registerPreference = function(index, swipedCard){
     $scope.preference = GameService.calculateScore(swipedCard, $scope.preference) || {};
-    console.log("cardTypes.length", cardTypes.length);
-    console.log("index", index);
-    console.log("swipedCard", swipedCard);
     if (cardTypes.length < 2) {
       $scope.showAlert().then(function(){
         $timeout(function(){

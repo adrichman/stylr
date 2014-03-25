@@ -242,7 +242,7 @@
     _transformOriginRight: function() {
       this.el.style[TRANSFORM_ORIGIN] = 'left center';
       this.rotationDirection = 1;
-    },
+     },
 
     _doDragStart: function(e) {
       var height = this.el.offsetHeight;
@@ -257,8 +257,8 @@
       var o = e.gesture.deltaX / 5;
 
       this.rotationAngle = Math.atan(o/this.touchDistance) * this.rotationDirection;
-
-      this.x = this.startX + (e.gesture.deltaX);
+      window.direction = this.rotationAngle;
+      console.log(this.rotationAngle);      this.x = this.startX + (e.gesture.deltaX);
       this.y = this.startY + (e.gesture.deltaY);
 
       this.el.style[ionic.CSS.TRANSFORM] = 'translate3d(' + this.x * .8 + 'px, ' + this.y + 'px, 0) rotate(' + (this.rotationAngle) + 'rad)';
