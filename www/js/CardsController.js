@@ -1,10 +1,32 @@
 angular.module('app.controllers')
 
-.controller('CardsController', ['ENV', '$rootScope','$scope','cardTypes','GameService', '$ionicSwipeCardDelegate', '$timeout', '$state', '$ionicPopup', '$rootScope','PhotoService', function(ENV, $rootScope, $scope, cardTypes, GameService, $ionicSwipeCardDelegate, $timeout, $state, $ionicPopup, $rootScope, PhotoService) {
+.controller('CardsController', ['ENV', '$ionicGesture','$rootScope','$scope','cardTypes','GameService', '$ionicSwipeCardDelegate', '$timeout', '$state', '$ionicPopup', '$rootScope','PhotoService', function(ENV, $ionicGesture, $rootScope, $scope, cardTypes, GameService, $ionicSwipeCardDelegate, $timeout, $state, $ionicPopup, $rootScope, PhotoService) {
   $scope.cards = [];
   $scope.preloadCache;
   $scope.hot;
   $scope.center = true;
+  // console.log($ionicGesture);
+  // $ionicGesture.on('drag', function(){ console.log(arguments); });
+  $scope.$on('!hot', function(){
+    $timeout(function(){
+      $scope.hot = false;
+    })
+  })
+  $scope.$on('!center', function(){
+    $timeout(function(){
+      $scope.center = false;
+    })
+  })
+  $scope.$on('hot', function(){
+    $timeout(function(){
+      $scope.hot = true;
+    })
+  })
+  $scope.$on('center', function(){
+    $timeout(function(){
+      $scope.center = true;
+    },400)
+  })
 
   PhotoService.requestPhotos(+($state.params.level) + 1)
   .then(function(res){
@@ -14,20 +36,6 @@ angular.module('app.controllers')
       $scope.preloadCache = urls;
     })
   });
-
-  setInterval(function() {
-    $scope.$apply(function() {
-      if(window.direction < 0) {
-        $scope.hot = false;
-        $scope.center = false;
-      } else if (window.direction > 0 ) {
-        $scope.hot = true;
-        $scope.center = false;
-      } else {
-        $scope.center = true;
-      }
-    });
-  }, 100);
   
   $scope.showAlert = function() {
     if ($rootScope.level < Object.keys(ENV.categories).length){
