@@ -282,7 +282,7 @@
 
   angular.module('ionic.contrib.ui.cards', ['ionic'])
 
-  .directive('swipeCard', ['$timeout', function($timeout) {
+  .directive('swipeCard', ['$ionicGesture','$timeout', function($ionicGesture, $timeout) {
     return {
       restrict: 'E',
       template: '<div class="swipe-card" ng-transclude></div>',
@@ -329,6 +329,14 @@
           if ($scope.$parent.card['Image_URL']){
             swipeCards.pushCard(swipeableCard);
           }
+          $scope.$on('$destroy', function() {
+          $ionicGesture.off(dragLeftGesture, 'dragleft', dragFn);
+          $ionicGesture.off(dragRightGesture, 'dragright', dragFn);
+          $ionicGesture.off(dragUpGesture, 'dragup', dragFn);
+          $ionicGesture.off(dragDownGesture, 'dragdown', dragFn);
+          $ionicGesture.off(releaseGesture, 'release', dragReleaseFn);
+          ionic.off('tap', contentTap, $element[0]);
+        });
         }
       }
     }

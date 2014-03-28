@@ -1,12 +1,11 @@
 angular.module('app.controllers')
 
-.controller('CardsController', ['ENV', '$ionicGesture','$rootScope','$scope','cardTypes','GameService', '$ionicSwipeCardDelegate', '$timeout', '$state', '$ionicPopup', '$rootScope','PhotoService', function(ENV, $ionicGesture, $rootScope, $scope, cardTypes, GameService, $ionicSwipeCardDelegate, $timeout, $state, $ionicPopup, $rootScope, PhotoService) {
+.controller('CardsController', ['ENV','$rootScope','$scope','cardTypes','GameService', '$ionicSwipeCardDelegate', '$timeout', '$state', '$ionicPopup', '$rootScope','PhotoService', function(ENV, $rootScope, $scope, cardTypes, GameService, $ionicSwipeCardDelegate, $timeout, $state, $ionicPopup, $rootScope, PhotoService) {
   $scope.cards = [];
   $scope.preloadCache;
-  $scope.hot;
+  $scope.hot = undefined;
   $scope.center = true;
-  // console.log($ionicGesture);
-  // $ionicGesture.on('drag', function(){ console.log(arguments); });
+
   $scope.$on('!hot', function(){
     $timeout(function(){
       $scope.hot = false;
@@ -25,8 +24,9 @@ angular.module('app.controllers')
   $scope.$on('center', function(){
     $timeout(function(){
       $scope.center = true;
-    },400)
+    }, 400)
   })
+  
 
   PhotoService.requestPhotos(+($state.params.level) + 1)
   .then(function(res){

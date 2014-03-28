@@ -56,6 +56,13 @@ angular.module('app', ['ionic', 'firebase', 'ngCookies', 'app.services', 'app.co
       }
     })
 
+    .state('home.slide.cards.hotOrNot', {
+      parent: "home.slide.cards",
+      url: "/hot-or-not",
+      templateUrl: "templates/slide.cards.hot-or-not.html",
+      controller: "HotOrNotController"
+    })
+
     .state('home.results', {
       parent: "home",
       url: "/results?preference",
