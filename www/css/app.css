@@ -105,7 +105,7 @@
   font-size: 100px;
   font-family: 'bebas_neueregular';
 }
-.hot h1 {
+.hot-color h1 {
   color: white;
   text-shadow:  rgba(0, 0, 0, 0.46) 2px 2px, 
                 #0A7E00 -10px -10px 25px, 
@@ -115,7 +115,7 @@
                 #0A7E00 14px -10px 25px;
 }
 
-.not h1 {
+.not-color h1 {
   color: white;
   text-shadow:  rgba(0, 0, 0, 0.46) 2px 2px, 
                 #A30000 -10px -10px 25px, 
@@ -123,6 +123,15 @@
                 #A30000 10px 10px 25px, 
                 #A30000 -14px 10px 25px,  
                 #A30000 14px -10px 25px;
+}
+.hot-white h1 {
+  color: white;
+  text-shadow:  rgba(0, 0, 0, 0.46) 2px 2px;
+}
+
+.not-white h1 {
+  color: white;
+  text-shadow:  rgba(0, 0, 0, 0.46) 2px 2px;
 }
 #play {
   border: none;
@@ -229,6 +238,7 @@
   box-sizing: border-box;
   background-color: rgb(255,255,255);
   border-radius: 4px;
+  /*border: 4px dotted burlywood;*/
   overflow: hidden;
   -webkit-animation-fill-mode: forwards;
 }
@@ -384,29 +394,31 @@
   -webkit-animation-timing-function: linear;
   -webkit-animation-duration: 0.1s;
 }
-.stylr-quick-slide{
+
+/*.stylr-quick-slide {
   -moz-animation-name: slideUp;
   -moz-animation-iteration-count: once;
   -moz-animation-timing-function: linear;
-  -moz-animation-duration: 0.2s;
+  -moz-animation-duration: 0.1s;
   
   -webkit-animation-name: slideUp;
   -webkit-animation-iteration-count: once;
   -webkit-animation-timing-function: linear;
-  -webkit-animation-duration: 0.2s;
+  -webkit-animation-duration: 0.1s;
 }
-.stylr-quick-slide.ng-hide-add {
-  display:block!important;
+
+.stylr-quick-slide.ng-leave {
   -moz-animation-name: slideDown;
   -moz-animation-iteration-count: once;
   -moz-animation-timing-function: linear;
-  -moz-animation-duration: 0.05s;
+  -moz-animation-duration: 0.1s;
 
   -webkit-animation-name: slideDown;
   -webkit-animation-iteration-count: once;
   -webkit-animation-timing-function: linear;
-  -webkit-animation-duration: 0.05s;
-}
+  -webkit-animation-duration: 0.1s;
+}*/
+
 .stylr-fade3 {
 
   -moz-animation-name: fadeIn;

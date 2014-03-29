@@ -3,37 +3,47 @@ angular.module('app.controllers')
 .controller('CardsController', ['ENV','$rootScope','$scope','cardTypes','GameService', '$ionicSwipeCardDelegate', '$timeout', '$state', '$ionicPopup', '$rootScope','PhotoService', function(ENV, $rootScope, $scope, cardTypes, GameService, $ionicSwipeCardDelegate, $timeout, $state, $ionicPopup, $rootScope, PhotoService) {
   $scope.cards = [];
   $scope.preloadCache;
-  $scope.hot = undefined;
+  $scope.hot = false;
   $scope.center = true;
+  $scope.hotClass = ENV.style.hotClass;
+  $scope.notClass = ENV.style.notClass;
 
   $scope.$on('!hot', function(){
-    $timeout(function(){
+    window._rAF(function(){$timeout(function(){
       $scope.hot = false;
     })
-  })
+  })})
   $scope.$on('!center', function(){
-    $timeout(function(){
-      $scope.center = false;
+    window._rAF(function(){
+      $timeout(function(){
+        $scope.center = false;
+      })
     })
   })
   $scope.$on('hot', function(){
-    $timeout(function(){
-      $scope.hot = true;
+    window._rAF(function(){
+      $timeout(function(){
+        $scope.hot = true;
+      })
     })
   })
   $scope.$on('center', function(){
-    $timeout(function(){
-      $scope.center = true;
-    }, 400)
+    window._rAF(function(){
+      $timeout(function(){
+        $scope.center = true;
+      },400)
+    })
   })
   
 
   PhotoService.requestPhotos(+($state.params.level) + 1)
   .then(function(res){
-    
-    PhotoService.getPhotos(res)
-    .then(function(urls){
-      $scope.preloadCache = urls;
+
+      
+      PhotoService.getPhotos(res)
+      .then(function(urls){
+      
+    $scope.preloadCache = urls;
     })
   });
   
@@ -41,9 +51,9 @@ angular.module('app.controllers')
     if ($rootScope.level < Object.keys(ENV.categories).length){
       return $ionicPopup.alert({
         templateUrl: 'templates/popup.html',
-        title: 'Level ' + $rootScope.level + ' Complete!',
+        title: 'Looking Good!',
         scope: $scope,
-        okText: ENV.categories[+($rootScope.level) + 1].friendly,
+        okText: 'Next: ' + ENV.categories[+($rootScope.level) + 1].friendly,
         okType: 'button-stable'
       });
     } else {
@@ -60,23 +70,25 @@ angular.module('app.controllers')
   $scope.cardSwiped = function(index) {
     index = index || 0;
     $scope.addCard(index);
-    $scope.registerPreference(index, this);
   };
 
   $scope.registerPreference = function(index, swipedCard){
     $scope.preference = GameService.calculateScore(swipedCard, $scope.preference) || {};
     if (cardTypes.length < 2) {
-      $scope.showAlert().then(function(){
-        $timeout(function(){
-          GameService.nextLevel($scope.preference);
-        },400); 
-      });
+      $timeout(function(){
+        $scope.showAlert().then(function(){
+          window._rAF(function(){
+            GameService.nextLevel($scope.preference);
+          }); 
+        }, 500);
+      })
     }
   };
 
   $scope.cardDestroyed = function(index) {
     $scope.cards.splice(index, 1);
     cardTypes.shift();
+    $scope.registerPreference(index, this);
   };
 
   $scope.addCard = function(index) {

@@ -275,6 +275,7 @@
     _doDragAbort: function(e) {
       this.startX = this.startY = this.x = this.y = 0;
       this.transitionBack(e);
+      this.el.style[ionic.CSS.TRANSFORM] = 'translate3d(0px,0px, 0) rotate(0rad)';
       window.direction = 0;
     }
   });
@@ -297,6 +298,7 @@
         return function($scope, $element, $attr, swipeCards) {
           var el = $element[0];
           console.log(arguments);
+          var direction = 0;
 
           // Instantiate our card view
           var swipeableCard = new SwipeableCardView({
@@ -312,31 +314,28 @@
               });
             },
             onDrag: function(e){
-              if(e.gesture.deltaX < 0) {
+              if(e.gesture.deltaX < -15 && direction > -1) {
                 $scope.$emit('!hot');
                 $scope.$emit('!center');
-              } else if (e.gesture.deltaX > 0 ) {
+                direction = -1;
+              } else if (e.gesture.deltaX > 15 && direction < 1) {
                 $scope.$emit('hot');
                 $scope.$emit('!center');
+                direction = 1;
+              } else {
+                 direction = 0;
               }
             },
             onDragEnd: function(e){
               console.log('drag end!');
               $scope.$emit('center');
+              direction = 0;
             }
           });
           $scope.$parent.swipeCard = swipeableCard;
           if ($scope.$parent.card['Image_URL']){
             swipeCards.pushCard(swipeableCard);
           }
-          $scope.$on('$destroy', function() {
-          $ionicGesture.off(dragLeftGesture, 'dragleft', dragFn);
-          $ionicGesture.off(dragRightGesture, 'dragright', dragFn);
-          $ionicGesture.off(dragUpGesture, 'dragup', dragFn);
-          $ionicGesture.off(dragDownGesture, 'dragdown', dragFn);
-          $ionicGesture.off(releaseGesture, 'release', dragReleaseFn);
-          ionic.off('tap', contentTap, $element[0]);
-        });
         }
       }
     }

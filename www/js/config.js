@@ -19,6 +19,11 @@ angular.module('app')
                         showBackdrop: true,
                         maxWidth: 200,
                         showDelay: 200
+                      },
+    'style'          :
+                      {
+                        notClass: 'not-color', // not-white or not-color
+                        hotClass: 'hot-color' //  hot-white or hot-color
                       }
   }
 );
