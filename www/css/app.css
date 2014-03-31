@@ -32,7 +32,7 @@
 .result h1 {
   width: 90%;
   line-height: 75px;
-  font-size: 100px;
+  font-size: 76px;
   font-family: 'bebas_neueregular';
   text-align: justify;
 }
@@ -84,7 +84,7 @@
 
 .splash_img {
   height: 100%;
-  background: url('../img/stylr-iphone5s.png') no-repeat;
+  background: url('../img/StarterApp-iphone5s.png') no-repeat;
   background-size: 100% auto;
 }
 
@@ -409,7 +409,7 @@
   -webkit-animation-duration: 0.5s;
 }
 
-.stylr-fade {
+.StarterApp-fade {
   -moz-animation-name: fadeIn;
   -moz-animation-iteration-count: once;
   -moz-animation-timing-function: linear;
@@ -421,7 +421,7 @@
   -webkit-animation-duration: 0.1s;
 }
 
-/*.stylr-quick-slide {
+/*.StarterApp-quick-slide {
   -moz-animation-name: slideUp;
   -moz-animation-iteration-count: once;
   -moz-animation-timing-function: linear;
@@ -433,7 +433,7 @@
   -webkit-animation-duration: 0.1s;
 }
 
-.stylr-quick-slide.ng-leave {
+.StarterApp-quick-slide.ng-leave {
   -moz-animation-name: slideDown;
   -moz-animation-iteration-count: once;
   -moz-animation-timing-function: linear;
@@ -445,7 +445,7 @@
   -webkit-animation-duration: 0.1s;
 }*/
 
-.stylr-fade3 {
+.StarterApp-fade3 {
 
   -moz-animation-name: fadeIn;
   -moz-animation-iteration-count: once;
