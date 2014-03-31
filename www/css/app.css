@@ -13,10 +13,16 @@
 
 .result {
   width: 90%;
+  height: 145px;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   font-family: 'bebas_neueregular';
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 10px 10px;
+  margin-bottom: -35px;
 }
 .result p {
   width: 90%;
@@ -28,6 +34,13 @@
   line-height: 75px;
   font-size: 100px;
   font-family: 'bebas_neueregular';
+  text-align: justify;
+}
+
+.result h2 {
+  line-height: 75px;
+  font-size: 60px;
+  text-align: center;
 }
 
 
@@ -56,9 +69,10 @@
   left: 50%;
   padding: 20px;
   border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   text-align: center;
+  text-shadow:  rgba(0, 0, 0, 0.36) 2px 2px 4px;
   text-overflow: ellipsis;
   font-size: 15px; }
   .loading h1, .loading h2, .loading h3, .loading h4, .loading h5, .loading h6 {
@@ -182,10 +196,13 @@
 
 .button-fb {
   background-color: #3B5998;
-  border: 1px solid #25375D;
+  border-radius: 4px;
+  border: 1px solid #3B5998; 
 }
-.button-fb:active {
+
+.button.button-fb.active, .button.button-fb:active {
   background-color: #25375D;
+  /*box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15);*/
   border: 1px solid #3B5998;
 }
 .button-get-your-fix {
@@ -229,6 +246,7 @@
   display: none;
   position: fixed;
   -webkit-transform: scale(1,1);
+  -webkit-transform: rotateZ(360deg);
   left: 50%;
   top: 50%;
   width: 300px;
@@ -238,7 +256,7 @@
   box-sizing: border-box;
   background-color: rgb(255,255,255);
   border-radius: 4px;
-  /*border: 4px dotted burlywood;*/
+  border: 2px solid rgb(231, 145, 159);
   overflow: hidden;
   -webkit-animation-fill-mode: forwards;
 }
@@ -310,7 +328,7 @@
   padding: 10px;
   border-radius: 4px;
   z-index: 9999;
-
+  
   -moz-animation-name: dropDown;
   -moz-animation-iteration-count: once;
   -moz-animation-timing-function: ease-in-out;
@@ -321,6 +339,14 @@
   -webkit-animation-timing-function: ease-in-out;
   -webkit-animation-duration: 0.3s;
 }
+
+.popup p {
+  margin: 0 auto;
+  width: 90%;
+  text-align: justify;
+  text-decoration: 
+}
+
 .popup-hidden {
   top: 0%;
   left: 50%;
