@@ -149,7 +149,6 @@
      * Transition in the card with the given animation class
      */
     transitionIn: function(animationClass) {
-      window.direction = 0;
       var self = this;
 
       this.el.classList.add(animationClass + '-start');
@@ -178,7 +177,6 @@
      * Fly the card out or animate back into resting position.
      */
     transitionOut: function() {
-      window.direction = 0;
       var self = this;
 
         // Fly out
@@ -205,7 +203,6 @@
       var self = this;
       self.el.style[TRANSITION] = '-webkit-transform 0.1s linear';
       self.el.style[ionic.CSS.TRANSFORM] = 'translate3d(0px,0px,0) rotate(0rad)';
-      window.direction = 0;
     },
 
     /**
@@ -228,11 +225,11 @@
       }, this.el);
 
       ionic.onGesture('dragend', function(e) {
-        window._rAF(function() { self._doDragEnd(e) });
+        window._rAF(function() { self._doDragEnd(e); self.onDragEnd(e) });
       }, this.el);
 
       ionic.onGesture('dragabort', function(e) {
-        window._rAF(function() { self._doDragAbort(e) });
+        window._rAF(function() { self._doDragAbort(e); self.onDragEnd(e) });
       }, this.el);
     },
 
@@ -260,12 +257,12 @@
       var o = e.gesture.deltaX / 5;
 
       this.rotationAngle = Math.atan(o/this.touchDistance) * this.rotationDirection;
-      window.direction = this.rotationAngle;
 
       this.x = this.startX + (e.gesture.deltaX);
       this.y = this.startY + (e.gesture.deltaY);
 
       this.el.style[ionic.CSS.TRANSFORM] = 'translate3d(' + this.x * .8 + 'px, ' + this.y + 'px, 0) rotate(' + (this.rotationAngle) + 'rad)';
+      this.onDrag && this.onDrag(e);
     },
     _doDragEnd: function(e) {
       this.transitionOut(e);
@@ -274,14 +271,14 @@
     _doDragAbort: function(e) {
       this.startX = this.startY = this.x = this.y = 0;
       this.transitionBack(e);
-      window.direction = 0;
+      this.el.style[ionic.CSS.TRANSFORM] = 'translate3d(0px,0px, 0) rotate(0rad)';
     }
   });
 
 
   angular.module('ionic.contrib.ui.cards', ['ionic'])
 
-  .directive('swipeCard', ['$timeout', function($timeout) {
+  .directive('swipeCard', ['$ionicGesture','$timeout', function($ionicGesture, $timeout) {
     return {
       restrict: 'E',
       template: '<div class="swipe-card" ng-transclude></div>',
@@ -295,6 +292,7 @@
       compile: function(element, attr) {
         return function($scope, $element, $attr, swipeCards) {
           var el = $element[0];
+          var direction = 0;
 
           // Instantiate our card view
           var swipeableCard = new SwipeableCardView({
@@ -309,6 +307,23 @@
                 $scope.onDestroy();
               });
             },
+            onDrag: function(e){
+              if(e.gesture.deltaX < -15 && direction > -1) {
+                $scope.$emit('!hot');
+                $scope.$emit('!center');
+                direction = -1;
+              } else if (e.gesture.deltaX > 15 && direction < 1) {
+                $scope.$emit('hot');
+                $scope.$emit('!center');
+                direction = 1;
+              } else {
+                 direction = 0;
+              }
+            },
+            onDragEnd: function(e){
+              $scope.$emit('center');
+              direction = 0;
+            }
           });
           $scope.$parent.swipeCard = swipeableCard;
           if ($scope.$parent.card['Image_URL']){
