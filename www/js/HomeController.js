@@ -25,44 +25,42 @@ angular.module('app.controllers', ['ionic.contrib.ui.cards', 'app.services'])
   };
 
   $scope.showAlert = function(step) {
-    $timeout(function(){
-      var content = function(step){
-        switch(step){
-        case 1: return  "<p>Our stylists have a secret formula for perfectly describing your personal style.</p>" + 
-                        "<p>Click below if you would like to check out some of their latest pieces.</p>";
-                        break;
-        case 2: return  "<p>Swipe right if the item looks like something " +
-                        "you would wear.</p><p>Swipe left if it's not really your thing.</p>";
-                        break;
-        case 3: return  "<p>At the end, we'll reveal your true style definition.</p><p>Even better, we'll show you how to get hooked " +
-                        "up with new clothes and accessories that are especially perfect for <strong>you</strong>.</p>";
-                        break;
-        }
+    var content = function(step){
+      switch(step){
+      case 1: return  "<p>Our stylists have a secret formula for perfectly describing your personal style.</p>" + 
+                      "<p>Click below if you would like to check out some of their latest pieces.</p>";
+                      break;
+      case 2: return  "<p>Swipe right if the item looks like something " +
+                      "you would wear.</p><p>Swipe left if it's not really your thing.</p>";
+                      break;
+      case 3: return  "<p>At the end, we'll reveal your true style definition.</p><p>Even better, we'll show you how to get hooked " +
+                      "up with new clothes and accessories that are especially perfect for <strong>you</strong>.</p>";
+                      break;
       }
-      var title = function(step){
-        switch(step){
-        case 1: return  "Hey Girl!";
-                        break;
-        case 2: return  "Hot or Not?";
-                        break;
-        case 3: return  "Just for you.";
-                        break;
-        }
+    }
+    var title = function(step){
+      switch(step){
+      case 1: return  "Hey Girl!";
+                      break;
+      case 2: return  "Hot or Not?";
+                      break;
+      case 3: return  "Just for you.";
+                      break;
       }
+    }
 
-      var okText = function(step){
-        return step === 3 ? 'Play!' : 'Next';
-      }
-      return $ionicPopup.alert({
-              content: content(step), 
-              display: 'popup-content' ,
-              templateUrl: 'templates/popup.html',
-              title: title(step),
-              scope: $scope,
-              okText: okText(step),
-              okType: 'button-stable'
-            });
-    }, 200);
+    var okText = function(step){
+      return step === 3 ? 'Play!' : 'Next';
+    }
+    return $ionicPopup.alert({
+      content: content(step), 
+      display: 'popup-content' ,
+      templateUrl: 'templates/popup.html',
+      title: title(step),
+      scope: $scope,
+      okText: okText(step),
+      okType: 'button-stable'
+    });
   };
   
   $scope.start = function(step){

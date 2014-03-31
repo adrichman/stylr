@@ -340,8 +340,12 @@
 .popup p {
   margin: 0 auto;
   width: 90%;
-  text-align: left;
-  text-decoration: 
+  font-family: sans-serif;
+  text-align: justify;
+}
+
+.popup-title {
+  font-family: monospace;
 }
 
 .popup-hidden {
