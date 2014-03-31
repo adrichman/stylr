@@ -28,6 +28,11 @@ angular.module('app', ['ionic', 'firebase', 'ngCookies', 'app.services', 'app.co
       templateUrl: "templates/home.html",
       controller: "HomeController"
     })
+    .state('home.loading', {
+      url: "/loading?toState",
+      templateUrl: "templates/loading.html",
+      controller: "LoadingController"
+    })
 
     .state('home.start', {
       parent: "home",
@@ -49,7 +54,9 @@ angular.module('app', ['ionic', 'firebase', 'ngCookies', 'app.services', 'app.co
       templateUrl: "templates/slide.cards.html",
       resolve: {
         cardTypes:      function(PhotoService, $stateParams){
-                          return PhotoService.requestPhotos($stateParams.level).then(function(photos){
+                          return PhotoService.requestPhotos($stateParams.level)
+
+                          .then(function(photos){
                             return photos;
                           });   
                         }

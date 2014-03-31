@@ -1,8 +1,8 @@
 angular.module('app.controllers')
 
-.controller('UserController', function($window, $rootScope, $scope, Cordova, PhotoService, $timeout, $state, $ionicLoading, ENV) {
+.controller('UserController', function($window, $rootScope, $scope, Cordova, PhotoService, $timeout, $state, $ionicLoading, ENV, stateChangeInterceptor) {
   console.log("USER controller");
-  $scope.preloadCache;
+  $scope.preloadCache = [];
   var startCount = 0;
   var verifyCacheAndProceed = function(){
     var nTotal = $scope.preloadCache.length
@@ -11,7 +11,6 @@ angular.module('app.controllers')
     .then(function(n){
       console.log(n)
       $timeout(function(){
-        $scope.loading.hide();
         $state.go('login');
       }, 3000);
     })
@@ -26,8 +25,6 @@ angular.module('app.controllers')
     });
   };
 
-  $scope.loading = $ionicLoading.show(ENV.loadingOptions);
-
   PhotoService.requestPhotos()
   .then(function(res){
     console.log('requested photos', res);
@@ -36,6 +33,7 @@ angular.module('app.controllers')
     .then(function(urls){
       console.log('got urls', urls);
       $scope.preloadCache = urls;
+      stateChangeInterceptor($state,$state.current.name, $state.params);
       verifyCacheAndProceed();
     })
   });
