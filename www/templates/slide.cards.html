@@ -6,11 +6,13 @@
       </swipe-card>
     </div>
   </swipe-cards>
-  <div ng-show="!hot && !center" class="bar bar-footer bar-assertive">
-    <div class="title">Gross!</div>
-  </div>
-  <div ng-show="hot && !center" class="bar bar-footer bar-balanced">
-    <div class="title">Hott!</div>
-  </div>
 </pane>
+<div class="cards-footer "></div>
+  <div animate ng-if="!hot && !center" class="hot-or-not {{ notClass }} stylr-quick-slide">
+    <h1>Gross.</h1>
+  </div>
+  <div animate ng-if="hot && !center" class="hot-or-not {{ hotClass }} stylr-quick-slide">
+    <h1>Hott!</h1>
+  </div>
 <img ng-repeat="image in preloadCache track by $index" src="{{ image }}" class="preload"/>
+<div ui-view></div>

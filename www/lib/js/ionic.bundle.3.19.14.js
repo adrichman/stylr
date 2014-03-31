@@ -33134,6 +33134,7 @@ angular.module('ionic.service.popup', ['ionic.service.templateLoad'])
 
   // Show a single popup
   var showSinglePopup = function(popup, opts) {
+    console.log(arguments);
     var _this = this;
 
     ionic.requestAnimationFrame(function() {
@@ -33253,8 +33254,8 @@ angular.module('ionic.service.popup', ['ionic.service.templateLoad'])
   }
 
   var buildPopupTemplate = function(opts, content) {
-    return '<ion-popup title="' + opts.title + '" buttons="buttons" on-button-tap="onButtonTap(button, event)" on-close="onClose(button, result, event)">'
-        + (content || '') +
+    return '<ion-popup title="' + opts.title + '" buttons="buttons" on-button-tap="onButtonTap(button, event)" on-close="onClose(button, result, event)" >'
+        + "<span display='" +  opts.display + "'>" + (content || '') + "</span>" +
       '</ion-popup>';
   };
 
@@ -33403,6 +33404,7 @@ angular.module('ionic.service.popup', ['ionic.service.templateLoad'])
       return this.showPopup({
         content: opts.content || '',
         title: opts.title || '',
+        display: opts.display || '',
         buttons: [
           {
             text: opts.okText || 'OK',
