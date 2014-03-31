@@ -2,7 +2,7 @@ angular.module('app.services')
 .service('stateChangeInterceptor', ['$rootScope','$ionicLoading','$q', 'ENV','$timeout','$state', function($rootScope, $ionicLoading, $q, ENV, $timeout, $state){
   return (function(e, toState, toParams, fromState, fromParams){
     if ((toState.name && !ENV.stateChangeWhiteList[toState.name.split('.').join('')] )
-        || (e.current.name && !ENV.stateChangeWhiteList[e.current.name.split('.').join('')]) ){
+        || (e.current && !ENV.stateChangeWhiteList[e.current.name.split('.').join('')]) ){
       var loading;
       var loadingConfig = function(){
         var loadingCopy = function(level){
