@@ -19,9 +19,11 @@ angular.module('app.controllers')
                     okText: 'Proceed',
                     okType: 'button-assertive'
                   }).then(function(){
-                    $timeout(function(){
-                      $state.go('home.start');
-                    }, 400)
+                    window._rAF(function(){
+                      $timeout(function(){
+                        $state.go('home.start');
+                      }, 400);
+                    });
                   });
       } else if (user) {
         // user authenticated with Firebase
