@@ -1,6 +1,6 @@
 angular.module('app.controllers')
 
-.controller('LoginController', ['$scope', '$state', 'Cordova', 'UserService', '$ionicPopup', function($scope, $state, Cordova, UserService, $ionicPopup) {
+.controller('LoginController', ['$scope', '$state', 'Cordova', 'UserService', '$ionicPopup','$timeout', function($scope, $state, Cordova, UserService, $ionicPopup, $timeout) {
 
   $scope.signup = function() {
     console.log('FBSIGNUP');
@@ -19,7 +19,11 @@ angular.module('app.controllers')
                     okText: 'Proceed',
                     okType: 'button-assertive'
                   }).then(function(){
-                    $state.go('home.start');
+                    window._rAF(function(){
+                      $timeout(function(){
+                        $state.go('home.start');
+                      }, 400);
+                    });
                   });
       } else if (user) {
         // user authenticated with Firebase
