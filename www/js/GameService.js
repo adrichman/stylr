@@ -23,12 +23,10 @@ angular.module('app.services')
   var calculateScore = function(swipedCard, userPreferences){
     userPreferences = userPreferences || new UserPreferences();
     if (swipedCard.swipeCard.x >= 0) {
-      console.log('right!');
       for (var i = 0; i < fields.length; i++){
         userPreferences[fields[i]] += swipedCard.card[fields[i]];
       }
     } else {
-      console.log('left!');
     }
     return userPreferences;
   };

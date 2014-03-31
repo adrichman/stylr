@@ -1,6 +1,6 @@
 angular.module('app.controllers')
 
-.controller('LoginController', ['$scope', '$state', 'Cordova', 'UserService', function($scope, $state, Cordova, UserService) {
+.controller('LoginController', ['$scope', '$state', 'Cordova', 'UserService', '$ionicPopup', function($scope, $state, Cordova, UserService, $ionicPopup) {
 
   $scope.signup = function() {
     console.log('FBSIGNUP');
@@ -9,17 +9,26 @@ angular.module('app.controllers')
       if (error) {
         // an error occurred while attempting login
         console.log(error);
-        alert(error);
-        $state.go('home.start');
+          return $ionicPopup.alert({
+                    content:  '<p>There was an error during authentication, '+
+                              'but we\'ll let it slide this time.</p>', 
+                    display: 'popup-content' ,
+                    templateUrl: 'templates/popup.html',
+                    title: "Uh-Oh.",
+                    scope: $scope,
+                    okText: 'Proceed',
+                    okType: 'button-assertive'
+                  }).then(function(){
+                    $state.go('home.start');
+                  });
       } else if (user) {
         // user authenticated with Firebase
         console.log('User ID: ' + user.id + ', Provider: ' + user.provider, '\n\n\n', user);
-        UserService.setCurrentUser(user);
-        $state.go('home.start');
-      } else {
-        // user is logged out
-        console.log("else");
+        UserService.setCurrentUser(user).then(function(){
+          $state.go('home.start');
+        });
       }
+      console.log('AUTH', auth);
     });
 
     Cordova.navigator().then(function() {

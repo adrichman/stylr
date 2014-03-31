@@ -1,12 +1,12 @@
 <ion-content class="has-header" scroll="false">
-  <div class="stylr-fade result"><p>your style is:</p><h1>{{ args.preference | uppercase }}</h1>
+  <div class="stylr-fade result"><p>your style is:</p><h1 ng-show="showResult" class="stylr-fade">{{ result | uppercase }}</h1><h2 ng-hide="showResult"><i class="icon ion-looping"></i></h2>
   </div>
   <div class="row result-buttons">
     <button ng-click="postFB()" class="button button-large button-fb ion-social-facebook icon-left button-results">Share Your Style</button>
   </div>
-   <form action="http://www.stitchfix.com">
+   <form>
       <div class="row">
-        <button type="submit" class="button button-large button-stable button-results button-get-your-fix"><span class="sf-icon"></span><span>Get Your Fix</span></button>
+        <button type="submit" ng-click="stitchFix()" class="button button-large button-stable button-results button-get-your-fix"><span class="sf-icon"></span><span>Get Your Fix</span></button>
       </div>
     </form>
   <div class="row">

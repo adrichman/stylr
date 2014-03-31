@@ -5343,12 +5343,13 @@ input[type="range"] {
   line-height: 42px;
   cursor: pointer; }
   .button:hover {
-    color: white;
+    /*color: white;*/
     text-decoration: none; }
   .button.active, .button:active {
-    background-color: #e5e5e5;
-    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15);
-    border-color: #a2a2a2; }
+    /*background-color: #e5e5e5;*/
+    /*box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15);*/
+    /*border-color: #a2a2a2; */
+  }
   .button:after {
     position: absolute;
     top: -6px;
@@ -5410,9 +5411,9 @@ input[type="range"] {
       color: white;
       text-decoration: none; }
     .button.button-stable.active, .button.button-stable:active {
-      background-color: #e5e5e5;
-      box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15);
-      border-color: #a2a2a2; }
+      background-color: #9CD1CB;
+      /*box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15);*/
+      border-color: #9CD1CB; }
     .button.button-stable.button-clear {
       color: #b2b2b2;
       background: none;
@@ -5485,15 +5486,15 @@ input[type="range"] {
         box-shadow: none; }
   .button.button-assertive {
     color: white;
-    background-color: #ef4e3a;
+    background-color: #B80000;
     border-color: #cc2511; }
     .button.button-assertive:hover {
       color: white;
       text-decoration: none; }
     .button.button-assertive.active, .button.button-assertive:active {
-      background-color: #cc2511;
+      background-color: #750000;
       box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15);
-      border-color: #cc2511; }
+      border-color: #750000; }
     .button.button-assertive.button-clear {
       color: #ef4e3a;
       background: none;

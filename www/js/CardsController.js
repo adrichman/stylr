@@ -1,36 +1,59 @@
 angular.module('app.controllers')
 
-.controller('CardsController', ['ENV', '$rootScope','$scope','cardTypes','GameService', '$ionicSwipeCardDelegate', '$timeout', '$state', '$ionicPopup', '$rootScope','PhotoService', function(ENV, $rootScope, $scope, cardTypes, GameService, $ionicSwipeCardDelegate, $timeout, $state, $ionicPopup, $rootScope, PhotoService) {
+.controller('CardsController', ['ENV','$rootScope','$scope','cardTypes','GameService', '$ionicSwipeCardDelegate', '$timeout', '$state', '$ionicPopup', '$rootScope','PhotoService', function(ENV, $rootScope, $scope, cardTypes, GameService, $ionicSwipeCardDelegate, $timeout, $state, $ionicPopup, $rootScope, PhotoService) {
   $scope.cards = [];
   $scope.preloadCache;
-  $scope.hot;
-  $scope.not = false;
+  $scope.hot = false;
+  $scope.center = true;
+  $scope.hotClass = ENV.style.color ? 'hot-color':'hot-white'; 
+  $scope.notClass = ENV.style.color ? 'not-color':'not-white';
+  $rootScope.stateIntercepted = false;
+
+  $scope.$on('!hot', function(){
+    window._rAF(function(){
+      $timeout(function(){
+        $scope.hot = false;
+      },25)
+    })
+  })
+  $scope.$on('!center', function(){
+    window._rAF(function(){
+      $timeout(function(){
+        $scope.center = false;
+      },25)
+    })
+  })
+  $scope.$on('hot', function(){
+    window._rAF(function(){
+      $timeout(function(){
+        $scope.hot = true;
+      },25)
+    })
+  })
+  $scope.$on('center', function(){
+    window._rAF(function(){
+      $timeout(function(){
+        $scope.center = true;
+      },400)
+    })
+  })
+  
 
   PhotoService.requestPhotos(+($state.params.level) + 1)
   .then(function(res){
-    
-    PhotoService.getPhotos(res)
-    .then(function(urls){
-      $scope.preloadCache = urls;
+      PhotoService.getPhotos(res)
+      .then(function(urls){
+        $scope.preloadCache = urls;
     })
   });
-
-  setInterval(function() {
-    console.log(window.direction);
-    if(window.direction < 0) {
-      $scope.hot = false;
-    } else {
-      $scope.hot = true;
-    }
-  }, 10);
   
   $scope.showAlert = function() {
     if ($rootScope.level < Object.keys(ENV.categories).length){
       return $ionicPopup.alert({
         templateUrl: 'templates/popup.html',
-        title: 'Level ' + $rootScope.level + ' Complete!',
+        title: ENV.levelPopupTitle[+($rootScope.level)],
         scope: $scope,
-        okText: ENV.categories[+($rootScope.level) + 1].friendly,
+        okText: 'Next Up: ' + ENV.categories[+($rootScope.level) + 1].friendly,
         okType: 'button-stable'
       });
     } else {
@@ -38,7 +61,7 @@ angular.module('app.controllers')
         templateUrl: 'templates/popup.html',
         title: 'We\'ve got your style!',
         scope: $scope,
-        okText: 'Ok',
+        okText: 'Tell Me!',
         okType: 'button-stable'
       });
       
@@ -47,23 +70,25 @@ angular.module('app.controllers')
   $scope.cardSwiped = function(index) {
     index = index || 0;
     $scope.addCard(index);
-    $scope.registerPreference(index, this);
   };
 
   $scope.registerPreference = function(index, swipedCard){
     $scope.preference = GameService.calculateScore(swipedCard, $scope.preference) || {};
-    if (cardTypes.length < 2) {
-      $scope.showAlert().then(function(){
-        $timeout(function(){
-          GameService.nextLevel($scope.preference);
-        },400); 
-      });
+    if (cardTypes.length < 1) {
+      $timeout(function(){
+        window._rAF(function(){
+          $scope.showAlert().then(function(){
+            GameService.nextLevel($scope.preference);
+          }); 
+        });
+      })
     }
   };
 
   $scope.cardDestroyed = function(index) {
     $scope.cards.splice(index, 1);
     cardTypes.shift();
+    $scope.registerPreference(index, this);
   };
 
   $scope.addCard = function(index) {
@@ -80,4 +105,4 @@ angular.module('app.controllers')
     var card = $ionicSwipeCardDelegate.getSwipebleCard($scope);
     card.swipe();
   };
-});
+}); 

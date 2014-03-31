@@ -6,11 +6,13 @@
       </swipe-card>
     </div>
   </swipe-cards>
-  <div class="bar bar-footer bar-balanced" ng-if="hot">
-    <div class="title">{{ hot }}</div>
-  </div>
-  <div class="bar bar-footer bar-assertive" ng-if="hot">
-    <div class="title">Gross!</div>
-  </div>
 </pane>
+<div class="cards-footer "></div>
+  <div animate ng-if="!hot && !center" class="hot-or-not {{ notClass }} stylr-quick-slide">
+    <h1>Gross.</h1>
+  </div>
+  <div animate ng-if="hot && !center" class="hot-or-not {{ hotClass }} stylr-quick-slide">
+    <h1>Hott!</h1>
+  </div>
 <img ng-repeat="image in preloadCache track by $index" src="{{ image }}" class="preload"/>
+<div ui-view></div>
