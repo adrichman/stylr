@@ -5,26 +5,29 @@ angular.module('app.controllers')
   $scope.preloadCache;
   $scope.hot = false;
   $scope.center = true;
-  $scope.hotClass = ENV.style.hotClass;
-  $scope.notClass = ENV.style.notClass;
+  $scope.hotClass = ENV.style.color ? 'hot-color':'hot-white'; 
+  $scope.notClass = ENV.style.color ? 'not-color':'not-white';
+  $rootScope.stateIntercepted = false;
 
   $scope.$on('!hot', function(){
-    window._rAF(function(){$timeout(function(){
-      $scope.hot = false;
+    window._rAF(function(){
+      $timeout(function(){
+        $scope.hot = false;
+      },25)
     })
-  })})
+  })
   $scope.$on('!center', function(){
     window._rAF(function(){
       $timeout(function(){
         $scope.center = false;
-      })
+      },25)
     })
   })
   $scope.$on('hot', function(){
     window._rAF(function(){
       $timeout(function(){
         $scope.hot = true;
-      })
+      },25)
     })
   })
   $scope.$on('center', function(){
@@ -38,12 +41,9 @@ angular.module('app.controllers')
 
   PhotoService.requestPhotos(+($state.params.level) + 1)
   .then(function(res){
-
-      
       PhotoService.getPhotos(res)
       .then(function(urls){
-      
-    $scope.preloadCache = urls;
+        $scope.preloadCache = urls;
     })
   });
   
@@ -51,9 +51,9 @@ angular.module('app.controllers')
     if ($rootScope.level < Object.keys(ENV.categories).length){
       return $ionicPopup.alert({
         templateUrl: 'templates/popup.html',
-        title: 'Looking Good!',
+        title: ENV.levelPopupTitle[+($rootScope.level)],
         scope: $scope,
-        okText: 'Next: ' + ENV.categories[+($rootScope.level) + 1].friendly,
+        okText: 'Next Up: ' + ENV.categories[+($rootScope.level) + 1].friendly,
         okType: 'button-stable'
       });
     } else {
@@ -61,7 +61,7 @@ angular.module('app.controllers')
         templateUrl: 'templates/popup.html',
         title: 'We\'ve got your style!',
         scope: $scope,
-        okText: 'Ok',
+        okText: 'Tell Me!',
         okType: 'button-stable'
       });
       
@@ -74,13 +74,13 @@ angular.module('app.controllers')
 
   $scope.registerPreference = function(index, swipedCard){
     $scope.preference = GameService.calculateScore(swipedCard, $scope.preference) || {};
-    if (cardTypes.length < 2) {
+    if (cardTypes.length < 1) {
       $timeout(function(){
-        $scope.showAlert().then(function(){
-          window._rAF(function(){
+        window._rAF(function(){
+          $scope.showAlert().then(function(){
             GameService.nextLevel($scope.preference);
           }); 
-        }, 500);
+        });
       })
     }
   };

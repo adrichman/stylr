@@ -149,7 +149,6 @@
      * Transition in the card with the given animation class
      */
     transitionIn: function(animationClass) {
-      window.direction = 0;
       var self = this;
 
       this.el.classList.add(animationClass + '-start');
@@ -178,7 +177,6 @@
      * Fly the card out or animate back into resting position.
      */
     transitionOut: function() {
-      window.direction = 0;
       var self = this;
 
         // Fly out
@@ -205,7 +203,6 @@
       var self = this;
       self.el.style[TRANSITION] = '-webkit-transform 0.1s linear';
       self.el.style[ionic.CSS.TRANSFORM] = 'translate3d(0px,0px,0) rotate(0rad)';
-      window.direction = 0;
     },
 
     /**
@@ -260,7 +257,6 @@
       var o = e.gesture.deltaX / 5;
 
       this.rotationAngle = Math.atan(o/this.touchDistance) * this.rotationDirection;
-      window.direction = this.rotationAngle;
 
       this.x = this.startX + (e.gesture.deltaX);
       this.y = this.startY + (e.gesture.deltaY);
@@ -276,7 +272,6 @@
       this.startX = this.startY = this.x = this.y = 0;
       this.transitionBack(e);
       this.el.style[ionic.CSS.TRANSFORM] = 'translate3d(0px,0px, 0) rotate(0rad)';
-      window.direction = 0;
     }
   });
 
@@ -297,7 +292,6 @@
       compile: function(element, attr) {
         return function($scope, $element, $attr, swipeCards) {
           var el = $element[0];
-          console.log(arguments);
           var direction = 0;
 
           // Instantiate our card view
@@ -327,7 +321,6 @@
               }
             },
             onDragEnd: function(e){
-              console.log('drag end!');
               $scope.$emit('center');
               direction = 0;
             }
