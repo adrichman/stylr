@@ -38,11 +38,11 @@ angular.module('app.controllers')
   })
   $scope.$on('center', function(){
     $timeout(function(){
-      window._rAF(function(){
-        window._rAF(function(){
+      // window._rAF(function(){
+        // window._rAF(function(){
           $scope.center = true;
-        })
-      })
+        // })
+      // })
     },400)
   })
   
