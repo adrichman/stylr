@@ -58,7 +58,7 @@ angular.module('app')
                                 4:  
                                     'Her Excellency, The Royal Hottness.',
                                 5:  
-                                    'Beautiful!<br>(You, That is.)',
+                                    'Beautiful!<br>(You, That Is.)',
                                 6:
                                     'One Last Time!' 
                               }

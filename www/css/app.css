@@ -33,6 +33,7 @@
   line-height: 75px;
   font-size: 76px;
   font-family: 'bebas_neueregular';
+  text-align: center;
 }
 
 .result h2 {
@@ -173,6 +174,8 @@
 
 .vert-top-third {
   margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .sf-icon {
@@ -201,6 +204,12 @@
   background-color: #25375D;
   /*box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15);*/
   border: 1px solid #3B5998;
+}
+.button.button-fb.ng-leave {
+  -webkit-animation-name: fadeOut;
+  -webkit-animation-iteration-count: once;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-duration: 0.3s;  
 }
 .button-get-your-fix {
   padding-top: 3px;
@@ -315,17 +324,25 @@
 .swipe-card.pop-in {
   -webkit-animation: bounceIn 0.4s ease-out;
 }
-
 .popup {
+  visibility: hidden;
+  margin-left: 0;
+  margin-right: 0;
+  left: 0;
+  right: 0;
   top: 30%;
-  left: 50%;
-  width: 80%;
-  background-color: rgba(255, 255, 255, 1);
+  width: 280px;
+  margin: 0 auto;
   text-align: center;
   padding: 10px;
   border-radius: 4px;
   z-index: 9999;
+  background-color: rgba(255, 255, 255, 1);
   
+}
+
+.popup-showing.active {
+  visibility: visible;
   -moz-animation-name: dropDown;
   -moz-animation-iteration-count: once;
   -moz-animation-timing-function: ease-in-out;
@@ -340,12 +357,7 @@
 .popup p {
   margin: 0 auto;
   width: 90%;
-  font-family: sans-serif;
   text-align: justify;
-}
-
-.popup-title {
-  font-family: monospace;
 }
 
 .popup-hidden {
@@ -357,6 +369,8 @@
   padding: 10px;
   border-radius: 4px;
   z-index: 9999;
+  margin-left: 0; 
+  margin-top: 0; 
 
   -moz-animation-name: raiseUp;
   -moz-animation-iteration-count: once;
@@ -527,6 +541,22 @@
       }
       100% {
           opacity: 1.0;
+      }
+  }
+  @-moz-keyframes fadeOut {
+      0% {
+          opacity: 1.0;
+      }
+      100% {
+          opacity: 0;
+      }
+  }
+  @-webkit-keyframes fadeOut {
+      0% {
+          opacity: 1.0;
+      }
+      100% {
+          opacity: 0;
       }
   }
   @-moz-keyframes slideUp {

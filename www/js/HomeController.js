@@ -65,17 +65,17 @@ angular.module('app.controllers', ['ionic.contrib.ui.cards', 'app.services'])
   
   $scope.start = function(step){
     step = step || 1;
-    $scope.showAlert(step).then(function(){
-      if (step < 3) {
-        step++;
-        window._rAF(function(){
-          $timeout(function(){
+    window._rAF(function(){
+      window._rAF(function(){
+        $scope.showAlert(step).then(function(){
+          if (step < 3) {
+            step++;
             $scope.start(step);
-          }, 300);
-        })
-      } else {
-        $scope.go('home.slide', 0);
-      }
+          } else {
+            $scope.go('home.slide', 0);
+          }
+        });
+      })
     });
   }
 }])
