@@ -10,32 +10,40 @@ angular.module('app.controllers')
   $rootScope.stateIntercepted = false;
 
   $scope.$on('!hot', function(){
-    window._rAF(function(){
-      $timeout(function(){
-        $scope.hot = false;
-      },25)
+    $timeout(function(){
+      window._rAF(function(){
+        window._rAF(function(){
+          $scope.hot = false;
+        })
+      })
     })
   })
   $scope.$on('!center', function(){
-    window._rAF(function(){
-      $timeout(function(){
-        $scope.center = false;
-      },25)
+    $timeout(function(){
+      window._rAF(function(){
+        window._rAF(function(){
+          $scope.center = false;
+        })
+      })
     })
   })
   $scope.$on('hot', function(){
-    window._rAF(function(){
-      $timeout(function(){
-        $scope.hot = true;
-      },25)
+    $timeout(function(){
+      window._rAF(function(){
+        window._rAF(function(){
+          $scope.hot = true;
+        })
+      })
     })
   })
   $scope.$on('center', function(){
-    window._rAF(function(){
-      $timeout(function(){
-        $scope.center = true;
-      },400)
-    })
+    $timeout(function(){
+      // window._rAF(function(){
+        // window._rAF(function(){
+          $scope.center = true;
+        // })
+      // })
+    },400)
   })
   
 

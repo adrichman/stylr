@@ -33111,7 +33111,7 @@ angular.module('ionic.service.popup', ['ionic.service.templateLoad'])
 
   // Center the given popup
   var positionPopup = function(popup) {
-    popup.el.style.marginLeft = (-popup.el.offsetWidth) / 2 + 'px';
+    // popup.el.style.marginLeft = (-popup.el.offsetWidth) / 2 + 'px';
     popup.el.style.marginTop = (-popup.el.offsetHeight) / 2 + 'px';
   };
 

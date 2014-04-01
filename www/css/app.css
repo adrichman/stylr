@@ -23,24 +23,22 @@
   border-radius: 2px;
   padding: 10px 10px;
   margin-bottom: -35px;
+  text-align: center;
 }
 .result p {
-  width: 90%;
   font-size: 20px;
   font-family: 'bebas_neueregular';
 }
 .result h1 {
-  width: 90%;
   line-height: 75px;
   font-size: 76px;
   font-family: 'bebas_neueregular';
-  text-align: justify;
+  text-align: center;
 }
 
 .result h2 {
   line-height: 75px;
   font-size: 60px;
-  text-align: center;
 }
 
 
@@ -84,7 +82,7 @@
 
 .splash_img {
   height: 100%;
-  background: url('../img/StarterApp-iphone5s.png') no-repeat;
+  background: url('../img/stylr-iphone5s.png') no-repeat;
   background-size: 100% auto;
 }
 
@@ -176,6 +174,8 @@
 
 .vert-top-third {
   margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .sf-icon {
@@ -204,6 +204,12 @@
   background-color: #25375D;
   /*box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15);*/
   border: 1px solid #3B5998;
+}
+.button.button-fb.ng-leave {
+  -webkit-animation-name: fadeOut;
+  -webkit-animation-iteration-count: once;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-duration: 0.3s;  
 }
 .button-get-your-fix {
   padding-top: 3px;
@@ -318,17 +324,25 @@
 .swipe-card.pop-in {
   -webkit-animation: bounceIn 0.4s ease-out;
 }
-
 .popup {
+  visibility: hidden;
+  margin-left: 0;
+  margin-right: 0;
+  left: 0;
+  right: 0;
   top: 30%;
-  left: 50%;
-  width: 80%;
-  background-color: rgba(255, 255, 255, 1);
+  width: 280px;
+  margin: 0 auto;
   text-align: center;
   padding: 10px;
   border-radius: 4px;
   z-index: 9999;
+  background-color: rgba(255, 255, 255, 1);
   
+}
+
+.popup-showing.active {
+  visibility: visible;
   -moz-animation-name: dropDown;
   -moz-animation-iteration-count: once;
   -moz-animation-timing-function: ease-in-out;
@@ -344,7 +358,6 @@
   margin: 0 auto;
   width: 90%;
   text-align: justify;
-  text-decoration: 
 }
 
 .popup-hidden {
@@ -356,6 +369,8 @@
   padding: 10px;
   border-radius: 4px;
   z-index: 9999;
+  margin-left: 0; 
+  margin-top: 0; 
 
   -moz-animation-name: raiseUp;
   -moz-animation-iteration-count: once;
@@ -409,7 +424,7 @@
   -webkit-animation-duration: 0.5s;
 }
 
-.StarterApp-fade {
+.stylr-fade {
   -moz-animation-name: fadeIn;
   -moz-animation-iteration-count: once;
   -moz-animation-timing-function: linear;
@@ -421,7 +436,7 @@
   -webkit-animation-duration: 0.1s;
 }
 
-/*.StarterApp-quick-slide {
+/*.stylr-quick-slide {
   -moz-animation-name: slideUp;
   -moz-animation-iteration-count: once;
   -moz-animation-timing-function: linear;
@@ -433,7 +448,7 @@
   -webkit-animation-duration: 0.1s;
 }
 
-.StarterApp-quick-slide.ng-leave {
+.stylr-quick-slide.ng-leave {
   -moz-animation-name: slideDown;
   -moz-animation-iteration-count: once;
   -moz-animation-timing-function: linear;
@@ -445,7 +460,7 @@
   -webkit-animation-duration: 0.1s;
 }*/
 
-.StarterApp-fade3 {
+.stylr-fade3 {
 
   -moz-animation-name: fadeIn;
   -moz-animation-iteration-count: once;
@@ -526,6 +541,22 @@
       }
       100% {
           opacity: 1.0;
+      }
+  }
+  @-moz-keyframes fadeOut {
+      0% {
+          opacity: 1.0;
+      }
+      100% {
+          opacity: 0;
+      }
+  }
+  @-webkit-keyframes fadeOut {
+      0% {
+          opacity: 1.0;
+      }
+      100% {
+          opacity: 0;
       }
   }
   @-moz-keyframes slideUp {
