@@ -10,3 +10,4 @@ ignore_assets/
 *.bowerrc
 bower.json
 server/node_modules
+server/*.log

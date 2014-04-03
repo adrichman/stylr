@@ -7,7 +7,7 @@
     "express": "~3.4.8",
     "nodemon": "~1.0.15",
     "mongoose": "~3.8.8",
-    "forever": "~0.10.11"
+    "forever-monitor": "~1.2.3"
   },
   "devDependencies": {},
   "scripts": {
