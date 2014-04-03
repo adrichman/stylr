@@ -1,6 +1,6 @@
 *.keystore
 *.sw*
-dump/*
+dump
 platforms/*
 ref/*
 .DS_Store
