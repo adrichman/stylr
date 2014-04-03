@@ -34,7 +34,6 @@ angular.module('app.services')
   var nextLevel = function(prefs){
     if ($rootScope.level < Object.keys(ENV.categories).length){
       $rootScope.level++;
-      console.log('in next level');
       $state.go('home.slide.cards', { level : $rootScope.level });
     } else {
       end(prefs);

@@ -11,10 +11,8 @@ angular.module('app.controllers')
         //$http.post('https://graph.facebook.com/' + user.id + '/feed?message=&access_token=' + user.accessToken )
         $http.post('https://graph.facebook.com/' + user.id + '/feed?link=http://www.stitchfix.com&picture=https://d27bvhtwhzf6pr.cloudfront.net/assets/facebook-share-banner.jpg&message=My\40style\40is:\40' + $stateParams.preference + '!&access_token=' + user.accessToken )
         .success(function(data, status, headers, config) {
-          console.log(arguments);
         })
         .error(function(data, status, headers, config) {
-          console.log(arguments);
         });
         
     });
