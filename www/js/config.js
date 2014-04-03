@@ -2,6 +2,9 @@ angular.module('app')
 
 .constant('ENV',
   {
+    'server':                 {
+                                'url': 'http://107.170.219.118/images/'
+                              },
     'categories':  
                               { 
                                 1:  { "db": "Top"         , "friendly" : "Tops"          },

@@ -9,3 +9,4 @@ node_modules/*
 ignore_assets/
 *.bowerrc
 bower.json
+server/node_modules

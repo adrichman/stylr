@@ -14,7 +14,7 @@ angular.module('app', ['ionic', 'firebase', 'ngCookies', 'app.services', 'app.co
     .state('splash', {
       url: "/splash",
       templateUrl: "templates/splash.html",
-      controller: 'UserController'
+      controller: 'InitializationController'
     })
 
     .state('login', {
