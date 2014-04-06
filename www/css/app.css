@@ -14,18 +14,17 @@
   position: fixed;
   color: rgb(155, 25, 25);
   font-size: 20px;
-  margin-top: 55px;
   text-align: center;
-  top: 75%;
+  top: 89%;
   left: 0;
   right: 0;
-  z-index: 0;
 }
 .level-title {
+  position: fixed;
   width:96%;
   font-family: 'bebas_neueregular';
-  font-size: 30px;
-  margin-top: 55px;
+  top: 16.5%;
+  font-size: 40px;
   margin-left: 0px;
   text-align: right;
   color: white;
@@ -139,7 +138,6 @@
   top: 84%;
   text-align: center;
   background-color: #56b9af;
-  z-index: 10;
 }
 .hot-or-not h1 {
   line-height: 54px;
@@ -285,7 +283,7 @@
   -webkit-transform: scale(1,1);
   -webkit-transform: rotateZ(360deg);
   left: 50%;
-  top: 50%;
+  top: 55%;
   width: 300px;
   height: 300px;
   margin-left: -150px;
