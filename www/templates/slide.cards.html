@@ -1,5 +1,5 @@
 <pane has-header>
-<div class="level-title">{{ levelTitle }}</div>
+<div animate class="level-title stylr-slide-left" >{{ levelTitle }}</div>
   <swipe-cards ng-init="addCard()">
     <div ng-controller="CardCtrl">
       <swipe-card ng-repeat="card in cards" on-destroy="cardDestroyed($index)" on-swipe="cardSwiped($index+1)">
