@@ -10,7 +10,32 @@
   font-weight: normal;
   font-style: normal;
 }
-
+.levels {
+  position: fixed;
+  color: rgb(155, 25, 25);
+  font-size: 20px;
+  margin-top: 55px;
+  text-align: center;
+  top: 75%;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+.level-title {
+  width:96%;
+  font-family: 'bebas_neueregular';
+  font-size: 30px;
+  margin-top: 55px;
+  text-align: right;
+  color: white;
+}
+.level-star {
+  margin-right: 12px;
+  margin-left: 12px;
+}
+.level-complete {
+  color: white;
+}
 .result {
   width: 90%;
   height: 145px;
@@ -104,6 +129,7 @@
 }
 
 .hot-or-not {
+  visibility: hidden;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -111,6 +137,7 @@
   height: 70px;
   text-align: center;
   background-color: #56b9af;
+  z-index: 10;
 }
 .hot-or-not h1 {
   line-height: 54px;
@@ -147,7 +174,7 @@
 }
 #play {
   border: none;
-  font-family: 'Roboto Condensed', sans-serif;
+  /*font-family: 'Roboto Condensed', sans-serif;*/
   font-size: 150%;
 }
 
@@ -243,6 +270,8 @@
 .bar .title {
   color: #eee;
 }
+
+
 
 .swipe-cards {
   position: fixed;
@@ -346,12 +375,12 @@
   -moz-animation-name: dropDown;
   -moz-animation-iteration-count: once;
   -moz-animation-timing-function: ease-in-out;
-  -moz-animation-duration: 0.3s;
+  -moz-animation-duration: 0.4s;
 
   -webkit-animation-name: dropDown;
   -webkit-animation-iteration-count: once;
   -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-duration: 0.3s;
+  -webkit-animation-duration: 0.4s;
 }
 
 .popup p {
@@ -435,8 +464,8 @@
   -webkit-animation-timing-function: linear;
   -webkit-animation-duration: 0.1s;
 }
-
-/*.stylr-quick-slide {
+/*
+.stylr-quick-slide {
   -moz-animation-name: slideUp;
   -moz-animation-iteration-count: once;
   -moz-animation-timing-function: linear;
@@ -458,8 +487,8 @@
   -webkit-animation-iteration-count: once;
   -webkit-animation-timing-function: linear;
   -webkit-animation-duration: 0.1s;
-}*/
-
+}
+*/
 .stylr-fade3 {
 
   -moz-animation-name: fadeIn;
@@ -561,17 +590,21 @@
   }
   @-moz-keyframes slideUp {
       0% {
+          visibility: hidden;
           height: 0px;
       }
       100% {
+          visibility: visible;
           height: 70px;
       }
   }
   @-webkit-keyframes slideUp {
       0% {
+          visibility: hidden;
           height: 0px;
       }
       100% {
+          visibility: visible;
           height: 70px;
       }
   }
