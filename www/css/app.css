@@ -26,6 +26,7 @@
   font-family: 'bebas_neueregular';
   font-size: 30px;
   margin-top: 55px;
+  margin-left: 0px;
   text-align: right;
   color: white;
 }
@@ -134,7 +135,8 @@
   bottom: 0;
   left: 0;
   right: 0;
-  height: 70px;
+  /*height: 70px;*/
+  top: 84%;
   text-align: center;
   background-color: #56b9af;
   z-index: 10;
@@ -464,31 +466,21 @@
   -webkit-animation-timing-function: linear;
   -webkit-animation-duration: 0.1s;
 }
-/*
+
 .stylr-quick-slide {
-  -moz-animation-name: slideUp;
-  -moz-animation-iteration-count: once;
-  -moz-animation-timing-function: linear;
-  -moz-animation-duration: 0.1s;
-  
   -webkit-animation-name: slideUp;
   -webkit-animation-iteration-count: once;
   -webkit-animation-timing-function: linear;
-  -webkit-animation-duration: 0.1s;
+  -webkit-animation-duration: 0.05s;
 }
 
-.stylr-quick-slide.ng-leave {
-  -moz-animation-name: slideDown;
-  -moz-animation-iteration-count: once;
-  -moz-animation-timing-function: linear;
-  -moz-animation-duration: 0.1s;
-
+.stylr-quick-slide.hidden {
   -webkit-animation-name: slideDown;
   -webkit-animation-iteration-count: once;
   -webkit-animation-timing-function: linear;
-  -webkit-animation-duration: 0.1s;
+  -webkit-animation-duration: 0.05s;
 }
-*/
+
 .stylr-fade3 {
 
   -moz-animation-name: fadeIn;
@@ -500,6 +492,26 @@
   -webkit-animation-iteration-count: once;
   -webkit-animation-timing-function: linear;
   -webkit-animation-duration: 0.3s;
+}
+.stylr-slide-left {
+
+  -moz-animation-name: slideLeft;
+  -moz-animation-iteration-count: once;
+  -moz-animation-timing-function: linear;
+  -moz-animation-duration: .8s;
+
+  -webkit-animation-name: slideLeft;
+  -webkit-animation-iteration-count: once;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-duration: .8s;
+}
+.stylr-slide-right {
+
+  -webkit-animation-name: slideRight;
+  -webkit-animation-iteration-count: once;
+  -webkit-animation-timing-function: ease-in-out;
+  /*-webkit-animation-delay: .4s;*/
+  -webkit-animation-duration: 1.3s;
 }
 
   @-webkit-keyframes dropDown {
@@ -556,6 +568,28 @@
       }
   }
 
+  @-webkit-keyframes slideLeft {
+      0% {
+          margin-left: 120px;
+      }
+      70% {
+          margin-left: -10px;
+      }
+      100% {
+          margin-left: 0px;
+      }
+  }
+  @-webkit-keyframes slideRight {
+      0% {
+          margin-left: -9999px;
+      }
+      70% {
+          margin-left: 30px;
+      }
+      100% {
+          margin-left: 0px;
+      }
+  }
   @-moz-keyframes fadeIn {
       0% {
           opacity: 0;
@@ -588,40 +622,26 @@
           opacity: 0;
       }
   }
-  @-moz-keyframes slideUp {
-      0% {
-          visibility: hidden;
-          height: 0px;
-      }
-      100% {
-          visibility: visible;
-          height: 70px;
-      }
-  }
+
   @-webkit-keyframes slideUp {
       0% {
           visibility: hidden;
-          height: 0px;
+          top: 100%;
       }
       100% {
           visibility: visible;
-          height: 70px;
+          top: 86%;
       }
   }
-  @-moz-keyframes slideDown {
-      0% {
-          height: 70px;
-      }
-      100% {
-          height: 0px;
-      }
-  }
+
   @-webkit-keyframes slideDown {
       0% {
-          height: 70px;
+          visibility: visible;
+          top: 86%;
       }
       100% {
-          height: 0px;
+          visibility: hidden;
+          top: 100%;
       }
   }
   

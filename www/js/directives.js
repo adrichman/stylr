@@ -9,7 +9,7 @@ angular.module('app.directives',[])
         // }
         // ,
         template:
-          '<div class="hot-or-not {{ notClass }}">' +
+          '<div animate class="hot-or-not {{ notClass }}">' +
             '<h1>{{ hotOrNot }}</h1>'                                 +
           '</div>'
         ,
@@ -22,6 +22,8 @@ angular.module('app.directives',[])
               window._rAF(function(){
                   $scope.hotOrNot = "GROSS!";
                   $element[0].style.visibility = 'visible';
+                  $element[0].classList.remove('hidden');
+                  $element[0].classList.add('stylr-quick-slide');
               })
             })
           })
@@ -30,6 +32,8 @@ angular.module('app.directives',[])
               window._rAF(function(){
                   $scope.center = false;
                   $element[0].style.visibility = 'visible';
+                  $element[0].classList.remove('hidden');
+                  $element[0].classList.add('stylr-quick-slide');
               })
             })
           })
@@ -38,6 +42,8 @@ angular.module('app.directives',[])
               window._rAF(function(){
                   $scope.hotOrNot = "HOTT!";
                   $element[0].style.visibility = 'visible';
+                  $element[0].classList.remove('hidden');
+                  $element[0].classList.add('stylr-quick-slide');
               })
             })
           })
@@ -47,6 +53,7 @@ angular.module('app.directives',[])
                   $scope.center = true;
                   $scope.hotOrNot = "";
                   $element[0].style.visibility = 'hidden';
+                  $element[0].classList.add('hidden');
               })
             }, 400);
           })
@@ -59,7 +66,7 @@ angular.module('app.directives',[])
     scope: {
       level: '='
     },
-    template: ' <div class="levels">' +
+    template: ' <div animate class="levels stylr-slide-right">' +
               '   <div class="fa fa-star level-star"></div> ' +
               '   <div class="fa fa-star level-star"></div> ' +
               '   <div class="fa fa-star level-star"></div> ' +

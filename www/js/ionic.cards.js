@@ -203,6 +203,7 @@
       var self = this;
       self.el.style[TRANSITION] = '-webkit-transform 0.1s linear';
       self.el.style[ionic.CSS.TRANSFORM] = 'translate3d(0px,0px,0) rotate(0rad)';
+      self.initialize();
     },
 
     /**
