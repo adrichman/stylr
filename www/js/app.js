@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'app.services' is found in services.js
 // 'app.controllers' is found in controllers.js
-angular.module('app', ['ionic', 'firebase', 'ngCookies', 'app.services', 'app.controllers'])
+angular.module('app', ['ionic', 'firebase', 'ngCookies', 'app.services', 'app.controllers','app.directives'])
 
 .config(function($stateProvider, $urlRouterProvider) {
 
