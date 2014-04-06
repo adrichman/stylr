@@ -44,16 +44,16 @@ angular.module('app.controllers')
   };
 
   $scope.registerPreference = function(index, swipedCard){
-    $scope.preference = GameService.calculateScore(swipedCard, $scope.preference) || {};
-    console.log($scope.preference);
+    $rootScope.preference = GameService.calculateScore(swipedCard, $rootScope.preference) || {};
+    console.log($rootScope.preference);
     if (cardTypes.length < 1) {
-      // $timeout(function(){
+      $timeout(function(){
         window._rAF(function(){
           $scope.showAlert().then(function(){
-            GameService.nextLevel($scope.preference);
+            GameService.nextLevel($rootScope.preference);
           }); 
         });
-      // })
+      }, 200);
     }
   };
 
