@@ -26,8 +26,7 @@ angular.module('app.services')
       for (var i = 0; i < fields.length; i++){
         userPreferences[fields[i]] += swipedCard.card[fields[i]];
       }
-    } else {
-    }
+    } 
     return userPreferences;
   };
 
