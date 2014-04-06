@@ -27,30 +27,42 @@ angular.module('app.controllers', ['ionic.contrib.ui.cards', 'app.services'])
   $scope.showAlert = function(step) {
     var content = function(step){
       switch(step){
-      case 1: return  "<p>Our stylists have a secret formula for perfectly describing your personal style.</p>" + 
-                      "<p>Click below if you would like to check out some of their latest pieces.</p>";
-                      break;
-      case 2: return  "<p>Swipe right if the item looks like something " +
-                      "you would wear.</p><p>Swipe left if it's not really your thing.</p>";
-                      break;
-      case 3: return  "<p>At the end, we'll reveal your true style definition.</p><p>Even better, we'll show you how to get hooked " +
-                      "up with new clothes and accessories that are especially perfect for <strong>you</strong>.</p>";
-                      break;
+      case 'fb':  return  "<p>Successfully posted to Facebook!</p>";
+                          break;
+      case 'fb0':  return "<p>Your post to Facebook was unsuccessful.</p>";
+                          break;
+      case 1:     return  "<p>Our stylists have a secret formula for perfectly describing your personal style.</p>" + 
+                          "<p>Click below if you would like to check out some of their latest pieces.</p>";
+                          break;
+      case 2:     return  "<p>Swipe right if the item looks like something " +
+                          "you would wear.</p><p>Swipe left if it's not really your thing.</p>";
+                          break;
+      case 3:     return  "<p>At the end, we'll reveal your true style definition.</p><p>Even better, we'll show you how to get hooked " +
+                          "up with new clothes and accessories that are especially perfect for <strong>you</strong>.</p>";
+                          break;
       }
     }
     var title = function(step){
       switch(step){
-      case 1: return  "Hey Girl!";
-                      break;
-      case 2: return  "Hot or Not?";
-                      break;
-      case 3: return  "Just for you.";
-                      break;
+      case 'fb':  return  "Success!";
+                          break;
+      case 'fb0':  return  "Error";
+                          break;
+      case 1:     return  "Hey Girl!";
+                          break;
+      case 2:     return  "Hot or Not?";
+                          break;
+      case 3:     return  "Just for you.";
+                          break;
       }
     }
 
     var okText = function(step){
-      return step === 3 ? 'Play!' : 'Next';
+      if (step === 'fb' || step === 'fb0') {
+        return 'OK';
+      } else {
+        return step === 3 ? 'Play!' : 'Next';
+      }
     }
     return $ionicPopup.alert({
       content: content(step), 
@@ -59,7 +71,7 @@ angular.module('app.controllers', ['ionic.contrib.ui.cards', 'app.services'])
       title: title(step),
       scope: $scope,
       okText: okText(step),
-      okType: 'button-stable'
+      okType: step === 'fb0' ? 'button-assertive' : 'button-stable'
     });
   };
   
