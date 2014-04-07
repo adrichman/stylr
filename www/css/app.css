@@ -255,15 +255,19 @@
 .button-results {
   width: 220px;
   height: 60px;
-  margin: 3% auto;
+  margin: 5px auto;
   border-radius: 4px;
 }
 .button-play-again {
   background-color: rgb(240, 159, 65);
   border: 0px solid black;
+  margin-bottom: 5px;
 }
 .result-buttons {
-  margin-top: 40px;
+  margin-top: 15%;
+}
+.result-buttons.row {
+  padding: 0;
 }
 
 .pane {
