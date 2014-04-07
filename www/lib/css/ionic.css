@@ -2565,7 +2565,7 @@ body, .ionic-body {
   color: black;
   word-wrap: break-word;
   font-size: 12px;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Capriola", sans-serif, Arial, sans-serif;
   line-height: 17px;
   text-rendering: optimizeLegibility;
   -webkit-backface-visibility: hidden;
@@ -2818,7 +2818,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   color: black;
   font-weight: 500;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Capriola", sans-serif, Arial, sans-serif;
   line-height: 1.2; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small,
   .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small {
@@ -4739,7 +4739,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Helvetica Neue", Arial, sans-serif; }
+  font-family: "Capriola", sans-serif, Arial, sans-serif; }
 
 .item-input {
   display: -webkit-box;

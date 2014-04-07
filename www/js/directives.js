@@ -77,11 +77,29 @@ angular.module('app.directives',[])
               ,
     replace: true,
     link: function($scope, $element, $attr){
-      console.log($scope.level);
-      console.log($element.children().length);       
-       for (var i = 0; i < $scope.level; i++){
+      // $scope.$on('removeStars', function(){
+        // console.log('end level heard in stars');
+        // $element[0].classList.add('hidden');
+      // });
+      for (var i = 0; i < $scope.level; i++){
         $element.children()[i].classList.add('level-complete');
-       }
+      }
+    }
+  }
+})
+.directive('levelTitle', function(){
+  return {
+    restrict: 'E',
+    template: '<div animate class="level-title stylr-slide-left" >' +
+              '{{ levelTitle }}</div>'
+              ,
+    replace: true,
+    link: function($scope, $element, $attr){      
+            $scope.$on('endLevel', function(){
+              console.log('endLevel!', $element[0]);
+              $element[0].classList.add('hidden');
+              $scope.$emit('removeStars');
+            });
     }
   }
 })

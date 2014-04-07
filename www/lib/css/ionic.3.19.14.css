@@ -2565,7 +2565,7 @@ body, .ionic-body {
   color: black;
   word-wrap: break-word;
   font-size: 14px;
-  font-family: "Avenir LT W01 45 Book", helvetica, HelveticaNeue, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Roboto-Condensed", helvetica, HelveticaNeue, "Helvetica Neue", Arial, sans-serif;
   line-height: 20px;
   text-rendering: optimizeLegibility;
   -webkit-backface-visibility: hidden;
