@@ -111,7 +111,7 @@
     color: #fff; 
   }
 .loading h2 {
-  font-family: 'Roboto';
+  /*font-family: 'Roboto Condensed';*/
   font-weight: 700;
 }
 .loading-backdrop.active {
