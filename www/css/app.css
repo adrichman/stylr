@@ -516,7 +516,7 @@
   -webkit-animation-iteration-count: once;
   -webkit-animation-timing-function: ease-in-out;
   /*-webkit-animation-delay: .4s;*/
-  -webkit-animation-duration: 1.3s;
+  -webkit-animation-duration: 1s;
 }
 .stylr-slide-right.hidden {
   -webkit-animation-name: slideRightOut;
