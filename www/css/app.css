@@ -42,6 +42,9 @@
 .level-complete {
   color: white;
 }
+.result-text {
+  color: black;
+}
 .result {
   width: 90%;
   height: 145px;
