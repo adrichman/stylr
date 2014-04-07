@@ -10,6 +10,17 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+    font-family: 'muliregular';
+    src: url('../lib/fonts/muli-regular-webfont.eot');
+    src: url('../lib/fonts/muli-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../lib/fonts/muli-regular-webfont.woff') format('woff'),
+         url('../lib/fonts/muli-regular-webfont.ttf') format('truetype'),
+         url('../lib/fonts/muli-regular-webfont.svg#muliregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 .levels {
   position: fixed;
   color: rgb(155, 25, 25);
@@ -111,7 +122,7 @@
     color: #fff; 
   }
 .loading h2 {
-  font-family: "Roboto Condensed";
+  font-family: "muliregular";
   font-weight: 700;
 }
 .loading-backdrop.active {
