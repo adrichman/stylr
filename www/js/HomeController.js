@@ -27,19 +27,19 @@ angular.module('app.controllers', ['ionic.contrib.ui.cards', 'app.services'])
   $scope.showAlert = function(step) {
     var content = function(step){
       switch(step){
-      case 'fb':  return  "<p>Successfully posted to Facebook!</p>";
-                          break;
-      case 'fb0':  return "<p>Your post to Facebook was unsuccessful.</p>";
-                          break;
-      case 1:     return  "<p>Our stylists have a secret formula for perfectly describing your personal style.</p>" + 
-                          "<p>Click below if you would like to check out some of their latest pieces.</p>";
-                          break;
-      case 2:     return  "<p>Swipe right if the item looks like something " +
-                          "you would wear.</p><p>Swipe left if it's not really your thing.</p>";
-                          break;
-      case 3:     return  "<p>At the end, we'll reveal your true style definition.</p><p>Even better, we'll show you how to get hooked " +
-                          "up with new clothes and accessories that are especially perfect for <strong>you</strong>.</p>";
-                          break;
+      case 'fb':    return  "<p>Successfully posted to Facebook!</p>";
+                            break;
+      case 'fb0':   return  "<p>Your post to Facebook was unsuccessful.</p>";
+                            break;
+      case 1:       return  "<p>Our stylists have a secret formula for perfectly describing your personal style.</p>" + 
+                            "<p>Click below if you would like to check out some of their latest pieces.</p>";
+                            break;
+      case 2:       return  "<p>Swipe right if the item looks like something " +
+                            "you would wear.</p><p>Swipe left if it's not really your thing.</p>";
+                            break;
+      case 3:       return  "<p>At the end, we'll reveal your true style definition.</p><p>Even better, we'll show you how to get hooked " +
+                            "up with new clothes and accessories that are especially perfect for <strong>you</strong>.</p>";
+                            break;
       }
     }
     var title = function(step){
@@ -48,11 +48,11 @@ angular.module('app.controllers', ['ionic.contrib.ui.cards', 'app.services'])
                           break;
       case 'fb0':  return  "Error";
                           break;
-      case 1:     return  "Hey Girl!";
+      case 1:     return  "What's Your Style?";
                           break;
       case 2:     return  "Hot or Not?";
                           break;
-      case 3:     return  "Just for you.";
+      case 3:     return  "Just for You.";
                           break;
       }
     }
@@ -91,17 +91,17 @@ angular.module('app.controllers', ['ionic.contrib.ui.cards', 'app.services'])
     });
   }
 }])
-.directive('gotTapped', ['$ionicGesture', function($ionicGesture, $timeout) {
+// .directive('gotTapped', ['$ionicGesture', function($ionicGesture, $timeout) {
 
-    return {
-        restrict: 'A',
-        link: function($scope, $element, $attr) {
-            $ionicGesture.on('touch', function(e) {
-                $element.addClass('circular-tap');
-            }, $element);
-            $ionicGesture.on('release', function(e) {
-                $element.removeClass('circular-tap');
-            }, $element);
-        }
-    };
-}]);
+//     return {
+//         restrict: 'A',
+//         link: function($scope, $element, $attr) {
+//             $ionicGesture.on('touch', function(e) {
+//                 $element.addClass('circular-tap');
+//             }, $element);
+//             $ionicGesture.on('release', function(e) {
+//                 $element.removeClass('circular-tap');
+//             }, $element);
+//         }
+//     };
+// }]);

@@ -47,13 +47,14 @@ angular.module('app.controllers')
     $rootScope.preference = GameService.calculateScore(swipedCard, $rootScope.preference) || {};
     console.log($rootScope.preference);
     if (cardTypes.length < 1) {
+      $scope.$emit('endLevel');
       $timeout(function(){
         window._rAF(function(){
           $scope.showAlert().then(function(){
             GameService.nextLevel($rootScope.preference);
           }); 
         });
-      }, 200);
+      }, 400);
     }
   };
 
