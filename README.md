@@ -34,7 +34,7 @@ cordova plugin add org.apache.cordova.core.splashscreen
 cordova build ios
 ```
 ###Deploying the server:
-The server is located on the ```master_server``` branch of the repo. This is where the server should clone from during deployment. __The ```stylr-server/``` directory in the master branch will not be up-to-date!__ 
+The server is located on the ```server_master``` branch of the repo. This is where the server should clone from during deployment. __The ```stylr-server/``` directory in the master branch will not be up-to-date!__ 
 
 On the server, we suggest installing tmux or a similar terminal multiplexer:
 
