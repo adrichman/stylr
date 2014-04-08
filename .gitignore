@@ -11,3 +11,8 @@ ignore_assets/
 bower.json
 stylr-server/node_modules
 stylr-server/*.log
+.cordova/
+README.md
+config.xml
+plugins/
+www/
