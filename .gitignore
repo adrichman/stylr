@@ -9,5 +9,5 @@ node_modules/*
 ignore_assets/
 *.bowerrc
 bower.json
-stylr-server/node-modules
+stylr-server/node_modules
 stylr-server/*.log
