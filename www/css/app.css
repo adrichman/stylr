@@ -10,7 +10,52 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+    font-family: 'muliregular';
+    src: url('../lib/fonts/muli-regular-webfont.eot');
+    src: url('../lib/fonts/muli-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../lib/fonts/muli-regular-webfont.woff') format('woff'),
+         url('../lib/fonts/muli-regular-webfont.ttf') format('truetype'),
+         url('../lib/fonts/muli-regular-webfont.svg#muliregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
+}
+.levels {
+  position: fixed;
+  color: rgb(155, 25, 25);
+  font-size: 20px;
+  text-align: center;
+  top: 89%;
+  left: 0;
+  right: 0;
+}
+.levels.hidden {
+  /*margin-left: -9999px;*/
+}
+.level-title {
+  position: fixed;
+  width:96%;
+  font-family: 'bebas_neueregular';
+  top: 16.5%;
+  font-size: 40px;
+  margin-left: 0px;
+  text-align: right;
+  color: white;
+}
+.level-title.hidden {
+  margin-left: 9999px;
+}
+.level-star {
+  margin-right: 12px;
+  margin-left: 12px;
+}
+.level-complete {
+  color: white;
+}
+.result-text {
+  color: black;
+}
 .result {
   width: 90%;
   height: 145px;
@@ -76,6 +121,10 @@
   .loading h1, .loading h2, .loading h3, .loading h4, .loading h5, .loading h6 {
     color: #fff; 
   }
+.loading h2 {
+  font-family: "muliregular";
+  font-weight: 700;
+}
 .loading-backdrop.active {
   background-color: rgba(0, 0, 0, 0.3);
 }
@@ -104,11 +153,13 @@
 }
 
 .hot-or-not {
+  visibility: hidden;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 70px;
+  /*height: 70px;*/
+  top: 84%;
   text-align: center;
   background-color: #56b9af;
 }
@@ -147,7 +198,7 @@
 }
 #play {
   border: none;
-  font-family: 'Roboto Condensed', sans-serif;
+  /*font-family: 'Roboto Condensed', sans-serif;*/
   font-size: 150%;
 }
 
@@ -219,15 +270,19 @@
 .button-results {
   width: 220px;
   height: 60px;
-  margin: 3% auto;
+  margin: 5px auto;
   border-radius: 4px;
 }
 .button-play-again {
   background-color: rgb(240, 159, 65);
   border: 0px solid black;
+  margin-bottom: 5px;
 }
 .result-buttons {
-  margin-top: 40px;
+  margin-top: 15%;
+}
+.result-buttons.row {
+  padding: 0;
 }
 
 .pane {
@@ -244,6 +299,8 @@
   color: #eee;
 }
 
+
+
 .swipe-cards {
   position: fixed;
 }
@@ -254,7 +311,7 @@
   -webkit-transform: scale(1,1);
   -webkit-transform: rotateZ(360deg);
   left: 50%;
-  top: 50%;
+  top: 55%;
   width: 300px;
   height: 300px;
   margin-left: -150px;
@@ -346,12 +403,12 @@
   -moz-animation-name: dropDown;
   -moz-animation-iteration-count: once;
   -moz-animation-timing-function: ease-in-out;
-  -moz-animation-duration: 0.3s;
+  -moz-animation-duration: 0.4s;
 
   -webkit-animation-name: dropDown;
   -webkit-animation-iteration-count: once;
   -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-duration: 0.3s;
+  -webkit-animation-duration: 0.4s;
 }
 
 .popup p {
@@ -436,29 +493,19 @@
   -webkit-animation-duration: 0.1s;
 }
 
-/*.stylr-quick-slide {
-  -moz-animation-name: slideUp;
-  -moz-animation-iteration-count: once;
-  -moz-animation-timing-function: linear;
-  -moz-animation-duration: 0.1s;
-  
+.stylr-quick-slide {
   -webkit-animation-name: slideUp;
   -webkit-animation-iteration-count: once;
   -webkit-animation-timing-function: linear;
-  -webkit-animation-duration: 0.1s;
+  -webkit-animation-duration: 0.05s;
 }
 
-.stylr-quick-slide.ng-leave {
-  -moz-animation-name: slideDown;
-  -moz-animation-iteration-count: once;
-  -moz-animation-timing-function: linear;
-  -moz-animation-duration: 0.1s;
-
+.stylr-quick-slide.hidden {
   -webkit-animation-name: slideDown;
   -webkit-animation-iteration-count: once;
   -webkit-animation-timing-function: linear;
-  -webkit-animation-duration: 0.1s;
-}*/
+  -webkit-animation-duration: 0.05s;
+}
 
 .stylr-fade3 {
 
@@ -471,6 +518,33 @@
   -webkit-animation-iteration-count: once;
   -webkit-animation-timing-function: linear;
   -webkit-animation-duration: 0.3s;
+}
+.stylr-slide-left {
+  -webkit-animation-name: slideLeft;
+  -webkit-animation-iteration-count: once;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-duration: 0.4s;
+}
+.stylr-slide-left.hidden {
+  -webkit-animation-name: slideLeftOut;
+  -webkit-animation-iteration-count: once;
+  -webkit-animation-timing-function: ease-in-out;
+  /*-webkit-animation-delay: 0.2s;*/
+  -webkit-animation-duration: 1.4s;
+}
+.stylr-slide-right {
+
+  -webkit-animation-name: slideRight;
+  -webkit-animation-iteration-count: once;
+  -webkit-animation-timing-function: ease-in-out;
+  /*-webkit-animation-delay: .4s;*/
+  -webkit-animation-duration: 1s;
+}
+.stylr-slide-right.hidden {
+  -webkit-animation-name: slideRightOut;
+  -webkit-animation-iteration-count: once;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 0.4s;
 }
 
   @-webkit-keyframes dropDown {
@@ -527,6 +601,44 @@
       }
   }
 
+  @-webkit-keyframes slideLeft {
+      0% {
+          margin-left: 120px;
+      }
+      70% {
+          margin-left: -10px;
+      }
+      100% {
+          margin-left: 0px;
+      }
+  }
+  @-webkit-keyframes slideLeftOut {
+      0% {
+          margin-left: 0px;
+      }
+      100% {
+          margin-left: 9999px;
+      }
+  }
+  @-webkit-keyframes slideRight {
+      0% {
+          margin-left: -9999px;
+      }
+      70% {
+          margin-left: 30px;
+      }
+      100% {
+          margin-left: 0px;
+      }
+  }
+  @-webkit-keyframes slideRightOut {
+      0% {
+          margin-left: 0px;
+      }
+      100% {
+          margin-left: -9999px;
+      }
+  }
   @-moz-keyframes fadeIn {
       0% {
           opacity: 0;
@@ -559,36 +671,26 @@
           opacity: 0;
       }
   }
-  @-moz-keyframes slideUp {
-      0% {
-          height: 0px;
-      }
-      100% {
-          height: 70px;
-      }
-  }
+
   @-webkit-keyframes slideUp {
       0% {
-          height: 0px;
+          visibility: hidden;
+          top: 100%;
       }
       100% {
-          height: 70px;
+          visibility: visible;
+          top: 86%;
       }
   }
-  @-moz-keyframes slideDown {
-      0% {
-          height: 70px;
-      }
-      100% {
-          height: 0px;
-      }
-  }
+
   @-webkit-keyframes slideDown {
       0% {
-          height: 70px;
+          visibility: visible;
+          top: 86%;
       }
       100% {
-          height: 0px;
+          visibility: hidden;
+          top: 100%;
       }
   }
   
