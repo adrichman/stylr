@@ -1,7 +1,7 @@
 {
   "name": "stylr-server",
-  "version": "0.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "API for stylr client app",
   "main": "server.js",
   "dependencies": {
     "express": "~3.4.8",
@@ -12,12 +12,12 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "forever start -l forever.log --append -o out.log -e err.log server.js --minUptime 100 --spinSleepTime 3000"
   },
-  "author": "",
+  "author": "Adam D Richman & Brendon Verissimo",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/brendonv/stylr/issues"
+    "url": "https://github.com/stitchfix/mbl-stylr/issues"
   },
-  "homepage": "https://github.com/brendonv/stylr"
+  "homepage": "http://getstylr.com"
 }
