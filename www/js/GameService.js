@@ -26,15 +26,13 @@ angular.module('app.services')
       for (var i = 0; i < fields.length; i++){
         userPreferences[fields[i]] += swipedCard.card[fields[i]];
       }
-    } else {
-    }
+    } 
     return userPreferences;
   };
 
   var nextLevel = function(prefs){
     if ($rootScope.level < Object.keys(ENV.categories).length){
       $rootScope.level++;
-      console.log('in next level');
       $state.go('home.slide.cards', { level : $rootScope.level });
     } else {
       end(prefs);

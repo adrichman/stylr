@@ -261,7 +261,7 @@
       this.x = this.startX + (e.gesture.deltaX);
       this.y = this.startY + (e.gesture.deltaY);
 
-      this.el.style[ionic.CSS.TRANSFORM] = 'translate3d(' + this.x * .8 + 'px, ' + this.y + 'px, 0) rotate(' + (this.rotationAngle) + 'rad)';
+      this.el.style[ionic.CSS.TRANSFORM] = 'translate3d(' + this.x * 0.7 + 'px, ' + this.y + 'px, 0) rotate(' + (this.rotationAngle) + 'rad)';
       this.onDrag && this.onDrag(e);
     },
     _doDragEnd: function(e) {
@@ -269,16 +269,15 @@
     },
 
     _doDragAbort: function(e) {
-      this.startX = this.startY = this.x = this.y = 0;
+      this.deltaX = this.deltaX = this.startX = this.startY = this.x = this.y = 0;
       this.transitionBack(e);
-      this.el.style[ionic.CSS.TRANSFORM] = 'translate3d(0px,0px, 0) rotate(0rad)';
     }
   });
 
 
   angular.module('ionic.contrib.ui.cards', ['ionic'])
 
-  .directive('swipeCard', ['$ionicGesture','$timeout', function($ionicGesture, $timeout) {
+  .directive('swipeCard', ['$ionicGesture', function($ionicGesture) {
     return {
       restrict: 'E',
       template: '<div class="swipe-card" ng-transclude></div>',
@@ -298,31 +297,39 @@
           var swipeableCard = new SwipeableCardView({
             el: el,
             onSwipe: function() {
-              $timeout(function() {
+              $scope.$apply(function(){
                 $scope.onSwipe();
               });
             },
             onDestroy: function() {
-              $timeout(function() {
+              $scope.$apply(function(){
                 $scope.onDestroy();
               });
             },
             onDrag: function(e){
-              if(e.gesture.deltaX < -15 && direction > -1) {
-                $scope.$emit('!hot');
-                $scope.$emit('!center');
-                direction = -1;
-              } else if (e.gesture.deltaX > 15 && direction < 1) {
-                $scope.$emit('hot');
-                $scope.$emit('!center');
-                direction = 1;
+              if(e.gesture.deltaX < 0 && direction > -1) {
+                $scope.$apply(function(){
+                  $scope.$emit('!hot');
+                  $scope.$emit('!center');
+                  direction = -1;
+                });
+              } else if (e.gesture.deltaX > 0 && direction < 1) {
+                $scope.$apply(function(){
+                  $scope.$emit('hot');
+                  $scope.$emit('!center');
+                  direction = 1;
+                });
               } else {
-                 direction = 0;
+                 $scope.$apply(function(){
+                  direction = 0;
+                });
               }
             },
             onDragEnd: function(e){
-              $scope.$emit('center');
-              direction = 0;
+              $scope.$apply(function(){
+                $scope.$emit('center');
+                direction = 0;
+              })
             }
           });
           $scope.$parent.swipeCard = swipeableCard;

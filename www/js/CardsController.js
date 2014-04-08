@@ -3,41 +3,12 @@ angular.module('app.controllers')
 .controller('CardsController', ['ENV','$rootScope','$scope','cardTypes','GameService', '$ionicSwipeCardDelegate', '$timeout', '$state', '$ionicPopup', '$rootScope','PhotoService', function(ENV, $rootScope, $scope, cardTypes, GameService, $ionicSwipeCardDelegate, $timeout, $state, $ionicPopup, $rootScope, PhotoService) {
   $scope.cards = [];
   $scope.preloadCache;
-  $scope.hot = false;
-  $scope.center = true;
+  $scope.level = $rootScope.level;
+  $scope.levelTitle = ENV.categories[+($rootScope.level)].friendly;
   $scope.hotClass = ENV.style.color ? 'hot-color':'hot-white'; 
   $scope.notClass = ENV.style.color ? 'not-color':'not-white';
   $rootScope.stateIntercepted = false;
 
-  $scope.$on('!hot', function(){
-    window._rAF(function(){
-      $timeout(function(){
-        $scope.hot = false;
-      },25)
-    })
-  })
-  $scope.$on('!center', function(){
-    window._rAF(function(){
-      $timeout(function(){
-        $scope.center = false;
-      },25)
-    })
-  })
-  $scope.$on('hot', function(){
-    window._rAF(function(){
-      $timeout(function(){
-        $scope.hot = true;
-      },25)
-    })
-  })
-  $scope.$on('center', function(){
-    window._rAF(function(){
-      $timeout(function(){
-        $scope.center = true;
-      },400)
-    })
-  })
-  
 
   PhotoService.requestPhotos(+($state.params.level) + 1)
   .then(function(res){
@@ -73,15 +44,17 @@ angular.module('app.controllers')
   };
 
   $scope.registerPreference = function(index, swipedCard){
-    $scope.preference = GameService.calculateScore(swipedCard, $scope.preference) || {};
+    $rootScope.preference = GameService.calculateScore(swipedCard, $rootScope.preference) || {};
+    console.log($rootScope.preference);
     if (cardTypes.length < 1) {
+      $scope.$emit('endLevel');
       $timeout(function(){
         window._rAF(function(){
           $scope.showAlert().then(function(){
-            GameService.nextLevel($scope.preference);
+            GameService.nextLevel($rootScope.preference);
           }); 
         });
-      })
+      }, 400);
     }
   };
 

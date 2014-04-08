@@ -2,6 +2,9 @@ angular.module('app')
 
 .constant('ENV',
   {
+    'server':                 {
+                                'url': 'http://107.170.219.118/images/'
+                              },
     'categories':  
                               { 
                                 1:  { "db": "Top"         , "friendly" : "Tops"          },
@@ -58,7 +61,7 @@ angular.module('app')
                                 4:  
                                     'Her Excellency, The Royal Hottness.',
                                 5:  
-                                    'Beautiful!<br>(You, That is.)',
+                                    'Beautiful!<br>(You, That Is.)',
                                 6:
                                     'One Last Time!' 
                               }

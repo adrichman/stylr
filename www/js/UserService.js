@@ -8,7 +8,6 @@ angular.module('app.services')
 
   this.setCurrentUser = function(user) {
     var d = $q.defer();
-    console.log("\n\n Set USER: ", user, "\n\n");
     $cookieStore.put('user', user);
     self._currentUser = user;
     d.resolve(user);

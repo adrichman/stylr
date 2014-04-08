@@ -2562,10 +2562,10 @@ body, .ionic-body {
   margin: 0;
   padding: 0;
   background-color: #ca4d60;
-  color: black;
+  color: #696969;
   word-wrap: break-word;
   font-size: 14px;
-  font-family: "Avenir LT W01 45 Book", helvetica, HelveticaNeue, "Helvetica Neue", Arial, sans-serif;
+  font-family: Arial, sans-serif;
   line-height: 20px;
   text-rendering: optimizeLegibility;
   -webkit-backface-visibility: hidden;
@@ -2816,9 +2816,9 @@ cite {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  color: black;
+  color: #56B9AF;
   font-weight: 500;
-  font-family: "Avenir LT W01 45 Book", helvetica, HelveticaNeue, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Capriola",Arial, sans-serif;
   line-height: 1.2; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small,
   .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small {
@@ -3639,7 +3639,7 @@ a.subdued {
   white-space: nowrap;
   font-weight: 400;
   font-size: 14px;
-  font-family: "Helvetica Neue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: Arial, "Lucida Grande", sans-serif;
   opacity: 0.8; }
   .tab-item:hover {
     cursor: pointer; }
@@ -4740,7 +4740,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Avenir LT W01 45 Book", helvetica, HelveticaNeue, "Helvetica Neue", Arial, sans-serif; }
+  font-family: Arial, sans-serif; }
 
 .item-input {
   display: -webkit-box;

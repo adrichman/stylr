@@ -1,6 +1,6 @@
 *.keystore
 *.sw*
-dump/*
+dump
 platforms/*
 ref/*
 .DS_Store
@@ -9,3 +9,4 @@ node_modules/*
 ignore_assets/
 *.bowerrc
 bower.json
+stylr-server/

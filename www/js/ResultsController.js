@@ -1,31 +1,29 @@
 angular.module('app.controllers')
 
-.controller('ResultsController', ['$scope', '$state', '$stateParams', '$http', '$location', 'UserService','$ionicLoading', 'ENV','$timeout', function($scope, $state, $stateParams, $http, $location, UserService, $ionicLoading, ENV, $timeout) {
+.controller('ResultsController', ['$scope', '$state', '$stateParams', '$http', '$location', 'UserService','stateChangeInterceptor', 'ENV','$timeout', function($scope, $state, $stateParams, $http, $location, UserService, stateChangeInterceptor, ENV, $timeout) {
   $scope.result = "";
   $scope.showResult = false;
   // $scope.list = [{'id':1,'title':'hey'},{'id':2,'title':'sup'},{'id':3,'title':'nothin'}];
 
   $scope.postFB = function() {
-    
+    $state.go('home.loading');
     UserService.currentUser().then(function(user) {
-        //$http.post('https://graph.facebook.com/' + user.id + '/feed?message=&access_token=' + user.accessToken )
+      if (user !== null){
         $http.post('https://graph.facebook.com/' + user.id + '/feed?link=http://www.stitchfix.com&picture=https://d27bvhtwhzf6pr.cloudfront.net/assets/facebook-share-banner.jpg&message=My\40style\40is:\40' + $stateParams.preference + '!&access_token=' + user.accessToken )
         .success(function(data, status, headers, config) {
-          console.log(arguments);
+          $scope.showAlert('fb').then(function(){ return; });
         })
         .error(function(data, status, headers, config) {
-          console.log(arguments);
+          $scope.showAlert('fb0').then(function(){ return; });
         });
-        
+      } else {
+         $scope.showAlert('fb0').then(function(){ return; });
+      }
     });
   };
 
   $scope.stitchFix = function() {
-    // $scope.loading = $ionicLoading.show(ENV.loadingOptions);
-    // $scope.$apply(function() { 
       window.open('http://www.stitchfix.com', '_system');
-      // $location.path("http://www.stitchfix.com"); 
-    // });
   };
 
   $scope.playAgain = function() {
