@@ -2818,7 +2818,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #56B9AF;
   font-weight: 500;
-  font-family: "Capriola",Arial, sans-serif;
+  font-family: "source_sans_proregular",Arial, sans-serif;
   line-height: 1.2; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small,
   .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small {

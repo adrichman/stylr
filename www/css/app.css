@@ -10,17 +10,55 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
-    font-family: 'muliregular';
-    src: url('../lib/fonts/muli-regular-webfont.eot');
-    src: url('../lib/fonts/muli-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../lib/fonts/muli-regular-webfont.woff') format('woff'),
-         url('../lib/fonts/muli-regular-webfont.ttf') format('truetype'),
-         url('../lib/fonts/muli-regular-webfont.svg#muliregular') format('svg');
+    font-family: 'dancing_script_otregular';
+    src: url('../lib/fonts/dancingscript-regular-webfont.eot');
+    src: url('../lib/fonts/dancingscript-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../lib/fonts/dancingscript-regular-webfont.woff') format('woff'),
+         url('../lib/fonts/dancingscript-regular-webfont.ttf') format('truetype'),
+         url('../lib/fonts/dancingscript-regular-webfont.svg#dancing_script_otregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
+
+@font-face {
+    font-family: 'source_sans_probold';
+    src: url('../lib/fonts/sourcesanspro-bold-webfont.eot');
+    src: url('../lib/fonts/sourcesanspro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../lib/fonts/sourcesanspro-bold-webfont.woff') format('woff'),
+         url('../lib/fonts/sourcesanspro-bold-webfont.ttf') format('truetype'),
+         url('../lib/fonts/sourcesanspro-bold-webfont.svg#source_sans_probold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'source_sans_proregular';
+    src: url('../lib/fonts/sourcesanspro-regular-webfont.eot');
+    src: url('../lib/fonts/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../lib/fonts/sourcesanspro-regular-webfont.woff') format('woff'),
+         url('../lib/fonts/sourcesanspro-regular-webfont.ttf') format('truetype'),
+         url('../lib/fonts/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'source_sans_prosemibold';
+    src: url('../lib/fonts/sourcesanspro-semibold-webfont.eot');
+    src: url('../lib/fonts/sourcesanspro-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../lib/fonts/sourcesanspro-semibold-webfont.woff') format('woff'),
+         url('../lib/fonts/sourcesanspro-semibold-webfont.ttf') format('truetype'),
+         url('../lib/fonts/sourcesanspro-semibold-webfont.svg#source_sans_prosemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 .levels {
   position: fixed;
   color: rgb(155, 25, 25);
@@ -100,7 +138,7 @@
 }
 
 #navi-header {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'dancing_script_otregular', cursive;
   font-size: 190%;
 }
 .preload {
@@ -122,7 +160,7 @@
     color: #fff; 
   }
 .loading h2 {
-  font-family: "muliregular";
+  font-family: "source_sans_proregular";
   font-weight: 700;
 }
 .loading-backdrop.active {
@@ -140,7 +178,7 @@
   padding-bottom: 4%;
   text-align: center;
   font-size: 100px;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'dancing_script_otregular', cursive;
 }
 
 .cards-footer {
