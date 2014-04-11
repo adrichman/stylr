@@ -81,3 +81,4 @@ angular.module('app', ['ionic', 'firebase', 'ngCookies', 'app.services', 'app.co
   $urlRouterProvider.otherwise('/splash');
 
 });
+
