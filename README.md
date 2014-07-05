@@ -1,4 +1,7 @@
 #STYLR
+
+See it: [Screencast demo on vimeo](https://vimeo.com/99956183)
+
 *These instructions assume an OSX development environment and a server running Ubuntu.*
 
 __[Stylr](http://getStylr.com)__ is a game in which the user swipes left or right on photos of various women's fashion items to register his/her preference. At the end, the game reveals the user's style profile category, which he/she can then share with friends.
