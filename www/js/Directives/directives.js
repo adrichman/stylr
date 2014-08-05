@@ -1,20 +1,12 @@
 angular.module('app.directives',[])
 .directive('hotOrNot', ['$timeout', function($timeout){
   return {
-        restrict: 'E'
-        ,
-        // scope: {
-          // hotOrNot: '@',
-          // notClass: '@'
-        // }
-        // ,
+        restrict: 'E', 
         template:
           '<div animate class="hot-or-not {{ notClass }}">' +
             '<h1>{{ hotOrNot }}</h1>'                                 +
-          '</div>'
-        ,
-        replace: true
-        ,
+          '</div>', 
+        replace: true, 
         link: function($scope, $element, $attr) {
           $scope.hotOrNot = "";
           $scope.$on('!hot', function(){
@@ -77,10 +69,6 @@ angular.module('app.directives',[])
               ,
     replace: true,
     link: function($scope, $element, $attr){
-      // $scope.$on('removeStars', function(){
-        // console.log('end level heard in stars');
-        // $element[0].classList.add('hidden');
-      // });
       for (var i = 0; i < $scope.level; i++){
         $element.children()[i].classList.add('level-complete');
       }

@@ -30,20 +30,13 @@ angular.module('app')
 
     'loadingCopy': 
                               {
-                                0:
-                                    '',
-                                1:  
-                                    'Fetching Fresh Fashions',
-                                2:  
-                                    'Pulling Pretty Party Pieces',
-                                3:  
-                                    'Calcuating Crazy Coolness',
-                                4:  
-                                    'Grabbing Something Glam and Gorgeous',
-                                5:  
-                                    'Magically Making Millions of Miniature Measurements',
-                                6:
-                                    'Getting the Goods from our Garment Guru' 
+                                0:  '',
+                                1:  'Fetching Fresh Fashions',
+                                2:  'Pulling Pretty Party Pieces',
+                                3:  'Calcuating Crazy Coolness',
+                                4:  'Grabbing Something Glam and Gorgeous',
+                                5:  'Magically Making Millions of Miniature Measurements',
+                                6:  'Getting the Goods from our Garment Guru' 
                               },
     'style':
                               {
@@ -52,18 +45,12 @@ angular.module('app')
 
     'levelPopupTitle':
                               {
-                                1:  
-                                    'Looking Good!',
-                                2:  
-                                    'We Like Your Style.',
-                                3:  
-                                    'You\'ve Chosen Wisely!',
-                                4:  
-                                    'Her Excellency, The Royal Hottness.',
-                                5:  
-                                    'Beautiful!<br>(You, That Is.)',
-                                6:
-                                    'One Last Time!' 
+                                1:  'Looking Good!',
+                                2:  'We Like Your Style.',
+                                3:  'You\'ve Chosen Wisely!',
+                                4:  'Her Excellency, The Royal Hottness.',
+                                5:  'Beautiful!<br>(You, That Is.)',
+                                6:  'One Last Time!' 
                               }
   }
 );

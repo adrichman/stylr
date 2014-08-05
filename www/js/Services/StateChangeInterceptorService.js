@@ -1,16 +1,19 @@
 angular.module('app.services')
 .service('stateChangeInterceptor', ['$rootScope','$ionicLoading','$q', 'ENV','$timeout','$state', function($rootScope, $ionicLoading, $q, ENV, $timeout, $state){
+  
   return (function(e, toState, toParams, fromState, fromParams){
+    
     if ((toState.name && !ENV.stateChangeWhiteList[toState.name.split('.').join('')] )
-        || (e.current && !ENV.stateChangeWhiteList[e.current.name.split('.').join('')]) ){
+    || (e.current && !ENV.stateChangeWhiteList[e.current.name.split('.').join('')]) ){
       var loading;
       var loadingConfig = function(){
+        var template =  '<h1><i class=\"icon ion-looping\"></i></h1>';
+        
         var loadingCopy = function(level){
           level = level || 0;
           return ENV.loadingCopy[level];
         }
-        var template =  '<h1><i class=\"icon ion-looping\"></i></h1>';
-
+        
         if (toParams.preference) {
           template += '<h2>ANALYZING</h2>';
         } else if ($rootScope.level && toState.name !== 'home.start'){
@@ -24,18 +27,18 @@ angular.module('app.services')
       var intercept = function(){
         var d = $q.defer();
         loading = $ionicLoading.show(ENV.loadingOptions);
-        $timeout(function(){
-          d.resolve(loading);
-        },2500);
+        $timeout(function(){ d.resolve(loading); },2500);
         return d.promise;
       };
   
       var proceed = function(loading){
         var d = $q.defer();
+       
         var resolveState = function(currentLoading){
           currentLoading.hide();
           $state.go(toState, toParams);
         }
+
         d.resolve(resolveState(loading));
         return d.promise;
       }
@@ -43,6 +46,7 @@ angular.module('app.services')
       if (!$rootScope.stateIntercepted){
         e.preventDefault && e.preventDefault();
         $rootScope.stateIntercepted = true;
+        
         intercept()
         .then(function(){ proceed(loading); })
         .then(function(){ $rootScope.stateIntercepted = false; });

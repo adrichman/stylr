@@ -3,7 +3,6 @@ angular.module('app.controllers')
 .controller('ResultsController', ['$scope', '$state', '$stateParams', '$http', '$location', 'UserService','stateChangeInterceptor', 'ENV','$timeout', function($scope, $state, $stateParams, $http, $location, UserService, stateChangeInterceptor, ENV, $timeout) {
   $scope.result = "";
   $scope.showResult = false;
-  // $scope.list = [{'id':1,'title':'hey'},{'id':2,'title':'sup'},{'id':3,'title':'nothin'}];
 
   $scope.postFB = function() {
     $state.go('home.loading');
@@ -23,7 +22,7 @@ angular.module('app.controllers')
   };
 
   $scope.stitchFix = function() {
-      window.open('http://www.stitchfix.com', '_system');
+    window.open('http://www.stitchfix.com', '_system');
   };
 
   $scope.playAgain = function() {
